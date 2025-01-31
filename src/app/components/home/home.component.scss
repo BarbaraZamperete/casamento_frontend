@@ -14,6 +14,14 @@
   min-height: 70px; // Mudando para min-height para permitir expansão
   background-color: transparent;
 
+  img {
+    display: none;
+
+    &.image-active {
+      display: block;
+    }
+  }
+
   .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
@@ -326,4 +334,3 @@ footer.bg-dark {
     }
   }
 }
-

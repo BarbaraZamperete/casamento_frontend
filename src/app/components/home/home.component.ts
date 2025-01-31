@@ -39,14 +39,24 @@ export class HomeComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const navbar = document.querySelector('.navbar');
-    if (navbar) {
+    const menuWhiteIcon = document.querySelector('img[src="assets/menu-ffff.svg"]');
+    const menuBlueIcon = document.querySelector('img[src="assets/menu-1A4B84.svg"]');
+
+    if (navbar && menuWhiteIcon && menuBlueIcon) {
       if (window.scrollY > window.innerHeight - 100) {
         navbar.classList.add('scrolled');
         navbar.classList.remove('bg-transparent');
+        menuWhiteIcon.classList.remove('image-active');
+        menuBlueIcon.classList.add('image-active');
+
       } else {
         navbar.classList.remove('scrolled');
         navbar.classList.add('bg-transparent');
+
+        menuWhiteIcon.classList.add('image-active');
+        menuBlueIcon.classList.remove('image-active');
       }
     }
   }
 }
+
