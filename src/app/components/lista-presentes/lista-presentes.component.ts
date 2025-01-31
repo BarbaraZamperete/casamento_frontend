@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { ApiService } from '../../services/api.service';
 import { SimpleNavBarComponent } from "../shared/simple-nav-bar/simple-nav-bar.component";
+import { Presente } from '../../interfaces/presente.interface';
 declare var bootstrap: any;
 
 @Component({
@@ -13,43 +14,13 @@ declare var bootstrap: any;
   styleUrl: './lista-presentes.component.scss'
 })
 export class ListaPresentesComponent {
-  presentes = [
-    {
-      nome: 'Presente 1',
-      descricao: 'Descrição do presente 1',
-      valor: 100.00,
-      imagem: 'assets/images/presente1.jpg'
-    },
-    {
-      nome: 'Presente 2',
-      descricao: 'Descrição do presente 2',
-      valor: 200.00,
-      imagem: 'assets/images/presente2.jpg'
-    },
-    {
-      nome: 'Presente 3',
-      descricao: 'Descrição do presente 3',
-      valor: 300.00,
-      imagem: 'assets/images/presente3.jpg'
-    },
-    {
-      nome: 'Presente 3',
-      descricao: 'Descrição do presente 3',
-      valor: 300.00,
-      imagem: 'assets/images/presente3.jpg'
-    },
-  ];
-
-  presenteSelecionado: any;
+  presentes: Presente[] = [];
+  presenteSelecionado: Presente | null = null;
 
   constructor(private apiService: ApiService ) {
-    this.presenteSelecionado = null;
-
     this.apiService.getPresentes().subscribe((presentes: any) => {
       this.presentes = presentes;
     });
-
-
   }
 
   comprarPresente(presente: any) {
@@ -76,6 +47,5 @@ export class ListaPresentesComponent {
       }
     }
   }
-
 }
 

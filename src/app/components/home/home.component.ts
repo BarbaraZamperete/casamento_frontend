@@ -1,34 +1,39 @@
-import { Component, HostListener } from '@angular/core';
-import { ApiService } from '../../services/api.service';
-
+import { Component, OnInit, HostListener } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from '../shared/footer/footer.component';
+import { ApiService } from '../../services/api.service';
+import { Presente } from '../../interfaces/presente.interface';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FooterComponent]
+  imports: [CommonModule, HttpClientModule, FooterComponent, RouterModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  presentesPreview: Presente[] = [];
+  isLoading = true;
 
-  convidados: any[] = [];
-  presentes: any[] = [];
+  constructor(private apiService: ApiService) {}
 
-  // Data do evento
-  eventDate: Date = new Date('2027-27-03T18:00:00'); // Data do seu casamento
-  days: number = 0;
-  hours: number = 0;
-  minutes: number = 0;
-  seconds: number = 0;
-  countdownInterval: any;
+  ngOnInit() {
+    this.loadPresentes();
+  }
 
-  constructor(private apiService: ApiService) { }
-
-  ngOnInit(): void {
-
+  private loadPresentes() {
+    this.apiService.getPresentes().subscribe({
+      next: (presentes) => {
+        this.presentesPreview = presentes.slice(0, 3);
+        this.isLoading = false;
+      },
+      error: (error) => {
+        console.error('Erro ao carregar presentes:', error);
+        this.isLoading = false;
+      }
+    });
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -44,5 +49,4 @@ export class HomeComponent {
       }
     }
   }
-
 }
