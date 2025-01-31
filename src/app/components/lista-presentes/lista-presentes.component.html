@@ -8,17 +8,19 @@
 
     <div class="row g-4">
       <!-- Card de Presente -->
-      <div class="col-md-4 col-sm-6" *ngFor="let presente of presentes">
+      <div class="col-md-4 col-sm-6" *ngFor="let presente of presentes" [id]="'presente-' + presente.id">
         <div class="card h-100 shadow-sm border-0 transition-hover">
           <img [src]="presente.imagem" class="card-img-top" style="height: 250px; object-fit: cover;" [alt]="presente.nome">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title texto-primary font-playfair">{{presente.nome}}</h5>
             <p class="card-text text-secondary">{{presente.descricao}}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="h5 texto-primary mb-0">R$ {{presente.valor | number:'1.2-2'}}</p>
-              <button class="btn btn-primary rounded-pill px-4" (click)="comprarPresente(presente)">
-                Presentear
-              </button>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="h5 texto-primary mb-0">R$ {{presente.valor | number:'1.2-2'}}</p>
+                <button class="btn btn-primary rounded-pill px-4" (click)="comprarPresente(presente)">
+                  Presentear
+                </button>
+              </div>
             </div>
           </div>
         </div>
