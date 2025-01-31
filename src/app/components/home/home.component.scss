@@ -7,12 +7,35 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+.container-navbar{
+  padding: 0 20px 0 20px;
+}
 // Navbar styles
 .navbar {
   transition: background-color 0.3s ease;
-  padding: 1rem 0;
-  min-height: 70px; // Mudando para min-height para permitir expansão
+  padding: 0.75rem 0;
+  height: 60px;
   background-color: transparent;
+
+  @media (max-width: 991px) {
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+
+    .navbar-brand {
+      font-size: 1.25rem;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .nav-link {
+      padding: 0.25rem 0.75rem;
+    }
+
+    img.image-active {
+      width: 24px;
+      height: auto;
+    }
+  }
 
   img {
     display: none;
@@ -24,14 +47,17 @@
 
   .navbar-brand {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: $white;
-    padding: 0.5rem 1rem; // Adicionando padding para evitar sobreposição
+    padding: 0.5rem 1rem;
   }
 
   .nav-link {
     color: $white;
     position: relative;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 
     &::after {
       content: '';
@@ -78,16 +104,11 @@
     }
   }
 
-  .nav-link {
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
-  }
-
   .navbar-toggler {
     outline: none !important;
     box-shadow: none !important;
     border: 0;
+    padding: 0.25rem 0.5rem;
 
     &:focus {
       outline: none;
@@ -95,15 +116,16 @@
     }
   }
 
-  @media (max-width: 991px) { // Ajustes para telas menores
+  @media (max-width: 991px) {
     .navbar-collapse {
       background-color: $white;
-      padding: 1rem;
-      margin-top: 0.5rem;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
       border-radius: 4px;
 
       .nav-link {
         color: $primary-blue;
+        padding: 0.35rem 0.5rem;
 
         &::after {
           background-color: $primary-blue;
