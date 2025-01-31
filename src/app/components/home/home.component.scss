@@ -1,51 +1,30 @@
 @use "sass:color";
 @use '../../../variables.scss' as *;
 
-// Estilos gerais
+// Layout
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  &-navbar {
+    padding: 0 20px;
+  }
 }
 
-.container-navbar{
-  padding: 0 20px 0 20px;
-}
-// Navbar styles
+// Navbar
 .navbar {
   transition: background-color 0.3s ease;
   padding: 0.75rem 0;
   height: 60px;
   background-color: transparent;
 
-  @media (max-width: 991px) {
-    padding: 0.25rem 0;
-    font-size: 0.95rem;
-
-    .navbar-brand {
-      font-size: 1.25rem;
-      padding: 0.25rem 0.75rem;
-    }
-
-    .nav-link {
-      padding: 0.25rem 0.75rem;
-    }
-
-    img.image-active {
-      width: 24px;
-      height: auto;
-    }
-  }
-
   img {
     display: none;
-
-    &.image-active {
-      display: block;
-    }
+    &.image-active { display: block; }
   }
 
-  .navbar-brand {
+  &-brand {
     font-weight: 600;
     font-size: 1.4rem;
     color: $white;
@@ -71,9 +50,7 @@
       transition: width 0.3s ease;
     }
 
-    &:hover::after {
-      width: 100%;
-    }
+    &:hover::after { width: 100%; }
   }
 
   &.bg-transparent {
@@ -87,9 +64,7 @@
       background-color: $white;
     }
 
-    .navbar-toggler{
-      color: $white;
-    }
+    .navbar-toggler { color: $white; }
   }
 
   &.scrolled {
@@ -117,6 +92,23 @@
   }
 
   @media (max-width: 991px) {
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+
+    .navbar-brand {
+      font-size: 1.25rem;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .nav-link {
+      padding: 0.25rem 0.75rem;
+    }
+
+    img.image-active {
+      width: 24px;
+      height: auto;
+    }
+
     .navbar-collapse {
       background-color: $white;
       padding: 0.5rem;
@@ -135,121 +127,98 @@
   }
 }
 
-// Ajuste para scroll-padding para todas as seções
+// Scroll behavior
 html {
-  scroll-padding-top: 70px; // Mesmo valor da altura do navbar
+  scroll-padding-top: 70px;
   scroll-behavior: smooth;
 }
 
-
-
 // Hero section
 .hero {
-  background-image: url('/assets/images/banner.jpeg');
-  background-size: auto;
-  background-position: center;
+  background: url('/assets/images/banner.jpeg') center/auto;
   height: 80vh;
   position: relative;
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba($primary-blue, 0.3),
-      rgba($primary-blue, 0.5)
-    );
-    pointer-events: none;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba($primary-blue, 0.3), rgba($primary-blue, 0.5));
     z-index: 1;
   }
 
   .container {
     position: relative;
     z-index: 2;
-    color: #ffffff;
+    color: $white;
+
+    h1, p, .lead, .h5 {
+      color: $white;
+    }
 
     h1 {
-      color: #ffffff;
       font-size: 3.5rem;
       margin-bottom: 1rem;
       font-weight: 300;
     }
 
     p {
-      color: #f8f9fa;
       font-size: 1.5rem;
       margin-bottom: 2rem;
-    }
-
-    .lead {
-      color: #ffffff;
-    }
-
-    .h5 {
-      color: #ffffff;
     }
 
     .btn {
       position: relative;
       z-index: 2;
-      color: #ffffff;
-      border-color: #ffffff;
+      color: $white;
+      border-color: $white;
 
       &:hover {
         color: $primary-blue;
-        background-color: #ffffff;
-        border-color: #ffffff;
+        background-color: $white;
+        border-color: $white;
       }
     }
   }
 }
 
-// Seção de detalhes
+// Detalhes section
 #detalhes {
   padding: 4rem 0;
   background-color: $gray;
 
-  .col-md-4 {
+  .card {
+    background: $white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba($primary-blue, 0.1);
+    transition: transform 0.3s ease;
     margin-bottom: 30px;
     text-align: center;
 
-    .card {
-      background: $white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 15px rgba($primary-blue, 0.1);
-      transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
 
-      &:hover {
-        transform: translateY(-5px);
-      }
+    i {
+      font-size: 2.5rem;
+      color: $secondary-blue;
+      margin-bottom: 1rem;
+    }
 
-      i {
-        font-size: 2.5rem;
-        color: $secondary-blue;
-        margin-bottom: 1rem;
-      }
+    h3 {
+      color: $primary-blue;
+      margin-bottom: 1rem;
+    }
 
-      h3 {
-        color: $primary-blue;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        color: #666;
-        line-height: 1.6;
-      }
+    p {
+      color: #666;
+      line-height: 1.6;
     }
   }
 }
 
-
-
-// Botões
+// Buttons
 .btn-primary {
   background-color: $secondary-blue;
   border: none;
@@ -266,27 +235,7 @@ html {
   }
 }
 
-// Responsividade
-@media (max-width: 768px) {
-  .hero .hero-content {
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-    }
-  }
-
-  .countdown .countdown-item {
-    margin: 0 1rem;
-
-    .number {
-      font-size: 2rem;
-    }
-  }
-}
-// Seção Lista de Presentes
+// Presentes section
 #presentes {
   .btn-outline-dark {
     color: $primary-blue;
@@ -308,15 +257,13 @@ html {
   }
 }
 
-// Seção Confirmação
-#confirmacao {
-  .btn-dark {
-    background-color: $primary-blue;
-    border-color: $primary-blue;
+// Confirmação section
+#confirmacao .btn-dark {
+  background-color: $primary-blue;
+  border-color: $primary-blue;
 
-    &:hover {
-      background-color: color.adjust($primary-blue, $lightness: -10%);
-    }
+  &:hover {
+    background-color: color.adjust($primary-blue, $lightness: -10%);
   }
 }
 
@@ -324,10 +271,8 @@ html {
 footer.bg-dark {
   background-color: rgba($primary-blue, 0.95) !important;
 
-  .social-links {
-    a:hover {
-      opacity: 0.8;
-    }
+  .social-links a:hover {
+    opacity: 0.8;
   }
 
   @media (max-width: 768px) {
@@ -337,22 +282,25 @@ footer.bg-dark {
       .col-md-4 {
         margin-bottom: 1rem;
 
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &.text-end {
-          text-align: center !important;
-        }
+        &:last-child { margin-bottom: 0; }
+        &.text-end { text-align: center !important; }
       }
     }
 
-    h5 {
-      font-size: 1.1rem;
-    }
+    h5 { font-size: 1.1rem; }
+    small { font-size: 0.8rem; }
+  }
+}
 
-    small {
-      font-size: 0.8rem;
-    }
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .hero .hero-content {
+    h1 { font-size: 2.5rem; }
+    p { font-size: 1.2rem; }
+  }
+
+  .countdown .countdown-item {
+    margin: 0 1rem;
+    .number { font-size: 2rem; }
   }
 }

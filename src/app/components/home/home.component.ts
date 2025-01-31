@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     const menuBlueIcon = document.querySelector('img[src="assets/menu-1A4B84.svg"]');
 
     if (navbar && menuWhiteIcon && menuBlueIcon) {
-      if (window.scrollY > window.innerHeight - 100) {
+      if (window.scrollY > window.innerHeight - 200) {
         navbar.classList.add('scrolled');
         navbar.classList.remove('bg-transparent');
         menuWhiteIcon.classList.remove('image-active');
