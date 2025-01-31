@@ -116,7 +116,7 @@ html {
 // Hero section
 .hero {
   background-image: url('/assets/images/banner.jpeg');
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   height: 80vh;
   position: relative;
@@ -130,7 +130,7 @@ html {
     bottom: 0;
     background: linear-gradient(
       to bottom,
-      rgba($primary-blue, 0.6),
+      rgba($primary-blue, 0.3),
       rgba($primary-blue, 0.5)
     );
     pointer-events: none;
@@ -217,34 +217,7 @@ html {
   }
 }
 
-// Seção de contagem regressiva
-.countdown {
-  background-color: $light-blue;
-  padding: 3rem 0;
-  text-align: center;
 
-  h2 {
-    color: $primary-blue;
-    margin-bottom: 2rem;
-  }
-
-  .countdown-item {
-    display: inline-block;
-    margin: 0 1.5rem;
-
-    .number {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: $secondary-blue;
-    }
-
-    .label {
-      color: $primary-blue;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
-  }
-}
 
 // Botões
 .btn-primary {
@@ -292,6 +265,15 @@ html {
     &:hover {
       background-color: $primary-blue;
       color: $white;
+    }
+  }
+
+  .text-primary {
+    color: $primary-blue !important;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: color.adjust($primary-blue, $lightness: -15%) !important;
     }
   }
 }
