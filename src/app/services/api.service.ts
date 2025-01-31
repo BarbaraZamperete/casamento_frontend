@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
 
-  private apiUrl = 'http://127.0.0.1:8000/api'; // URL da API do Django
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
