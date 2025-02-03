@@ -1,0 +1,61 @@
+@use "sass:color";
+@use '../../../variables.scss' as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Container principal
+section {
+  flex: 1 0 auto;
+  padding-top: 76px; // Altura da navbar
+}
+
+.titulo {
+  color: $primary-blue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid $primary-blue;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    color: $primary-blue; // Use a secondary color for card titles
+  }
+
+}
+
+.btn-dark {
+  background-color: $primary-blue;
+  border-color: $primary-blue;
+
+  &:hover {
+    background-color: color.adjust($primary-blue, $lightness: -10%);
+  }
+}
+
+.btn-outline-dark {
+  color: $primary-blue;
+  border-color: $primary-blue;
+
+  &:hover {
+    color: $white;
+    border: none;
+    background-color: $primary-blue; // Lighten on hover
+  }
+}
+
+
+
+
+

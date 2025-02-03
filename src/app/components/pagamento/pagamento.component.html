@@ -1,0 +1,65 @@
+<app-simple-nav-bar></app-simple-nav-bar>
+
+<section class="bg-light py-5 mt-5">
+  <div class="container text-center ">
+    <h2 class="titulo mb-4">Pagamento</h2>
+    <p class="lead mb-4">
+      Você pode presentear as noivas de várias maneiras:
+    </p>
+
+    <div class="row mb-4">
+      <!-- Card para PIX -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
+          <div class="card-body">
+            <h5 class="card-title ">Pagamento via PIX</h5>
+            <p class="card-text">Realize o pagamento instantaneamente usando o PIX.</p>
+            <div *ngIf="qrCodeUrl" class="mb-3">
+              <img [src]="qrCodeUrl" alt="QR Code de Pagamento" class="img-fluid rounded shadow">
+            </div>
+            <div class="mt-auto"> <!-- This div pushes the button to the bottom -->
+              <button class="btn btn-dark" (click)="confirmarPagamento()">Pix realizado</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card para Loja -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
+          <div class="card-body">
+            <h5 class="card-title ">Loja XXXX</h5>
+            <p class="card-text">Endereço: Rua Exemplo, 123, Cidade - Estado</p>
+            <div class="mt-auto"> <!-- This div pushes the button to the bottom -->
+              <button class="btn btn-dark">Comprarei presencialmente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card para Link -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
+          <div class="card-body">
+            <h5 class="card-title ">Site de Pagamento</h5>
+            <p class="card-text">Acesse o site para mais opções.</p>
+            <div class="mt-auto"> <!-- This div pushes the button to the bottom -->
+              <a href="https://www.exemplo.com" class="btn btn-dark" target="_blank">Comprarei no site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-muted mb-4">
+      Lembre-se: No caso do PIX, o pagamento não é verificado automaticamente. Para informar as noivas que a compra foi
+      feita, clique no botão "Pix realizado".
+    </p>
+
+    <div *ngIf="pagamentoEfetuado" class="mt-4">
+      <p class="lead">Obrigada pelo seu presente!</p>
+      <a routerLink="/" class="btn btn-outline-dark">Voltar ao Início</a>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

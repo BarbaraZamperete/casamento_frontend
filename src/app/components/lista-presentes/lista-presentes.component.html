@@ -38,11 +38,26 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Você será redirecionado para a página de pagamento.</p>
+        <form [formGroup]="searchForm" (ngSubmit)="search()">
+          <div class="mb-3">
+            <label for="searchTerm" class="form-label">Se identifique:</label>
+            <input type="text" id="searchTerm" formControlName="searchTerm" class="form-control" placeholder="Digite o nome do convidado">
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="isLoading">Buscar</button>
+        </form>
+
+        <div *ngIf="isLoading" class="mt-3">Carregando...</div>
+        <div *ngIf="showNotFound" class="mt-3 text-danger">Nenhum convidado encontrado.</div>
+
+        <ul *ngIf="showResults" class="list-group mt-3">
+          <li *ngFor="let guest of guests" class="list-group-item d-flex justify-content-between align-items-center">
+            {{ guest.nome }}
+            <button class="btn btn-success btn-sm" (click)="confirmarCompra(guest)"> Confirmar Compra</button>
+          </li>
+        </ul>
       </div>
       <div class="modal-footer border-top-0">
         <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary rounded-pill px-4" (click)="confirmarCompra()">Confirmar</button>
       </div>
     </div>
   </div>

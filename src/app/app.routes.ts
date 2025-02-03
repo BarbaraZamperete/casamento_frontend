@@ -13,4 +13,8 @@ export const routes: Routes = [
     path: 'lista-presentes',
     loadComponent: () => import('./components/lista-presentes/lista-presentes.component').then(m => m.ListaPresentesComponent)
   },
+  {
+    path: 'pagamento',
+    loadComponent: () => import('./components/pagamento/pagamento.component').then(m => m.PagamentoComponent)
+  }
 ];
