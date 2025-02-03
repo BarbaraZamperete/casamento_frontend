@@ -46,8 +46,13 @@ export class ApiService {
     });
   }
 
-  gerarQRCode(id: string, nome: string, valor: number, convidadoId: string) {
-    return this.http.post(`${this.apiUrl}/api/compras/gerar-qrcode/`, { id, nome, valor, convidadoId }).pipe(
+  gerarCompra(id: string, valor: number, convidadoId: string) {
+    const data = {
+      presenteId: id,
+      valor: valor,
+      convidadoId: convidadoId
+    }
+    return this.http.post(`${this.apiUrl}/api/compras/gerar-compra/`, data).pipe(
       map((response: any) => {
         return `${this.apiUrl}/${response.qrCodeUrl}`
       })

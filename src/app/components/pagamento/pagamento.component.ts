@@ -28,14 +28,15 @@ export class PagamentoComponent implements OnInit {
       this.produtoValor = params['valor'];
       this.convidadoId = params['convidadoId'];
 
-      this.gerarQRCode();
+      this.pegarQrcode();
     });
   }
 
-  gerarQRCode() {
-    if (this.produtoId && this.produtoNome && this.produtoValor && this.convidadoId) {
-      this.apiService.gerarQRCode(this.produtoId, this.produtoNome, this.produtoValor, this.convidadoId).subscribe((response: any) => {
-        this.qrCodeUrl = response;
+  pegarQrcode() {
+    if (this.produtoId && this.produtoValor && this.convidadoId) {
+      this.apiService.gerarCompra(this.produtoId, this.produtoValor, this.convidadoId).subscribe((response: any) => {
+        this.qrCodeUrl = response
+        console.log(this.qrCodeUrl);
       });
     }
   }
