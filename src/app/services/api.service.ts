@@ -59,4 +59,12 @@ export class ApiService {
     );
   }
 
+  getLojas(id: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/api/presentes/${id}/lojas/`).pipe(
+      map((response: any) => {
+        return response;
+      })
+    );
+  }
+
 }
