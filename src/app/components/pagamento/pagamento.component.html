@@ -45,7 +45,7 @@
             <ng-template #noPhysicalStores>
               <p class="card-text">Nenhuma loja física disponível para esse presente.</p>
             </ng-template>
-            <div class="mt-auto">
+            <div>
               <button class="btn btn-dark" (click)="confirmarPagamento()">Comprarei presencialmente</button>
             </div>
           </div>
@@ -61,8 +61,9 @@
               <div *ngFor="let loja of lojasVirtuais" class="store-item flex-column">
                 <i class="bi bi-cart-fill"></i> <!-- Ícone de loja virtual -->
                 <p class="card-text">{{ loja.nome }}</p>
-                <i class="bi bi-link"></i>
-                <p class="card-text">{{ loja.endereco }}/{{produtoNome}}
+                <!-- <i class="bi bi-link"></i> -->
+                <p class="card-subtitle font-weight-bold mb-3">Link para compra do produto na Amazon</p>
+                <p class="card-text">{{produtoLinkCompra}}
                   <a [href]="produtoLinkCompra" class="icon-link icon-click fa-5x" target="_blank">
                     <i class="bi bi-box-arrow-up-right fs-6"></i>
                   </a>
