@@ -54,7 +54,9 @@ export class ApiService {
     }
     return this.http.post(`${this.apiUrl}/api/compras/gerar-compra/`, data).pipe(
       map((response: any) => {
-        return `${this.apiUrl}/${response.qrCodeUrl}`
+        console.log(response.qrCodeUrl)
+        console.log(`${this.apiUrl}${response.qrCodeUrl}`)
+        return `${this.apiUrl}${response.qrCodeUrl}`
       })
     );
   }
