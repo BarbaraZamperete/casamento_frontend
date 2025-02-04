@@ -4,4 +4,5 @@ export interface Presente {
   descricao: string;
   valor: number;
   imagem: string;
+  link_compra: string;
 }
