@@ -20,18 +20,39 @@ section {
 }
 
 .card {
-  border: 1px solid $primary-blue;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Centraliza verticalmente
+  align-items: center; // Centraliza horizontalmente
+  text-align: center;
 
   &:hover {
-    transform: scale(1.01);
+    // transform: scale(1.01);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 
   .card-title, .card-subtitle {
     color: $primary-blue; // Use a secondary color for card titles
   }
+
+  .store-item {
+    display: flex;
+    flex-direction: column; // Alinha os itens verticalmente
+    align-items: center; // Centraliza os itens
+    margin-bottom: 10px; // Espaçamento entre os itens
+  }
+
+  .icon-click {
+    cursor: pointer;
+    color: $primary-blue;
+    margin-left: 5px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
 }
 
 .btn-dark {
@@ -42,6 +63,7 @@ section {
     background-color: color.adjust($primary-blue, $lightness: -10%);
   }
 }
+
 
 .btn-outline-dark {
   color: $primary-blue;
@@ -80,4 +102,62 @@ section {
 
 .text-muted {
   color: #6c757d; // muted text color
+}
+
+.store-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+
+  i {
+    margin-right: 10px; // Espaçamento entre o ícone e o texto
+    color: #1A4B84; // Cor do ícone
+    font-size: 1.5rem; // Tamanho do ícone
+  }
+
+  // Adicionando responsividade
+  @media (max-width: 576px) {
+    flex-direction: column; // Muda para coluna em telas pequenas
+    align-items: flex-start; // Alinha à esquerda
+  }
+}
+
+.card-title {
+  font-weight: bold;
+  color: #1A4B84; // Cor do título
+}
+
+.card-text {
+  color: #555; // Cor do texto
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; // Alinha os itens verticalmente
+  justify-content: space-between; // Espaça os itens
+}
+
+.toast {
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgba($success-green, 0.9); // Adiciona transparência ao fundo
+  border: none;
+
+  &.show {
+    opacity: 1;
+  }
+
+  &:not(.show) {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem; // Adiciona padding em telas pequenas
+  }
+
+  .store-item {
+    width: 100%; // Faz os itens ocuparem toda a largura
+  }
 }

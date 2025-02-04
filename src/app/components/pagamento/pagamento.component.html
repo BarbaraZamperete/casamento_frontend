@@ -1,7 +1,7 @@
 <app-simple-nav-bar></app-simple-nav-bar>
 
 <section class="bg-light py-5 mt-5">
-  <div class="container text-center ">
+  <div class="container text-center">
     <h2 class="titulo mb-4">Pagamento</h2>
     <p class="lead mb-4">
       Você pode presentear as noivas de várias maneiras:
@@ -9,37 +9,43 @@
 
     <div class="row mb-4">
       <!-- Card para PIX -->
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
         <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title ">Pagamento via PIX</h5>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pagamento via PIX</h5>
             <p class="card-text">Realize o pagamento instantaneamente usando o PIX.</p>
             <p class="card-subtitle font-weight-bold mb-3">Valor: R$ {{ produtoValor | number: '1.2-2' }}</p>
             <div *ngIf="qrCodeUrl" class="mb-3">
               <img [src]="qrCodeUrl" alt="QR Code de Pagamento" class="img-fluid rounded shadow">
             </div>
-            <div class="mt-auto"> <!-- This div pushes the button to the bottom -->
+            <div class="mt-auto">
               <button class="btn btn-dark" (click)="confirmarPagamento()">Pix realizado</button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Card para Loja -->
-      <div class="col-md-4 d-flex align-items-stretch">
+      <!-- Card para Lojas Físicas -->
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
         <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title ">Lojas Físicas</h5>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Loja Física</h5>
             <div *ngIf="lojasFisicas.length > 0; else noPhysicalStores">
-              <div *ngFor="let loja of lojasFisicas">
+              <div *ngFor="let loja of lojasFisicas" class="store-item flex-column">
+                <i class="bi bi-shop"></i> <!-- Ícone de loja -->
                 <p class="card-text">{{ loja.nome }}</p>
-                <p class="card-text">Endereço: {{ loja.endereco }}</p>
+                <i class="bi bi-geo-alt"></i>
+                <p class="card-text">{{ loja.endereco }}
+                  <a class="icon-link icon-click fa-5x" (click)="copyToClipboard(loja.endereco)">
+                    <i class="bi bi-clipboard fs-6"></i>
+                  </a>
+                </p>
               </div>
             </div>
             <ng-template #noPhysicalStores>
               <p class="card-text">Nenhuma loja física disponível para esse presente.</p>
             </ng-template>
-            <div class="mt-auto"> <!-- This div pushes the button to the bottom -->
+            <div class="mt-auto">
               <button class="btn btn-dark" (click)="confirmarPagamento()">Comprarei presencialmente</button>
             </div>
           </div>
@@ -47,12 +53,13 @@
       </div>
 
       <!-- Card para Lojas Virtuais -->
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
         <div class="card h-100 shadow-sm border-0 transition-hover flex-fill d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title ">Lojas Virtuais</h5>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Lojas Virtuais</h5>
             <div *ngIf="lojasVirtuais.length > 0; else noVirtualStores">
-              <div *ngFor="let loja of lojasVirtuais">
+              <div *ngFor="let loja of lojasVirtuais" class="store-item">
+                <i class="fas fa-laptop"></i> <!-- Ícone de loja virtual -->
                 <p class="card-text">{{ loja.nome }}</p>
                 <p class="card-text">{{ loja.endereco }}</p>
                 <a [href]="loja.endereco" class="btn btn-dark" target="_blank">Acesse a loja</a>
@@ -71,9 +78,18 @@
       feita, clique no botão <strong>"Pix realizado"</strong>.
     </p>
 
+    <!-- Toast de Sucesso -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+      <div class="toast" *ngIf="showFeedbackMessage" [ngClass]="{'show': showFeedbackMessage}" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          Endereço copiado para a área de transferência!
+        </div>
+      </div>
+    </div>
+
     <!-- Modal de Agradecimento -->
     <div class="modal fade" id="modalAgradecimento" tabindex="-1" role="dialog" [ngClass]="{'show': showModal}">
-      <div class="modal-dialog modal-sm"> <!-- Changed to modal-sm for a smaller modal -->
+      <div class="modal-dialog modal-sm">
         <div class="modal-content border-0 rounded-3 text-center">
           <div class="modal-header border-0">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -85,7 +101,7 @@
           </div>
           <div class="modal-footer border-top-0 justify-content-center">
             <button class="btn btn-dark px-4" (click)="gotHome()">Voltar ao Início</button>
-            <button type="button" class="btn btn-success  px-4" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-success px-4" data-bs-dismiss="modal">Fechar</button>
           </div>
         </div>
       </div>

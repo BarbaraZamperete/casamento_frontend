@@ -15,7 +15,6 @@ declare var bootstrap: any;
   styleUrls: ['./pagamento.component.scss']
 })
 export class PagamentoComponent implements OnInit {
-[x: string]: any;
   qrCodeUrl: string | null = null;
   produtoId: string | null = null;
   produtoNome: string | null = null;
@@ -29,6 +28,7 @@ export class PagamentoComponent implements OnInit {
 
   // Propriedade para controlar a exibição do modal
   showModal: boolean = false;
+  showFeedbackMessage: boolean = false;
 
   constructor(private route: ActivatedRoute, private apiService: ApiService, private router: Router) {}
 
@@ -92,5 +92,16 @@ export class PagamentoComponent implements OnInit {
   gotHome() {
     this.closeModal();
     this.router.navigate(['/']);
+  }
+
+  copyToClipboard(endereco: string) {
+    navigator.clipboard.writeText(endereco).then(() => {
+      this.showFeedbackMessage = true;
+      setTimeout(() => {
+        this.showFeedbackMessage = false;
+      }, 2000);
+    }).catch(err => {
+      console.error('Erro ao copiar o endereço: ', err);
+    });
   }
 }
