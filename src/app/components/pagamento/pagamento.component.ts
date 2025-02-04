@@ -21,7 +21,7 @@ export class PagamentoComponent implements OnInit {
   produtoValor: number | null = null;
   pagamentoEfetuado: boolean = false;
   convidadoId: string | null = null;
-
+  produtoLinkCompra: string | null = null;
   // Novas propriedades para armazenar as lojas
   lojasFisicas: any[] = [];
   lojasVirtuais: any[] = [];
@@ -38,6 +38,7 @@ export class PagamentoComponent implements OnInit {
       this.produtoNome = params['nome'];
       this.produtoValor = params['valor'];
       this.convidadoId = params['convidadoId'];
+      this.produtoLinkCompra = params['link_compra'];
 
       this.pegarQrcode();
       this.pegarLojas();

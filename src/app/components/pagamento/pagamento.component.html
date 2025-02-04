@@ -58,16 +58,23 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Lojas Virtuais</h5>
             <div *ngIf="lojasVirtuais.length > 0; else noVirtualStores">
-              <div *ngFor="let loja of lojasVirtuais" class="store-item">
-                <i class="fas fa-laptop"></i> <!-- Ícone de loja virtual -->
+              <div *ngFor="let loja of lojasVirtuais" class="store-item flex-column">
+                <i class="bi bi-cart-fill"></i> <!-- Ícone de loja virtual -->
                 <p class="card-text">{{ loja.nome }}</p>
-                <p class="card-text">{{ loja.endereco }}</p>
-                <a [href]="loja.endereco" class="btn btn-dark" target="_blank">Acesse a loja</a>
+                <i class="bi bi-link"></i>
+                <p class="card-text">{{ loja.endereco }}/{{produtoNome}}
+                  <a [href]="produtoLinkCompra" class="icon-link icon-click fa-5x" target="_blank">
+                    <i class="bi bi-box-arrow-up-right fs-6"></i>
+                  </a>
+                </p>
               </div>
             </div>
             <ng-template #noVirtualStores>
               <p class="card-text">Nenhuma loja virtual disponível para esse presente.</p>
             </ng-template>
+            <div class="mt-auto">
+              <button class="btn btn-dark" (click)="confirmarPagamento()">Comprarei online</button>
+            </div>
           </div>
         </div>
       </div>

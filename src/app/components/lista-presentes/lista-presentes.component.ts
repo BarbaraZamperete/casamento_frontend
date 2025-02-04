@@ -80,6 +80,7 @@ export class ListaPresentesComponent {
             id: this.presenteSelecionado.id,
             nome: this.presenteSelecionado.nome,
             valor: this.presenteSelecionado.valor,
+            link_compra: this.presenteSelecionado.link_compra,
             convidadoId: convidado.id
           }
         });
