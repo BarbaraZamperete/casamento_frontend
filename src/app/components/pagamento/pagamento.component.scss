@@ -29,7 +29,7 @@ section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 
-  .card-title {
+  .card-title, .card-subtitle {
     color: $primary-blue; // Use a secondary color for card titles
   }
 }
