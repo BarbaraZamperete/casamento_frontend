@@ -1,7 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { ApiService } from '../../services/api.service';
 import { Presente } from '../../interfaces/presente.interface';
@@ -9,7 +8,7 @@ import { Presente } from '../../interfaces/presente.interface';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FooterComponent, RouterModule],
+  imports: [CommonModule, FooterComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
