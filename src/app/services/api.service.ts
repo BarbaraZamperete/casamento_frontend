@@ -41,7 +41,7 @@ export class ApiService {
   }
 
   confirmarPresenca(convidados: { id: number, presenca_confirmada: boolean }[]): Observable<any> {
-    return this.http.post(`${this.apiUrl}/api/convidados/confirmar-presenca/`, {
+    return this.http.put(`${this.apiUrl}/api/convidados/confirmar-presenca/`, {
       convidados: convidados
     });
   }
