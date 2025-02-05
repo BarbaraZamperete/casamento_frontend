@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } 
 import { ApiService } from '../../services/api.service';
 import { SimpleNavBarComponent } from "../shared/simple-nav-bar/simple-nav-bar.component";
 import { FooterComponent } from "../shared/footer/footer.component";
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-confirma-presenca',
@@ -19,8 +20,8 @@ export class ConfirmaPresencaComponent {
   showNotFound = false;
   guests: Array<{id: string, name: string, confirmed: boolean}> = [];
   isConfirming = false;
-  confirmationSuccess = false;
-  confirmationError = '';
+  toastMessage = '';
+
 
   constructor(
     private apiService: ApiService,
@@ -30,6 +31,7 @@ export class ConfirmaPresencaComponent {
       searchType: ['code'],
       searchTerm: ['', Validators.required]
     });
+
   }
 
   onSearchTypeChange(type: 'code' | 'name'): void {
@@ -53,7 +55,7 @@ export class ConfirmaPresencaComponent {
         this.guests = response.map((guest: any) => ({
           id: guest.id,
           name: guest.nome,
-          confirmed: false
+          confirmed: guest.presenca_confirmada
         }));
         this.showResults = this.guests.length > 0;
         this.showNotFound = this.guests.length === 0;
@@ -75,32 +77,58 @@ export class ConfirmaPresencaComponent {
       presenca_confirmada: guest.confirmed
     }));
 
-    if (guestsToConfirm.length === 0) {
-      this.confirmationError = 'Por favor, selecione pelo menos um convidado.';
-      return;
-    }
 
     this.isConfirming = true;
-    this.confirmationError = '';
-    this.confirmationSuccess = false;
 
     this.apiService.confirmarPresenca(guestsToConfirm).subscribe({
       next: (response) => {
-        this.confirmationSuccess = true;
+        console.log(response);
+        if (response.presenca_confirmada) {
+          this.displayMessage('Presença confirmada com sucesso!', 'confirmado');
+        } else {
+          this.displayMessage('Confirmação de presença desfeita!', 'desconfirmado');
+        }
         this.isConfirming = false;
         this.showResults = false;
         this.searchForm.reset({ searchType: 'code' });
+        
       },
       error: (error) => {
+        this.displayMessage('Erro ao confirmar presença!', 'erro');
         console.error('Erro ao confirmar presença:', error);
-        this.confirmationError = 'Ocorreu um erro ao confirmar a presença. Por favor, tente novamente.';
         this.isConfirming = false;
       }
     });
   }
 
-  clearMessages(): void {
-    this.confirmationSuccess = false;
-    this.confirmationError = '';
+  displayMessage(message: string, type: 'confirmado' | 'desconfirmado' | 'erro'): void {
+    const toastElement = document.getElementById('toastPlacement');
+
+    if (toastElement) {
+      // Define o conteúdo da mensagem no Toast
+    toastElement.classList.remove('confirmado', 'desconfirmado', 'erro');
+
+      const toastBody = toastElement.querySelector('.toast-body');
+      this.toastMessage = message;
+      if (toastBody) {
+        toastBody.textContent = message;
+        switch (type) {
+          case 'confirmado':
+            toastElement.classList.add('confirmado');
+            break;
+          case 'desconfirmado':
+            toastElement.classList.add('desconfirmado');
+            break;
+          default:
+            toastElement.classList.add('erro');
+            break;
+        }
+      }
+  
+      // Inicializa o Toast corretamente
+      const toast = new bootstrap.Toast(toastElement, { delay: 1200 }); // Tempo de exibição: 1,2 segundos
+      toast.show();
+    }
   }
+
 }

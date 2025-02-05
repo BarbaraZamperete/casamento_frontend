@@ -46,3 +46,22 @@ section {
 .form-check-input:not(:checked):hover {
   border-color: $primary-blue;
 }
+
+#toastPlacement {
+  color: $dark-black;
+  border: none;
+
+  &.confirmado {
+    background-color: $success-green;
+  }
+
+  &.desconfirmado {
+    background-color: $warning-yellow;
+  }
+
+  &.erro {
+    background-color: $error-red;
+  }
+  
+}
+
