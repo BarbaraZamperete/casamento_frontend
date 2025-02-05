@@ -29,6 +29,9 @@ export class ListaPresentesComponent {
     this.searchForm = this.formBuilder.group({
       searchTerm: ['', Validators.required]
     });
+  }
+
+  ngOnInit() {
     this.apiService.getPresentes().subscribe((presentes: any) => {
       this.presentes = presentes;
     });
