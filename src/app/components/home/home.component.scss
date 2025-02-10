@@ -26,8 +26,14 @@ html {
   // background-repeat: no-repeat;
 
   height: 75vh;
+  max-height: 1000px;
+  min-height: 250px;
   position: relative;
   margin-bottom: 0;
+
+  // @media (max-width: 768px) {
+  //   height: calc(100vh - 60px);
+  // }
 
   &::before {
     content: "";
@@ -35,7 +41,6 @@ html {
     inset: 0;
     background: linear-gradient(
       to top,
-
       rgba($text-dark, 0.5),
       rgba($highlight-color, 0.8) 47%,
       rgba($primary-color, 0.3)
@@ -88,6 +93,11 @@ html {
         border-color: $white;
       }
     }
+
+    @media (min-height: 400px) {
+      margin-top: 0;
+    }
+
   }
 }
 
