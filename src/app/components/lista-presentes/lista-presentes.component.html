@@ -1,7 +1,7 @@
 <app-simple-nav-bar></app-simple-nav-bar>
 
 <!-- Lista de Presentes -->
-<section class="bg-light py-5 mt-5">
+<section class="py-5 mt-5">
   <div class="container">
     <h2 class="texto-primary text-center display-4 font-playfair mb-4">Lista de Presentes</h2>
     <p class="text-secondary text-center lead mb-5">Escolha um presente especial para celebrar conosco</p>
@@ -52,7 +52,7 @@
         <ul *ngIf="showResults" class="list-group mt-3">
           <li *ngFor="let guest of guests" class="list-group-item d-flex justify-content-between align-items-center">
             {{ guest.nome }}
-            <button class="btn btn-success btn-sm" (click)="confirmarCompra(guest)"> Confirmar Compra</button>
+            <button class="btn botao-sucesso btn-sm" (click)="confirmarCompra(guest)"> Confirmar Compra</button>
           </li>
         </ul>
       </div>

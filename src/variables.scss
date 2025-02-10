@@ -1,12 +1,39 @@
-// Variáveis de cores globais
-$primary-blue: #1a4b84;
-$dark-blue: #1a1a1a;
-$secondary-blue: #3474c5;
-$light-blue: #e8f1ff;
-$white: #ffffff;
+// // Variáveis de cores globais
+// $primary-blue: #1a4b84;
+// $dark-blue: #1a1a1a;
+// $secondary-blue: #3474c5;
+// $light-blue: #e8f1ff;
+
+/* Color Theme Swatches in Hex */
+// $paleta_BK_01-1-hex: #6B8596;
+// $paleta_BK_01-2-hex: #95ADB7;
+// $paleta_BK_01-3-hex: #FBE4C5;
+// $paleta_BK_01-4-hex: #D9560B;
+// $paleta_BK_01-5-hex: #BF3604;
+
+
+// Paleta principal do site de casamento
+$primary-color: #6B8596;  // Azul acinzentado sofisticado
+$secondary-color: #95ADB7;  // Azul claro para contrastes sutis
+$background-light: #EEEEEB;  // Bege claro para um visual elegante
+$highlight-color: #D9560B;  // Laranja vibrante para realces e destaques
+$deep-accent: #BF3604;  // Tom mais escuro para equilíbrio e contraste
+
+// Cores auxiliares para sombreamento e iluminação
+$text-dark: #1a1a1a;  // Texto escuro para legibilidade
+$text-light: #ffffff;  // Texto claro para fundos escuros
+$border-color: #95ADB7;  // Bordas suaves e neutras
+$button-bg: #D9560B;  // Botões destacados
+$button-hover: #BF3604;  // Efeito de hover para botões
+$white: #ffffff; // Branco para textos e elementos contrastantes
+$dark-black: #000000; // Preto para textos e elementos contrastantes
 $gray: #f5f5f5;
-$light-black: #1a1a1a;
+$light-black: #575757;
 $dark-black: #000000;
 $success-green: #75ac97; // Cor verde de sucesso mais suave
 $error-red: #f07b7b; // Cor vermelha de erro
 $warning-yellow: #f7c388; // Cor amarela de aviso
+
+
+$font-01: 'Great Vibes', serif;
+$font-02: 'Albert Sans', serif;

@@ -12,7 +12,11 @@ footer.bg-dark {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba($primary-blue, 0.95) !important;
+  background-color: rgba($primary-color, 1) !important;
+
+  .icone {
+    color: $deep-accent;
+  }
 
   .social-links {
     a:hover {

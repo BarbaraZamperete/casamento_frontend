@@ -11,6 +11,12 @@
 section {
   flex: 1 0 auto;
   padding-top: 76px; // Altura da navbar
+  // background-color: rgba($secondary-color, 0.2);
+  background-image: url('/assets/images/elementos/folhagem.png');
+  background-size: cover;
+  background-position: center;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
 }
 
 // Estilização dos cards
@@ -22,7 +28,7 @@ section {
   }
 
   .texto-primary {
-    color: $primary-blue;
+    color: $deep-accent;
   }
 }
 
@@ -32,7 +38,7 @@ section {
   border-radius: 8px;
 
   .texto-primary {
-    color: $primary-blue;
+    color: $deep-accent;
   }
 }
 
@@ -42,45 +48,13 @@ section {
   transition: all 0.3s ease;
 
   &.btn-primary {
-    background-color: $primary-blue;
-    border-color: $primary-blue;
+    background-color: $highlight-color;
+    border-color: $highlight-color;
   }
 }
 
-// Estilização do rodapé
-// Footer
-footer.bg-dark {
-  background-color: rgba($primary-blue, 0.95) !important;
-
-  .social-links {
-    a:hover {
-      opacity: 0.8;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .row {
-      text-align: center;
-
-      .col-md-4 {
-        margin-bottom: 1rem;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &.text-end {
-          text-align: center !important;
-        }
-      }
-    }
-
-    h5 {
-      font-size: 1.1rem;
-    }
-
-    small {
-      font-size: 0.8rem;
-    }
-  }
+.botao-sucesso {
+  background-color: $success-green;
+  border-color: $success-green;
+  color: $white;
 }

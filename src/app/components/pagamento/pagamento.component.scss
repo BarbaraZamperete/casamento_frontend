@@ -14,7 +14,7 @@ section {
 }
 
 .titulo {
-  color: $primary-blue;
+  color: $primary-color;
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ section {
   }
 
   .card-title, .card-subtitle {
-    color: $primary-blue; // Use a secondary color for card titles
+      color: $primary-color; // Use a secondary color for card titles
   }
 
   .store-item {
@@ -44,7 +44,7 @@ section {
 
   .icon-click {
     cursor: pointer;
-    color: $primary-blue;
+    color: $primary-color;
     margin-left: 5px;
 
     &:hover {
@@ -56,23 +56,23 @@ section {
 }
 
 .btn-dark {
-  background-color: $primary-blue;
-  border-color: $primary-blue;
+  background-color: $primary-color;
+  border-color: $primary-color;
 
   &:hover {
-    background-color: color.adjust($primary-blue, $lightness: -10%);
+    background-color: color.adjust($primary-color, $lightness: -10%);
   }
 }
 
 
 .btn-outline-dark {
-  color: $primary-blue;
-  border-color: $primary-blue;
+  color: $primary-color;
+  border-color: $primary-color;
 
   &:hover {
     color: $white;
     border: none;
-    background-color: $primary-blue; // Lighten on hover
+    background-color: $primary-color; // Lighten on hover
   }
 }
 
@@ -112,7 +112,7 @@ section {
 
   i {
     margin-right: 10px; // Espaçamento entre o ícone e o texto
-    color: #1A4B84; // Cor do ícone
+    color: $primary-color; // Cor do ícone
     font-size: 1.5rem; // Tamanho do ícone
   }
 
@@ -125,11 +125,11 @@ section {
 
 .card-title {
   font-weight: bold;
-  color: #1A4B84; // Cor do título
+  color: $highlight-color; // Cor do título
 }
 
 .card-text {
-  color: #555; // Cor do texto
+  color: $primary-color; // Cor do texto
 }
 
 .card-body {

@@ -5,20 +5,18 @@
 
 // Navbar styles
 .navbar {
-  // transition: background-color 0.3s ease;
-  // padding: 1rem 0;
-  // min-height: 70px;
-  background-color: $white;
+  background-color: $primary-color;
+  background: linear-gradient(to bottom, color.adjust($primary-color, $lightness: -10%), $primary-color); // Adicionando gradiente linear
 
   .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
-    color: $primary-blue;
+    color: $white;
     padding: 0.5rem 1rem; // Adicionando padding para evitar sobreposição
   }
 
   .nav-link {
-    color: $primary-blue;
+    color: $white;
     position: relative;
 
     &::after {
@@ -29,7 +27,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background-color: $primary-blue;
+      background-color: $white;
       transition: width 0.3s ease;
     }
 
@@ -64,10 +62,10 @@
       border-radius: 4px;
 
       .nav-link {
-        color: $primary-blue;
+        color: $primary-color;
 
         &::after {
-          background-color: $primary-blue;
+          background-color: $primary-color;
         }
       }
     }

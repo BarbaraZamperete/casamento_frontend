@@ -19,32 +19,32 @@ section {
   transition: all 0.3s ease;
 
   &.btn-primary {
-    background-color: $primary-blue;
-    border-color: $primary-blue;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 }
 
 // Estilização dos radio buttons
 .form-check-input {
   &:checked {
-    background-color: $primary-blue;
-    border-color: $primary-blue;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 
   &:focus {
-    border-color: $primary-blue;
-    box-shadow: 0 0 0 0.25rem rgba($primary-blue, 0.25);
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
   }
 
   &:active {
-    background-color: $primary-blue;
-    border-color: $primary-blue;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 }
 
 // Hover state para melhor feedback visual
 .form-check-input:not(:checked):hover {
-  border-color: $primary-blue;
+  border-color: $primary-color;
 }
 
 #toastPlacement {
