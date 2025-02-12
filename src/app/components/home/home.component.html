@@ -3,7 +3,6 @@
 
 
 <!-- Seção Hero -->
-<!-- Start of Selection -->
 <section class="hero d-flex align-items-center">
   <div class="container text-center titulo-container">
     <h1 class="titulo-principal">Bárbara & Kamila</h1>
@@ -12,8 +11,6 @@
     <a href="#confirmacao" class="btn btn-outline-dark btn-lg">Confirmar Presença</a>
   </div>
 </section>
-<!-- <span id="divider"></span> -->
-<!-- End of Selection -->
 
 <!-- Barra de Navegação -->
 <nav class="navbar navbar-expand-lg sticky-top">
@@ -29,10 +26,16 @@
           <a class="nav-link" href="#detalhes">Detalhes</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#historia">Nossa História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#duvidas">Dúvidas</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/lista-presentes">Lista de Presentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#confirmacao">Confirmação</a>
+          <a class="nav-link" href="/confirmacao">Confirmação</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#historia">Nossa História</a>
@@ -42,8 +45,10 @@
   </div>
 </nav>
 
+
 <!-- Detalhes do Evento -->
 <section id="detalhes" class="py-5 claro enfeite">
+
   <div class="container">
     <h2 class="titulo-sessao">Detalhes</h2>
     <div class="row text-center g-4">
@@ -81,6 +86,7 @@
   </div>
 </section>
 
+
 <!-- Lista de Presentes -->
 <section id="presentes" class="py-5 cor">
   <div class="container">
@@ -89,7 +95,7 @@
       especial.</p>
 
     <!-- Preview dos Presentes -->
-    <div class="row g-4 mb-5">
+    <!-- <div class="row g-4 mb-5">
       <div class="col-md-4" *ngFor="let presente of presentesPreview">
         <div class="card h-100 border-0 shadow-sm">
           <img [src]="presente.imagem" class="card-img-top" style="height: 200px; object-fit: cover;"
@@ -106,9 +112,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <a [routerLink]="['/lista-presentes']" class="btn btn-outline-dark btn-lg">Ver Lista Completa</a>
+    <a [routerLink]="['/lista-presentes']" class="btn btn-outline-dark btn-lg">Ver Lista de Presentes</a>
   </div>
 </section>
 
