@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { ApiService } from '../../services/api.service';
 import { Presente } from '../../interfaces/presente.interface';
+import { CarroselSlideComponent } from "../carrosel-slide/carrosel-slide.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FooterComponent, RouterModule],
+  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

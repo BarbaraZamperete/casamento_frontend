@@ -236,45 +236,6 @@ html {
   }
 }
 
-#historia {
-
-}
-
-.titulo-sessao {
-  color: $primary-color;
-  text-transform: uppercase;
-  font-family: $font-02;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-
-.claro {
-  background-color: $white;
-  padding: 4rem 0;
-  text-align: center;
-  width: 100%;
-
-  &.enfeite {
-    background-image:
-      url("/assets/images/elementos/flor-folha.png"),
-      url("/assets/images/elementos/flor-folha 2.png");
-    background-size: 250px, 250px; // Ajuste o tamanho conforme necessário
-    background-position: -50px -50px, calc(100% + 50px) calc(100% + 50px); // Posição da flor mais no canto
-    background-repeat: no-repeat, no-repeat; // Não repetir a imagem
-    width: 100%;
-    height: 100%;
-  }
-}
-.cor {
-  background-color: $background-light;
-  padding: 4rem 0;
-  text-align: center;
-  width: 100%;
-}
-
 // Detalhes section
 #detalhes {
   .card {
@@ -316,23 +277,6 @@ html {
   }
 }
 
-// Buttons
-.btn-primary {
-  background-color: $deep-accent;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 25px;
-  color: $white;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: color.adjust($highlight-color, $lightness: -10%);
-  }
-}
-
 // Presentes section
 #presentes {
 
@@ -360,9 +304,9 @@ html {
   }
 }
 
+
 // Confirmação section
 #confirmacao {
-  background-color: rgba($background-light, 0.1);
 
   .btn-dark {
     background-color: $highlight-color;
@@ -374,38 +318,63 @@ html {
   }
 }
 
-// Footer
-footer.bg-dark {
-  background-color: rgba($primary-color, 0.95) !important;
+.titulo-sessao {
+  color: $primary-color;
+  text-transform: uppercase;
+  font-family: $font-02;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba($white, 1);
 
-  .social-links a:hover {
-    opacity: 0.8;
-  }
+}
 
-  @media (max-width: 768px) {
-    .row {
-      text-align: center;
+.claro {
+  background-color: $white;
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
 
-      .col-md-4 {
-        margin-bottom: 1rem;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-        &.text-end {
-          text-align: center !important;
-        }
-      }
-    }
-
-    h5 {
-      font-size: 1.1rem;
-    }
-    small {
-      font-size: 0.8rem;
-    }
+  &.enfeite {
+    background-image:
+      url("/assets/images/elementos/flor-folha.png"),
+      url("/assets/images/elementos/flor-folha 2.png");
+    background-size: 250px, 250px; // Ajuste o tamanho conforme necessário
+    background-position: -50px -50px, calc(100% + 50px) calc(100% + 50px); // Posição da flor mais no canto
+    background-repeat: no-repeat, no-repeat; // Não repetir a imagem
+    width: 100%;
+    height: 100%;
   }
 }
+.cor {
+  background-color: $background-light;
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+// Buttons
+.btn-primary {
+  background-color: $deep-accent;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust($highlight-color, $lightness: -10%);
+  }
+}
+
+
 
 // Mobile responsiveness
 @media (max-width: 768px) {
