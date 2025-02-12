@@ -1,0 +1,83 @@
+@use "sass:color";
+@use "../../../variables.scss" as *;
+
+.carousel {
+  position: relative;
+}
+
+.card {
+  text-align: center;
+  background: $background-light;
+  overflow: hidden;
+  height: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-body {
+    padding: 15px;
+
+    .card-title{
+      font-family: $font-01;
+      font-size: clamp(1.7rem, 3vw, 2rem);
+      letter-spacing: 0.1em;
+    }
+    
+    
+
+    .card-text{
+
+      color: $light-black;
+      font-family: $font-02;
+
+      ::ng-deep .strong{
+        color: $highlight-color;
+      }
+    }
+  }
+}
+
+// Botões do carrossel
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba($deep-accent, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgba($deep-accent, 0.9);
+  }
+
+  span {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.carousel-control-prev {
+  left: -20px;
+}
+
+.carousel-control-next {
+  right: -20px;
+}

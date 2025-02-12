@@ -1,0 +1,91 @@
+<!-- Nossa História -->
+
+<!--
+##############################################
+Carrossel para 3 cards por slide (telas > 1000px)
+##############################################
+-->
+<div id="carousel3Cards" class="carousel slide d-none d-lg-block" >
+  <div class="carousel-inner">
+    <div *ngFor="let slide of getSlides(3); let first = first" class="carousel-item" [ngClass]="{'active': first}">
+      <div class="row g-4 justify-content-center">
+        <div *ngFor="let card of slide" class="col-lg-4">
+          <div class="card border-0 shadow-sm">
+            <img [src]="card.imagem && card.imagem.trim() !== '' ? card.imagem : 'assets/images/default-image.png'" class="card-img-top" [alt]="card.titulo">
+            <div class="card-body">
+              <h5 class="card-title">{{ card.titulo }}</h5>
+              <!-- <p class="card-text" [innerHTML]="card.descricao"></p> -->
+              <p class="card-text" [innerHTML]="card.descricao"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel3Cards" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel3Cards" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+
+<!--
+##############################################
+Carrossel para 2 cards por slide (telas entre 768px e 1000px)
+##############################################
+-->
+
+<div id="carousel2Cards" class="carousel slide d-none d-md-block d-lg-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div *ngFor="let slide of getSlides(2); let first = first" class="carousel-item" [ngClass]="{'active': first}">
+      <div class="row g-4 justify-content-center">
+        <div *ngFor="let card of slide" class="col-md-6">
+          <div class="card border-0 shadow-sm">
+            <img [src]="card.imagem && card.imagem.trim() !== '' ? card.imagem : 'assets/images/default-image.png'" class="card-img-top" [alt]="card.titulo">
+            <div class="card-body">
+              <h5 class="card-title">{{ card.titulo }}</h5>
+              <p class="card-text" [innerHTML]="card.descricao"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2Cards" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel2Cards" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<!--
+##############################################
+Carrossel para 1 card por slide (telas < 768px)
+##############################################
+-->
+<div id="carousel1Card" class="carousel slide d-md-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div *ngFor="let slide of getSlides(1); let first = first" class="carousel-item" [ngClass]="{'active': first}">
+      <div class="row g-4 justify-content-center">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm">
+            <img [src]="slide[0].imagem && slide[0].imagem.trim() !== '' ? slide[0].imagem : 'assets/images/default-image.png'" class="card-img-top" [alt]="slide[0].titulo">
+            <div class="card-body">
+              <h5 class="card-title">{{ slide[0].titulo }}</h5>
+              <p class="card-text" [innerHTML]="slide[0].descricao"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel1Card" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel1Card" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
