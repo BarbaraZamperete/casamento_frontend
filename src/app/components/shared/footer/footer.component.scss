@@ -6,6 +6,10 @@
   flex-shrink: 0; // Impede que o footer encolha
 }
 
+.container{
+  max-width: 1200px;
+}
+
 // Footer
 footer.bg-dark {
   position: relative;
