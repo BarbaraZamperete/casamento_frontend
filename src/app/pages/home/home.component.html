@@ -9,13 +9,12 @@
   </div>
 </section>
 
-
+<!-- NavBar -->
 <app-simple-nav-bar></app-simple-nav-bar>
 
 
 <!-- Detalhes do Evento -->
 <section id="detalhes" class="py-5 claro enfeite">
-
   <div class="container">
     <h2 class="titulo-sessao">Detalhes</h2>
     <div class="row text-center g-4">
@@ -60,62 +59,18 @@
     <h2 class="titulo-sessao">Lista de Presentes</h2>
     <p class="lead mb-4">Sua presença é nosso maior presente, mas se desejar nos presentear, preparamos uma lista
       especial.</p>
-
-    <!-- Preview dos Presentes -->
-    <!-- <div class="row g-4 mb-5">
-      <div class="col-md-4" *ngFor="let presente of presentesPreview">
-        <div class="card h-100 border-0 shadow-sm">
-          <img [src]="presente.imagem" class="card-img-top" style="height: 200px; object-fit: cover;"
-            [alt]="presente.nome">
-          <div class="card-body">
-            <h5 class="card-title">{{presente.nome}}</h5>
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="h5 mb-0">R$ {{presente.valor | number:'1.2-2'}}</p>
-              <a [routerLink]="['/lista-presentes']" [fragment]="'presente-' + presente.id"
-                class="text-primary text-decoration-none small">
-                Ver detalhes <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <a [routerLink]="['/lista-presentes']" class="btn btn-outline-dark btn-lg">Ver Lista de Presentes</a>
   </div>
 </section>
 
+
 <!-- Nossa História -->
-<!-- <section id="historia" class="py-5 claro">
-  <div class="container">
-    <h2 class="titulo-sessao">Nossa História</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="assets/images/couple2.jpeg" alt="Bárbara e Kamila" class="img-fluid rounded shadow mb-4">
-      </div>
-      <div class="col-md-6">
-        <p class="lead">Tudo começou com um simples "seguir" no Instagram. Kamila e Bárbara tinham uma coincidência curiosa: ambas haviam saído, em momentos diferentes, com a mesma pessoa. E foi justamente olhando os seguidores dessa menina que Kamila encontrou Bárbara. Algo na descrição, a bandeira LGBT no perfil, chamou sua atenção. Então, sem pretensão, clicou em "seguir". Bárbara, ao receber a notificação, notou o estilo de Kamila e imaginou que ela também poderia ser LGBT. Sem pensar muito, seguiu de volta.</p>
-        <p class="lead">O primeiro papo aconteceu por acaso. Bárbara postou um story sobre sua nova tatuagem, e Kamila, que sonhava em fazer uma, puxou assunto perguntando se doía. A resposta? Uma história inusitada e um tanto… peculiar! Bárbara contou que, antes de sua primeira tatuagem, tentou medir a dor furando as próprias costas com uma agulha. No final, descobriu que a tatuagem doía bem menos do que esperava!</p>
-        <p class="lead">A conversa seguiu, e os interesses em comum foram surgindo. Gatos, filmes, mensagens fofas… logo, passaram a se falar todos os dias. Era 2021, tempos de pandemia, então o primeiro filme juntas foi à distância, cada uma em sua casa. Mas, apesar da conexão, Bárbara não queria se envolver naquele momento, e o contato esfriou.</p>
-        <p class="lead">O destino, porém, tinha outros planos. As conversas voltaram, e logo veio o primeiro encontro. 27 de março de 2021, 17h, na sorveteria Dois90. Kamila, tímida como sempre. Bárbara, animada, mas sem grandes expectativas. O encontro fluiu, e depois do sorvete, seguiram para o Parque Mirandinha. Foram expulsas de lá (por que será? 😆), acabaram na Praça do Chefão, onde Kamila, sempre planejada, tinha preparado perguntas para tornar a conversa mais leve. A última pergunta era: “Onde você gostaria de ser beijada?” Nervosa, Bárbara respondeu a primeira coisa que veio à mente: “No dedão do pé”. A resposta foi estranha, mas o primeiro beijo aconteceu ali mesmo, marcando o começo de uma nova história.</p>
-        <p class="lead">Desde aquele dia, as duas foram se apaixonando cada vez mais. Os encontros ficaram mais frequentes e repletos de brincadeiras e trocas de pequenas surpresas românticas. Bárbara já estava envolvida, mas Kamila, sempre cautelosa, demorou um pouco mais para se entregar completamente. Até que, em 18 de junho de 2021, após uma viagem de Bárbara ao Rio Grande do Sul, Kamila tomou coragem, foi até sua casa e fez o pedido de namoro.</p>
-        <p class="lead">De lá para cá, a relação amadureceu e se fortaleceu. Como qualquer casal, enfrentaram desafios, mas sempre tiveram uma regra: nunca dormir brigadas. Aprenderam que a maior qualidade da relação era a parceria – juntas, eram mais fortes.</p>
-        <p class="lead">Foram três viagens incríveis: Rio de Janeiro, São Paulo, Rio Grande do Sul e Curitiba. Em cada uma delas, novas memórias, aventuras e sonhos sendo construídos. O desejo de formar uma família crescia, e com ele, a vontade de dar mais um passo na relação.</p>
-        <p class="lead">Em 30 de setembro de 2024, um novo capítulo começou: passaram a morar juntas. E no réveillon, 31 de dezembro de 2024, veio o momento mais especial: na virada do ano, cercadas por família e amor, Kamila pediu Bárbara em casamento. E a resposta? Um “sim” cheio de felicidade.</p>
-        <p class="lead">Agora, aqui estão elas: prontas para dizer "sim" diante de todos aqueles que fazem parte dessa história. Mais felizes do que nunca, ansiosas para o futuro e para todas as novas aventuras que virão. ❤️</p>
-
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section id="historia" class="py-5 claro enfeite">
   <div class="container">
     <h2 class="titulo-sessao">Nossa História</h2>
     <app-carrosel-slide></app-carrosel-slide>
   </div>
 </section>
-
 
 
 <!-- Confirmar Presença -->
@@ -165,9 +120,8 @@
         </a>
       </p>
     </div>
-
-
   </div>
 </section>
 
+<!-- Footer -->
 <app-footer></app-footer>
