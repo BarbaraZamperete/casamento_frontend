@@ -3,24 +3,47 @@
 
 
 
-// Navbar styles
-.navbar {
-  background-color: $primary-color;
-  background: linear-gradient(to bottom, color.adjust($primary-color, $lightness: -10%), $primary-color); // Adicionando gradiente linear
 
-  .navbar-brand {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: $white;
-    padding: 0.5rem 1rem; // Adicionando padding para evitar sobreposição
+.navbar {
+  // transition: background-color 0.3s ease;
+  padding: 0.75rem 0;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    $primary-color,
+    color.adjust($primary-color, $lightness: -10%)
+  );
+  margin: 0;
+
+  .menu-icon {
+    display: none;
+    &.image-active {
+      display: block;
+    }
+  }
+
+  &-brand {
+    background-image: url("/assets/images/BK.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 45px;
+    // padding: 0.5rem 1rem;
   }
 
   .nav-link {
     color: $white;
     position: relative;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    font-family: $font-02;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 0;
       height: 2px;
@@ -36,17 +59,11 @@
     }
   }
 
-
-  .nav-link {
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
-  }
-
   .navbar-toggler {
     outline: none !important;
     box-shadow: none !important;
     border: 0;
+    padding: 0.25rem 0.5rem;
 
     &:focus {
       outline: none;
@@ -54,15 +71,33 @@
     }
   }
 
-  @media (max-width: 991px) { // Ajustes para telas menores
+  @media (max-width: 991px) {
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+
+    .navbar-brand {
+      font-size: 1.25rem;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .nav-link {
+      padding: 0.25rem 0.75rem;
+    }
+
+    img.image-active {
+      width: 24px;
+      height: auto;
+    }
+
     .navbar-collapse {
       background-color: $white;
-      padding: 1rem;
-      margin-top: 0.5rem;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
       border-radius: 4px;
 
       .nav-link {
         color: $primary-color;
+        padding: 0.35rem 0.5rem;
 
         &::after {
           background-color: $primary-color;
