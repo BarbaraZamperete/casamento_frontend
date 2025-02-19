@@ -56,7 +56,7 @@ export class PagamentoComponent implements OnInit {
   pegarLojas() {
     if (this.produtoId) {
       this.apiService.getLojas(this.produtoId).subscribe((response: any) => {
-        console.log(response);
+
         // Limpa as listas antes de adicionar novas lojas
         this.lojasFisicas = [];
         this.lojasVirtuais = [];
