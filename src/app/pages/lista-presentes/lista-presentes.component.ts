@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../shared/footer/footer.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 import { ApiService } from '../../services/api.service';
-import { SimpleNavBarComponent } from "../shared/simple-nav-bar/simple-nav-bar.component";
+import { SimpleNavBarComponent } from "../../components/simple-nav-bar/simple-nav-bar.component";
 import { Presente } from '../../interfaces/presente.interface';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';

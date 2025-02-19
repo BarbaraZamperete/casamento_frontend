@@ -5,7 +5,7 @@ import { of, throwError } from 'rxjs';
 import { Presente } from '../../interfaces/presente.interface';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FooterComponent } from '../shared/footer/footer.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { By } from '@angular/platform-browser';
 

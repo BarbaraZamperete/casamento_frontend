@@ -1,10 +1,10 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../shared/footer/footer.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 import { ApiService } from '../../services/api.service';
 import { Presente } from '../../interfaces/presente.interface';
-import { CarroselSlideComponent } from "../carrosel-slide/carrosel-slide.component";
+import { CarroselSlideComponent } from "../../components/carrosel-slide/carrosel-slide.component";
 
 @Component({
   selector: 'app-home',
