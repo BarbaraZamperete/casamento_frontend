@@ -5,11 +5,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { ApiService } from '../../services/api.service';
 import { Presente } from '../../interfaces/presente.interface';
 import { CarroselSlideComponent } from "../../components/carrosel-slide/carrosel-slide.component";
+import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent],
+  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent, SimpleNavBarComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../../services/api.service';
-import { SimpleNavBarComponent } from "../../components/simple-nav-bar/simple-nav-bar.component";
+import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 declare var bootstrap: any;
 

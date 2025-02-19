@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { ApiService } from '../../services/api.service';
-import { SimpleNavBarComponent } from "../../components/simple-nav-bar/simple-nav-bar.component";
+import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
 import { Presente } from '../../interfaces/presente.interface';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
