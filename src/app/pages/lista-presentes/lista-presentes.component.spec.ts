@@ -55,19 +55,22 @@ describe('ListaPresentesComponent', () => {
     expect(component.isLoading).toBeFalse();
   });
 
-  // it('should fetch presentes on component initialization', fakeAsync(() => {
-  //   const mockPresentes: Presente[] = [
-  //     { id: 1, nome: 'Presente 1', valor: 50, link_compra: 'link1', descricao: 'Descrição do presente 1', imagem: 'img1.jpg' },
-  //     { id: 2, nome: 'Presente 2', valor: 100, link_compra: 'link2', descricao: 'Descrição do presente 2', imagem: 'img2.jpg' }
-  //   ];
-
-  //   spyOn(apiService, 'getPresentes').and.returnValue(of(mockPresentes));
-
-  //   fixture.detectChanges();  // Chama a detecção de mudanças.
-  //   tick();  // Aguarda a execução do Observable.
-
-  //   expect(component.presentes).toEqual(mockPresentes);
-  // }));
+  it('should fetch presentes on component initialization', fakeAsync(() => {
+    const mockPresentes: Presente[] = [
+      { id: 1, nome: 'Presente 1', valor: 50, link_compra: 'link1', descricao: 'Descrição do presente 1', imagem: 'img1.jpg' },
+      { id: 2, nome: 'Presente 2', valor: 100, link_compra: 'link2', descricao: 'Descrição do presente 2', imagem: 'img2.jpg' }
+    ];
+  
+    spyOn(apiService, 'getPresentes').and.returnValue(of(mockPresentes));
+  
+    component.ngOnInit(); // Chamar manualmente para garantir execução
+  
+    tick(); // Processa assincronamente o Observable
+    fixture.detectChanges(); // Atualiza o template
+  
+    expect(component.presentes).toEqual(mockPresentes);
+  }));
+  
 
   it('should call search method and update guests on successful response', () => {
     const mockGuests: Convidado[] = [

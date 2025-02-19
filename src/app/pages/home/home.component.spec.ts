@@ -80,45 +80,6 @@ describe('HomeComponent', () => {
     // Verifica se o erro foi tratado e a flag de carregamento foi desativada
     expect(component.isLoading).toBeFalse();
     expect(consoleSpy).toHaveBeenCalledWith('Erro ao carregar presentes:', jasmine.any(Error));
-  });
-
-  // it('deve adicionar e remover classes corretamente no scroll', () => {
-  //   // Criar os elementos DOM necessários
-  //   const navbar = fixture.debugElement.query(By.css('.navbar')).nativeElement;
-  //   const menuWhiteIcon = fixture.debugElement.query(By.css('img[src="assets/menu-ffff.svg"]')).nativeElement;
-  //   const menuBlueIcon = fixture.debugElement.query(By.css('img[src="assets/menu-1A4B84.svg"]')).nativeElement;
-
-  //   // Verifica o estado inicial (navbar deve ter a classe bg-transparent)
-  //   expect(navbar.classList.contains('bg-transparent')).toBeTrue();
-  //   expect(navbar.classList.contains('scrolled')).toBeFalse();
-  //   expect(menuWhiteIcon.classList.contains('image-active')).toBeTrue();
-  //   expect(menuBlueIcon.classList.contains('image-active')).toBeFalse();
-
-  //   // Simula o evento de scroll
-  //   window.scrollY = window.innerHeight - 100; // Define um valor para o scroll
-  //   const scrollEvent = new Event('scroll');
-  //   window.dispatchEvent(scrollEvent);
-
-  //   fixture.detectChanges(); // Força a detecção de mudanças após o evento de scroll
-
-  //   // Verifica se as classes foram alteradas
-  //   expect(navbar.classList.contains('scrolled')).toBeTrue();
-  //   expect(navbar.classList.contains('bg-transparent')).toBeFalse();
-  //   expect(menuWhiteIcon.classList.contains('image-active')).toBeFalse();
-  //   expect(menuBlueIcon.classList.contains('image-active')).toBeTrue();
-
-  //   // Simula a rolagem para o topo da página
-  //   window.scrollY = 0;
-  //   window.dispatchEvent(scrollEvent);
-
-  //   fixture.detectChanges(); // Força a detecção de mudanças novamente
-
-  //   // Verifica se as classes foram revertidas
-  //   expect(navbar.classList.contains('scrolled')).toBeFalse();
-  //   expect(navbar.classList.contains('bg-transparent')).toBeTrue();
-  //   expect(menuWhiteIcon.classList.contains('image-active')).toBeTrue();
-  //   expect(menuBlueIcon.classList.contains('image-active')).toBeFalse();
-  // });
-  
+  });  
   
 });
