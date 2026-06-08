@@ -56,11 +56,11 @@ html {
   }
 
   .monograma {
-    width: clamp(90px, 15vw, 130px);
+    width: clamp(70px, 15vw, 130px);
     height: auto;
     z-index: 2;
     // margin-top: clamp(1px, 5vw, 90px);
-      margin-top: max(0px, calc(40px - 4vw));
+    margin-top: max(0px, calc(30px - 4vw));
 
   }
 
