@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { ApiService } from '../../services/api.service';
+// import { ApiService } from '../../services/api.service';
 import { Presente } from '../../interfaces/presente.interface';
 import { CarroselSlideComponent } from "../../components/carrosel-slide/carrosel-slide.component";
 import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
@@ -18,23 +18,23 @@ export class HomeComponent implements OnInit {
   presentesPreview: Presente[] = [];
   isLoading = true;
 
-  constructor(private apiService: ApiService) {}
+  // constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    this.loadPresentes();
+    // this.loadPresentes();
   }
 
-  loadPresentes() {
-    this.apiService.getPresentes().subscribe({
-      next: (presentes) => {
-        this.presentesPreview = presentes.slice(0, 3);
-        this.isLoading = false;
-      },
-      error: (error) => {
-        console.error('Erro ao carregar presentes:', error);
-        this.isLoading = false;
-      }
-    });
-  }
+  // loadPresentes() {
+  //   this.apiService.getPresentes().subscribe({
+  //     next: (presentes) => {
+  //       this.presentesPreview = presentes.slice(0, 3);
+  //       this.isLoading = false;
+  //     },
+  //     error: (error) => {
+  //       console.error('Erro ao carregar presentes:', error);
+  //       this.isLoading = false;
+  //     }
+  //   });
+  // }
 }
 
