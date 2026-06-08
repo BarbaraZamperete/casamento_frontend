@@ -1,50 +1,157 @@
-
 <!-- Seção Hero -->
 <section class="hero d-flex align-items-center">
   <div class="container text-center titulo-container">
     <h1 class="titulo-principal">Bárbara & Kamila</h1>
-    <p class="subtitulo uppercase">27 de Março, 2026</p>
-    <p class="mensagem">Junte-se a nós para celebrar nosso amor</p>
-    <a href="#confirmacao" class="btn btn-outline-dark btn-lg">Confirmar Presença</a>
+    <p class="subtitulo uppercase">27 de Março, 2027</p>
+    <p class="mensagem">Conheça um pouco da nossa jornada!</p>
+    <!-- <a href="#confirmacao" class="btn btn-outline-dark btn-lg">Confirmar Presença</a> -->
   </div>
 </section>
 
 <!-- NavBar -->
 <app-simple-nav-bar></app-simple-nav-bar>
 
+<!-- Contagem regressiva -->
+<section class="py-5 claro enfeite">
+  <div class="container text-center">
+    <h2 class="titulo-sessao">Contagem Regressiva</h2>
+    <p class="lead">Faltam apenas alguns dias para o grande dia!</p>
+    <!-- Adicione aqui a lógica para a contagem regressiva -->
+  </div>
+</section>
 
 <!-- Detalhes do Evento -->
-<section id="detalhes" class="py-5 claro enfeite">
-  <div class="container">
+<!-- <section id="detalhes" class="py-5 claro enfeite">
+  <div class="container flex-row">
     <h2 class="titulo-sessao">Detalhes</h2>
-    <div class="row text-center g-4">
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm">
+    <div class="row text-center g-4 align-items-stretch">
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
           <div class="card-body">
             <i class="bi bi-calendar-heart fs-1"></i>
             <h3 class="titulo-detalhes">Data</h3>
-            <p class="conteudo-detalhes">27 de Março, 2026</p>
-            <p class="conteudo-detalhes">Sexta-feira, 19:00</p>
+            <p class="conteudo-detalhes">27 de Março, 2027</p>
+            <p class="conteudo-detalhes">Sábado, 16:30</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm">
+      <div class="col-md-4 d-flex">
+        <a href="https://www.google.com/maps/search/?api=1&query=Espaço+Monte+Castelo+Rua+Mariano+Vieira+146+Boa+Vista+RR"
+          target="_blank" rel="noopener noreferrer"
+          class="card card-link border-0 shadow-sm h-90 w-100 mx-auto text-decoration-none text-dark">
           <div class="card-body">
             <i class="bi bi-geo-alt fs-1"></i>
             <h3 class="titulo-detalhes">Local</h3>
-            <p class="conteudo-detalhes">Nome do Local</p>
-            <p class="conteudo-detalhes">Endereço Completo</p>
+            <p class="conteudo-detalhes">Espaço Monte Castelo</p>
+            <p class="conteudo-detalhes">R. Mariano Vieira, 146 - Cambará, Boa Vista - RR</p>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm">
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
           <div class="card-body">
             <i class="bi bi-clock fs-1"></i>
             <h3 class="titulo-detalhes">Programação</h3>
-            <p class="conteudo-detalhes">19:00 - Cerimônia</p>
-            <p class="conteudo-detalhes">20:00 - Recepção</p>
+            <p class="conteudo-detalhes">16:30 - Cerimônia</p>
+            <p class="conteudo-detalhes">17:30 - Recepção</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Lista de Presentes -->
+<!-- <section id="presentes" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao">Lista de Presentes</h2>
+    <p class="lead mb-4">Sua presença é nosso maior presente, mas se desejar nos presentear, preparamos uma lista
+      especial.</p>
+    <a [routerLink]="['/lista-presentes']" class="btn btn-outline-dark btn-lg">Ver Lista de Presentes</a>
+  </div>
+</section> -->
+
+
+<!-- Nossa História -->
+<section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao-cor">Nossa História</h2>
+    <app-carrosel-slide></app-carrosel-slide>
+  </div>
+</section>
+
+
+<!-- Confirmar Presença -->
+<!-- <section id="confirmacao" class="py-5 cor">
+  <div class="container ">
+    <h2 class="titulo-sessao">Confirmação</h2>
+    <p class="lead mb-4">Ficaremos muito felizes com sua presença em nosso grande dia!</p>
+    <a href="/confirmacao" class="btn btn-dark btn-lg">Confirmar Presença</a>
+  </div>
+</section> -->
+
+<section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao-cor">Nosso Mundinho</h2>
+    <!-- Quem somos nós e do que gostamos -->
+  </div>
+</section>
+
+<section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao-cor">Nossa Família</h2>
+    <!-- Barbara, Kamila, Collina e Ada -->
+  </div>
+</section>
+
+<section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao-cor">Curiosidades</h2>
+    <!-- Curiosidades do casal -->
+  </div>
+</section>
+
+<section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao-cor">Galeria</h2>
+    <!-- Nossas fotos favoritas -->
+  </div>
+</section>
+
+<section id="historia" class="py-5">
+  <div class="container">
+    <h2 class="titulo-sessao">O Casamento</h2>
+    <div class="row text-center g-4 align-items-stretch">
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
+          <div class="card-body">
+            <i class="bi bi-calendar-heart fs-1"></i>
+            <h3 class="titulo-detalhes">Data</h3>
+            <p class="conteudo-detalhes">27 de Março, 2027</p>
+            <p class="conteudo-detalhes">Sábado, 16:30</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <a href="https://www.google.com/maps/search/?api=1&query=Espaço+Monte+Castelo+Rua+Mariano+Vieira+146+Boa+Vista+RR"
+          target="_blank" rel="noopener noreferrer"
+          class="card card-link border-0 shadow-sm h-90 w-100 mx-auto text-decoration-none text-dark">
+          <div class="card-body">
+            <i class="bi bi-geo-alt fs-1"></i>
+            <h3 class="titulo-detalhes">Local</h3>
+            <p class="conteudo-detalhes">Espaço Monte Castelo</p>
+            <p class="conteudo-detalhes">R. Mariano Vieira, 146 - Cambará, Boa Vista - RR</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
+          <div class="card-body">
+            <i class="bi bi-clock fs-1"></i>
+            <h3 class="titulo-detalhes">Programação</h3>
+            <p class="conteudo-detalhes">16:30 - Cerimônia</p>
+            <p class="conteudo-detalhes">17:30 - Recepção</p>
           </div>
         </div>
       </div>
@@ -52,48 +159,20 @@
   </div>
 </section>
 
-
-<!-- Lista de Presentes -->
-<section id="presentes" class="py-5 cor">
-  <div class="container">
-    <h2 class="titulo-sessao">Lista de Presentes</h2>
-    <p class="lead mb-4">Sua presença é nosso maior presente, mas se desejar nos presentear, preparamos uma lista
-      especial.</p>
-    <a [routerLink]="['/lista-presentes']" class="btn btn-outline-dark btn-lg">Ver Lista de Presentes</a>
-  </div>
-</section>
-
-
-<!-- Nossa História -->
-<section id="historia" class="py-5 claro enfeite">
-  <div class="container">
-    <h2 class="titulo-sessao">Nossa História</h2>
-    <app-carrosel-slide></app-carrosel-slide>
-  </div>
-</section>
-
-
-<!-- Confirmar Presença -->
-<section id="confirmacao" class="py-5 cor">
-  <div class="container ">
-    <h2 class="titulo-sessao">Confirmação</h2>
-    <p class="lead mb-4">Ficaremos muito felizes com sua presença em nosso grande dia!</p>
-    <a href="/confirmacao" class="btn btn-dark btn-lg">Confirmar Presença</a>
-  </div>
-</section>
-
 <!-- Dúvidas Frequentes -->
-<section id="duvidas" class="py-5 claro">
+<!-- <section id="duvidas" class="py-5 claro">
   <div class="container">
     <h2 class="titulo-sessao">Dúvidas Comuns</h2>
     <div class="accordion" id="duvidasAccordion">
       <div class="accordion-item">
         <h2 class="accordion-header" id="duvida1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1" aria-expanded="true" aria-controls="resposta1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1"
+            aria-expanded="true" aria-controls="resposta1">
             Qual o traje recomendado?
           </button>
         </h2>
-        <div id="resposta1" class="accordion-collapse collapse" aria-labelledby="duvida1" data-bs-parent="#duvidasAccordion">
+        <div id="resposta1" class="accordion-collapse collapse" aria-labelledby="duvida1"
+          data-bs-parent="#duvidasAccordion">
           <div class="accordion-body">
             O traje recomendado é esporte fino para convidados e traje formal para padrinhos e madrinhas.
           </div>
@@ -101,11 +180,13 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="duvida2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2" aria-expanded="false" aria-controls="resposta2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2"
+            aria-expanded="false" aria-controls="resposta2">
             Posso levar um acompanhante?
           </button>
         </h2>
-        <div id="resposta2" class="accordion-collapse collapse" aria-labelledby="duvida2" data-bs-parent="#duvidasAccordion">
+        <div id="resposta2" class="accordion-collapse collapse" aria-labelledby="duvida2"
+          data-bs-parent="#duvidasAccordion">
           <div class="accordion-body">
             O casamento será um evento íntimo, então apenas convidados previamente confirmados poderão comparecer.
           </div>
@@ -121,7 +202,7 @@
       </p>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Footer -->
 <app-footer></app-footer>

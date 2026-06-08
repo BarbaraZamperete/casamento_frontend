@@ -1,0 +1,89 @@
+@use "sass:color";
+@use "../../../variables.scss" as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Container principal
+// Container principal
+section {
+  flex: 1 0 auto;
+  padding-top: 76px;
+  background-color: $white;
+
+  &.enfeite {
+    background-image: url("/assets/images/elementos/flor-folha.png"),
+      url("/assets/images/elementos/flor-folha 2.png");
+    background-size: 250px, 250px; // Ajuste o tamanho conforme necessário
+    background-position: -50px -50px, calc(100% + 50px) calc(100% + 50px); // Posição da flor mais no canto
+    background-repeat: no-repeat, no-repeat; // Não repetir a imagem
+    width: 100%;
+    height: 100%;
+  }
+
+  .titulo-sessao {
+    font-family: $font-02;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+  }
+
+  .lead {
+    color: $light-black;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+  }
+
+  .card {
+    background: $primary-color;
+    color: $text-light;
+    padding: 20px;
+    // border-radius: 15px;
+    // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      .card-title {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        color: $highlight-color;
+      }
+
+      .dresscode{
+        padding: 10px;
+        text-align: justify;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+        color: $text-dark;
+      }
+    }
+  }
+}
+
+.subtitulo {
+  font-family: $font-02;
+  color: $terciary-color;
+  text-transform: uppercase;
+}
+
+.icone-regra {
+  font-size: 2.5rem;
+  color: $highlight-color;
+}

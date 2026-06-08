@@ -39,25 +39,25 @@ export class CarroselSlideComponent {
       id: 4,
       imagem: "",
       titulo: "Pedido de Namoro",
-      descricao: "Após meses de encontros, brincadeiras e surpresas românticas, no dia 18 de junho de 2021, veio o pedido oficial: ‘Quer namorar comigo?’. E a resposta foi um ‘sim’ cheio de amor!"
+      descricao: "Após meses de encontros, brincadeiras e surpresas românticas, no dia <strong class='strong'> 18 de junho de 2021 </strong>, veio o pedido oficial: ‘Quer namorar comigo?’. E a resposta foi um ‘sim’ cheio de amor!"
     },
     {
       id: 5,
       imagem: "",
-      titulo: "Primeiro 'Eu te amo'",
+      titulo: "Eu te amo",
       descricao: "O primeiro 'eu te amo foi desenhado a dedo nas costas de Kamila que um tempo depois respondeu com um video com cartazes'"
     },
     {
       id: 6,
       imagem: "",
       titulo: "Nossas Viagens",
-      descricao: "De Rio Grande do Sul a Rio de Janeiro, cada viagem nos trouxe novas memórias, aventuras inesquecíveis e reforçou ainda mais nossa parceria."
+      descricao: "De Rio Grande do Sul ao Rio Grande do Norte, cada viagem nos trouxe novas memórias, aventuras inesquecíveis e reforçou ainda mais nossa parceria."
     },
     {
       id: 7,
       imagem: "",
       titulo: "Nosso Lar",
-      descricao: "Em 30 de setembro de 2024, demos um grande passo: começamos a dividir o mesmo teto, construindo juntos o lar dos nossos sonhos e da nossa família."
+      descricao: "Em <strong class='strong'> 30 de setembro de 2024 </strong>, demos um grande passo: começamos a dividir o mesmo teto, construindo juntos o lar dos nossos sonhos e da nossa família."
     },
     {
       id: 8,
@@ -69,7 +69,7 @@ export class CarroselSlideComponent {
       id: 9,
       imagem: "",
       titulo: "Nossa Parceria",
-      descricao: "Com amor e cumplicidade, aprendemos que nossa força está na parceria. Sempre seguimos juntas, enfrentando desafios e celebrando cada conquista. Agora, estamos prontas para o nosso 'sim'!"
+      descricao: "Com amor e cumplicidade, aprendemos que nossa força está na parceria. Sempre seguimos juntas, enfrentando desafios e celebrando cada conquista. Agora, estamos prontas para celebrar e oficializar a nossa união!"
     }
   ];
 

@@ -7,7 +7,8 @@
 
 .card {
   text-align: center;
-  background: $background-light;
+  background: color.adjust($background-light, $lightness: 5%);
+  // color: color.adjust($highlight-color, $lightness: -5%);
   overflow: hidden;
   height: 500px;
   padding: 1rem;
@@ -55,7 +56,7 @@
 .carousel-control-next {
   width: 50px;
   height: 50px;
-  background-color: rgba($deep-accent, 0.8);
+  background-color: rgba($highlight-color, 0.8);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
@@ -65,7 +66,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: rgba($deep-accent, 0.9);
+    background-color: rgba($highlight-color, 0.9);
   }
 
   span {
