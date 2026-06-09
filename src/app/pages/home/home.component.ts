@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   seconds = 0;
 
   private intervalId: any;
-  weddingDate = new Date('2027-03-27T19:00:00-04:00');
+  weddingDate = new Date('2027-03-27T16:30:00-04:00');
 
   // constructor(private apiService: ApiService) {}
 
