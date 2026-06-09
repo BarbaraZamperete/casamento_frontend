@@ -195,7 +195,7 @@ html {
     font-family: $font-02;
     font-size: clamp(2.5rem, 6vw, 4rem);
     line-height: 1;
-    color: $highlight-color;
+    color: $primary-color;
   }
 
   .label {
@@ -343,10 +343,43 @@ html {
 //   }
 // }
 
+#familia{
+  background-color: $background-very-light;
+
+  .titulo-sessao {
+    color: $terciary-color;
+  }
+}
+
+#galeria{
+  background-color: $terciary-color;
+
+  .titulo-sessao {
+    color: $white;
+  }
+}
+
+#curiosidades {
+  background-color: $background-very-light;
+
+  .titulo-sessao {
+    color: $terciary-color;
+  }
+}
+
+// #galeria{
+
+//   background-color: $secondary-color;
+// }
+
 // Detalhes section
 #detalhes {
+
+  .titulo-sessao{
+    color: $highlight-color;
+  }
   .card {
-    background: $primary-color;
+    background: $highlight-color;
     padding: 2rem;
     border-radius: 8px;
     // box-shadow: 0 2px 15px rgba($terciary-color, 0.5);
