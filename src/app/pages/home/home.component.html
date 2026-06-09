@@ -17,11 +17,37 @@
 <app-simple-nav-bar></app-simple-nav-bar>
 
 <!-- Contagem regressiva -->
-<section class="py-5 claro enfeite">
+<section class="countdown-section">
   <div class="container text-center">
-    <h2 class="titulo-sessao">Contagem Regressiva</h2>
-    <p class="lead">Faltam apenas alguns dias para o grande dia!</p>
-    <!-- Adicione aqui a lógica para a contagem regressiva -->
+
+    <p class="countdown-subtitle">
+      Estamos contando os dias para viver esse momento com vocês
+    </p>
+
+    <div class="countdown-container">
+
+      <div class="countdown-item">
+        <span class="number">{{ days }}</span>
+        <span class="label">Dias</span>
+      </div>
+
+      <div class="countdown-item">
+        <span class="number">{{ hours }}</span>
+        <span class="label">Horas</span>
+      </div>
+
+      <div class="countdown-item">
+        <span class="number">{{ minutes }}</span>
+        <span class="label">Minutos</span>
+      </div>
+
+      <div class="countdown-item">
+        <span class="number">{{ seconds }}</span>
+        <span class="label">Segundos</span>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
