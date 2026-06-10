@@ -73,6 +73,7 @@
   padding-bottom: 0;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 
+
   .timeline-date {
     display: block;
     // font-size: 1rem;
@@ -110,6 +111,11 @@
 @media (max-width: 768px) {
   .timeline::before, .timeline::after {
     left: 25px;
+  }
+
+  .timeline-card .card-body{
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .timeline-item {
