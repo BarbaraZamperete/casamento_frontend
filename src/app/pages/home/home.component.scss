@@ -230,6 +230,11 @@ html {
 
   background-color: $primary-color;
 
+  .container{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .titulo-sessao {
     color: $white;
   }
