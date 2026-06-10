@@ -66,13 +66,15 @@
   }
 
   .timeline-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     text-align: center;
+    font-size: 1.2rem;
   }
   .timeline-description {
     line-height: 1.8;
     color: #555;
-    text-indent: justify;
+    text-align: justify;
+    font-size: 0.8rem;
 
     p {
       margin-bottom: 1rem;
