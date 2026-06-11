@@ -65,7 +65,7 @@ export class TimelineComponent {
       <p>Em setembro de 2024, Kamila e Bárbara resolveram dar um próximo passo em sua relação e juntaram oficialmente as escovas de dentes. Essa mudança de fase veio acompanhada de muitos desafios, mas elas se mantiveram unidas e firmes, pois são mais fortes assim.</p>
       <p>Também foi uma fase que trouxe muito aprendizado, evolução e inúmeras experiências positivas para o casal. Entre elas, a decisão de aumentar a família com a chegada de duas gatinhas muito especiais: primeiro a Collina, cujo nome foi inspirado no apelido "Gigante da Colina", como é conhecido o Vasco, time do coração da Kamila; e depois a Ada, batizada em homenagem a Ada Lovelace, a matemática considerada a autora do primeiro algoritmo de computador da história</p>
       <p>Desde então, as duas passaram a dividir não apenas a casa e a rotina, mas também a companhia, as travessuras e o carinho de suas novas companheiras felinas.'</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/morar-juntas.jpeg'
     },
     {
       date: '01/01/2025',
@@ -74,7 +74,7 @@ export class TimelineComponent {
       <p>No réveillon, sob o brilho dos fogos de artifício e perante as pessoas mais importantes da família das duas, Kamila se declarou para Bárbara, ajoelhou-se no gramado e a pediu em casamento. Não havia nenhuma dúvida: Bárbara disse sim!</p>
       <p>No entanto, Bárbara acreditava que Kamila também deveria viver a experiência de ser pedida em casamento. Alguns meses depois, durante uma viagem para o Rio Grande do Norte, na cidade de São Miguel do Gostoso, Bárbara organizou para que o quarto estivesse todo decorado e fez sua declaração quando chegaram à hospedagem.</p>
       <p>Houve alguns probleminhas técnicos, como por exemplo a Bárbara ter esquecido de registrar o momento, mas são justamente essas peculiaridades que tornam a história ainda mais especial. Um momento que, infelizmente, está gravado apenas na memória das duas.</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/noivado.jpeg'
     },
     {
       date: '27/03/2027',
@@ -84,7 +84,7 @@ export class TimelineComponent {
       <p>Tudo começou com uma simples conversa sobre uma tatuagem. Depois vieram os encontros, os bilhetinhos, os chocolates, as videochamadas, as viagens, as aventuras, os aprendizados, as conquistas, os desafios, os gatos, a casa compartilhada e o sonho de construir uma vida juntas.</p>
       <p>Hoje, cercadas por familiares e amigos, Bárbara e Kamila celebram não apenas o amor que as uniu, mas também toda a caminhada que percorreram até aqui. E este é apenas o começo de muitos novos capítulos que ainda serão escritos.</p>
       <p>Obrigada por fazer parte dessa história.</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/casamento.jpeg'
     }
   ]
 
