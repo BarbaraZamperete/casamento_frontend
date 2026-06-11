@@ -80,6 +80,7 @@
   @media (max-width: 991px) {
     padding: 0.25rem 0;
     font-size: 0.95rem;
+    text-align: right;
 
     .navbar-brand {
       font-size: 1.25rem;
@@ -100,6 +101,7 @@
       padding: 0.5rem;
       margin-top: 0.25rem;
       border-radius: 4px;
+      // max-width: 400px;
 
       .nav-link {
         color: color.adjust($highlight-color, $lightness: -5%);
