@@ -1,11 +1,27 @@
-<!-- Nossa História -->
+<div class="familia-scroll d-flex gap-3 overflow-auto py-2">
+
+  @for(card of cards; track $index){
+
+  <div class="card border-0 shadow-sm flex-shrink-0">
+
+    <img [src]="card.imagem && card.imagem.trim() !== '' ? card.imagem : 'assets/images/default-image.png'"
+      class="card-img-top" [alt]="card.titulo">
+    <div class="card-body">
+      <h5 class="card-title">{{ card.titulo }}</h5>
+      <p class="card-text" [innerHTML]="card.descricao"></p>
+    </div>
+  </div>
+
+
+  }
+</div>
 
 <!--
 ##############################################
 Carrossel para 3 cards por slide (telas > 1000px)
 ##############################################
 -->
-<div id="carousel3Cards" class="carousel slide d-none d-lg-block" >
+<!-- <div id="carousel3Cards" class="carousel slide d-none d-lg-block" >
   <div class="carousel-inner">
     <div *ngFor="let slide of getSlides(3); let first = first" class="carousel-item" [ngClass]="{'active': first}">
       <div class="row g-4 justify-content-center">
@@ -14,7 +30,6 @@ Carrossel para 3 cards por slide (telas > 1000px)
             <img [src]="card.imagem && card.imagem.trim() !== '' ? card.imagem : 'assets/images/default-image.png'" class="card-img-top" [alt]="card.titulo">
             <div class="card-body">
               <h5 class="card-title">{{ card.titulo }}</h5>
-              <!-- <p class="card-text" [innerHTML]="card.descricao"></p> -->
               <p class="card-text" [innerHTML]="card.descricao"></p>
             </div>
           </div>
@@ -28,7 +43,7 @@ Carrossel para 3 cards por slide (telas > 1000px)
   <button class="carousel-control-next" type="button" data-bs-target="#carousel3Cards" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
-</div>
+</div> -->
 
 
 <!--
@@ -37,7 +52,7 @@ Carrossel para 2 cards por slide (telas entre 768px e 1000px)
 ##############################################
 -->
 
-<div id="carousel2Cards" class="carousel slide d-none d-md-block d-lg-none" data-bs-ride="carousel">
+<!-- <div id="carousel2Cards" class="carousel slide d-none d-md-block d-lg-none" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div *ngFor="let slide of getSlides(2); let first = first" class="carousel-item" [ngClass]="{'active': first}">
       <div class="row g-4 justify-content-center">
@@ -59,14 +74,14 @@ Carrossel para 2 cards por slide (telas entre 768px e 1000px)
   <button class="carousel-control-next" type="button" data-bs-target="#carousel2Cards" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
-</div>
+</div> -->
 
 <!--
 ##############################################
 Carrossel para 1 card por slide (telas < 768px)
 ##############################################
 -->
-<div id="carousel1Card" class="carousel slide d-md-none" data-bs-ride="carousel">
+<!-- <div id="carousel1Card" class="carousel slide d-md-none" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div *ngFor="let slide of getSlides(1); let first = first" class="carousel-item" [ngClass]="{'active': first}">
       <div class="row g-4 justify-content-center">
@@ -88,4 +103,4 @@ Carrossel para 1 card por slide (telas < 768px)
   <button class="carousel-control-next" type="button" data-bs-target="#carousel1Card" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
-</div>
+</div> -->

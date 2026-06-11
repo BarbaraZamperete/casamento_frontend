@@ -1,20 +1,43 @@
 @use "sass:color";
-@use '../../../variables.scss' as *;
+@use "../../../variables.scss" as *;
 
-.carousel {
-  position: relative;
+// .carousel {
+//   position: relative;
+// }
+
+.familia-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  padding: 1rem 0;
+  align-items: center;
+  // justify-content: center;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none; // Firefox
+}
+
+.familia-scroll::-webkit-scrollbar {
+  display: none; // Chrome/Safari
 }
 
 .card {
   text-align: center;
-  background: color.adjust($background-light, $lightness: 5%);
-  // color: color.adjust($highlight-color, $lightness: -5%);
+  background: $terciary-color;
+  // border: 0;
   overflow: hidden;
-  height: 500px;
-  padding: 1rem;
-  border-radius: 8px;
+  // height: 500px;
+  height: 100%;
+  max-width: 300px;
+  // padding: 1rem;
+  border-radius: 10px;
   transition: transform 0.3s ease;
   cursor: default;
+  scroll-snap-align: center;
 
   &:hover {
     transform: scale(1.03);
@@ -24,61 +47,33 @@
     height: 250px;
     object-fit: cover;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
   }
 
   .card-body {
     padding: 15px;
 
-    .card-title{
+    .card-title {
       font-family: $font-01;
       font-size: clamp(1.7rem, 3vw, 2rem);
       letter-spacing: 0.1em;
+      color: $white;
     }
-    
-    
 
-    .card-text{
-
+    .card-text {
       color: $light-black;
       font-family: $font-02;
 
-      ::ng-deep .strong{
+      ::ng-deep .strong {
         color: $highlight-color;
       }
     }
   }
 }
 
-// Botões do carrossel
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: rgba($highlight-color, 0.8);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease-in-out;
-
-  &:hover {
-    background-color: rgba($highlight-color, 0.9);
+@media (min-width: 1100px) {
+  .familia-scroll {
+    justify-content: center;
   }
-
-  span {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.carousel-control-prev {
-  left: -20px;
-}
-
-.carousel-control-next {
-  right: -20px;
 }
