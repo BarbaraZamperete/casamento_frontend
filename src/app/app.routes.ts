@@ -5,10 +5,10 @@ export const routes: Routes = [
     path: '',
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
   },
-  // {
-  //   path: 'confirmacao',
-  //   loadComponent: () => import('./pages/confirma-presenca/confirma-presenca.component').then(m => m.ConfirmaPresencaComponent)
-  // },
+  {
+    path: 'galeria',
+    loadComponent: () => import('./pages/galeria/galeria.component').then(m => m.GaleriaComponent)
+  },
   // {
   //   path: 'lista-presentes',
   //   loadComponent: () => import('./pages/lista-presentes/lista-presentes.component').then(m => m.ListaPresentesComponent)
