@@ -22,66 +22,64 @@
   }
 }
 
-
 .polaroid {
-
   position: relative;
 
-  flex: 0 0 320px;
+  // flex: 0 0 320px;
+
+  flex: 0 0 clamp(280px, 28vw, 320px);
 
   background: white;
 
   padding: 1rem;
-  padding-bottom: 1.8rem;
 
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 
   scroll-snap-align: center;
 
-  transition: .3s;
+  transition: 0.3s;
 
-  &:hover{
+  &:hover {
     transform: translateY(-5px);
   }
 }
 
-.polaroid:nth-child(1){
+.polaroid:nth-child(1) {
   transform: rotate(-3deg);
 }
 
-.polaroid:nth-child(2){
+.polaroid:nth-child(2) {
   transform: rotate(2deg);
 }
 
-.polaroid:nth-child(3){
+.polaroid:nth-child(3) {
   transform: rotate(-1deg);
 }
 
-.polaroid:nth-child(4){
+.polaroid:nth-child(4) {
   transform: rotate(3deg);
 }
 
-.polaroid:nth-child(1):hover{
+.polaroid:nth-child(1):hover {
   transform: rotate(-3deg) translateY(-5px);
 }
 
-.polaroid:nth-child(2):hover{
+.polaroid:nth-child(2):hover {
   transform: rotate(2deg) translateY(-5px);
 }
 
-.polaroid:nth-child(3):hover{
+.polaroid:nth-child(3):hover {
   transform: rotate(-1deg) translateY(-5px);
 }
 
-.polaroid:nth-child(4):hover{
+.polaroid:nth-child(4):hover {
   transform: rotate(3deg) translateY(-5px);
 }
 
 .polaroid img {
-
   width: 100%;
   height: 280px;
+  // height: clamp(200px, 25vw, 280px);
 
   object-fit: cover;
 
@@ -89,7 +87,6 @@
 }
 
 .tape {
-
   position: absolute;
 
   top: -12px;
@@ -100,20 +97,20 @@
   width: 90px;
   height: 28px;
 
-  background: rgba(255,255,255,.6);
+  background: rgba(255, 255, 255, 0.6);
 
   backdrop-filter: blur(2px);
 
-  box-shadow:
-    0 2px 4px rgba(0,0,0,.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .polaroid h3 {
-
   text-align: center;
 
   margin-top: 1rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.4rem;
+
+  font-size: 1.8rem;
 
   font-family: $font-01;
 
@@ -121,12 +118,11 @@
 }
 
 .descricao {
-
   text-align: left;
 
   font-family: $font-02;
 
-  line-height: 1.7;
+  // line-height: 1.3;
 
   color: #666;
 }
@@ -135,9 +131,7 @@
   display: none; // Chrome/Safari
 }
 
-
 .scroll-btn {
-
   position: absolute;
   top: 50%;
 
@@ -149,9 +143,9 @@
   border: none;
   border-radius: 50%;
 
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
 
-  box-shadow: 0 4px 15px rgba(0,0,0,.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 
   z-index: 20;
 
@@ -159,7 +153,7 @@
   align-items: center;
   justify-content: center;
 
-  transition: .25s;
+  transition: 0.25s;
 
   i {
     font-size: 1.4rem;
@@ -167,7 +161,6 @@
   }
 
   &:hover {
-
     background: white;
 
     transform: translateY(-50%) scale(1.08);
@@ -183,11 +176,9 @@
 }
 
 @media (max-width: 768px) {
-
   .scroll-btn {
     display: none;
   }
-
 }
 
 // .card {
