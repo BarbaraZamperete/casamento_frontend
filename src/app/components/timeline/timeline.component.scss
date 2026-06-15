@@ -1,142 +1,236 @@
 @use "sass:color";
 @use "../../../variables.scss" as *;
 
+// ==========================================
+// TIMELINE
+// ==========================================
+
 .timeline {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0;
 
+  // Linha central
   &::before {
     content: "";
     position: absolute;
-    width: 4px;
-    background: #d8c6b0;
     top: 25px;
     bottom: 0;
     left: 50%;
+
+    width: 4px;
+
+    background: #d8c6b0;
+
     transform: translateX(-50%);
   }
 
+  // Pontinhos de continuidade
   &::after {
     content: "";
+
     position: absolute;
     left: 50%;
     bottom: -15px;
-    transform: translateX(-50%);
+
     width: 6px;
     height: 6px;
+
     border-radius: 50%;
     background: #d8c6b0;
+
+    transform: translateX(-50%);
 
     box-shadow:
       0 12px 0 #d8c6b0,
       0 24px 0 #d8c6b0,
       0 36px 0 #d8c6b0;
   }
-
 }
 
-.timeline-item:not(:first-child) {
-  margin-top: -400px;
-}
-.timeline-card {
-  max-width: 500px;
-}
-
-.timeline-item.left .timeline-card {
-  margin-left: auto;
-}
-
-.timeline-item.right .timeline-card {
-  margin-right: auto;
-}
+// ==========================================
+// ITEMS
+// ==========================================
 
 .timeline-item {
   position: relative;
+
   width: 50%;
+
   padding: 1rem 3rem;
   margin-bottom: 1rem;
 
   .timeline-dot {
-    color: $terciary-color;
     position: absolute;
-    font-size: larger;
     top: 30px;
     right: -10px;
+
     z-index: 2;
-  }
-}
 
-.timeline-item.left {
-  left: 0;
-  text-align: justify;
-}
-
-.timeline-item.right {
-  left: 50%;
-  text-align: justify;
-}
-
-.timeline-item.right .timeline-dot {
-  left: -10px;
-}
-
-.timeline-card {
-  background: #FAF6EA;
-  // background-image: url("/assets/images/ativos/background.png");
-  border-radius: 16px;
-  padding: 1rem;
-  padding-bottom: 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-
-  .timeline-date {
-    display: block;
-    // font-size: 1rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-family: $font-02;
+    color: $terciary-color;
+    font-size: larger;
   }
 
-  .timeline-title {
-    margin-bottom: 0.7rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: $font-02;
-  }
-  .timeline-description {
-    line-height: 1.8;
-    color: #555;
+  &.left {
+    left: 0;
     text-align: justify;
-    font-size: 1rem;
-    margin: 0;
-    font-family: $font-02;
 
-    span {
-      text-indent: 15px;
+    .timeline-card {
+      margin-left: auto;
+    }
+  }
+
+  &.right {
+    left: 50%;
+    text-align: justify;
+
+    .timeline-dot {
+      left: -10px;
+    }
+
+    .timeline-card {
+      margin-right: auto;
     }
   }
 }
 
-@media (max-width: 768px) {
-  .timeline::before,
-  .timeline::after {
-    left: 15px;
-  }
+// ==========================================
+// CARD
+// ==========================================
 
-  .timeline-card .card-body {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.timeline-card {
+  max-width: 500px;
+
+  // background: #faf6ea;
+  background-image: url("/assets/images/ativos/background.png");
+  background-size: contain;
+
+  padding: 1rem;
+  padding-bottom: 0;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  .tape {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(-4deg);
+
+    width: 90px;
+    height: 28px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    backdrop-filter: blur(2px);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// ==========================================
+// CARD CONTENT
+// ==========================================
+
+.timeline-image {
+  width: 100%;
+  max-height: 350px;
+
+  object-fit: cover;
+}
+
+.timeline-date {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+
+  opacity: 0.7;
+
+  font-family: $font-02;
+}
+
+.timeline-title {
+  margin-bottom: 0.7rem;
+
+  text-align: center;
+
+  font-size: 1.5rem;
+  font-family: $font-02;
+}
+
+.expand-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ==========================================
+// DESCRIPTION / ACCORDION
+// ==========================================
+
+.timeline-description {
+  max-height: 0;
+
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+
+  transition:
+    max-height 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.5s ease,
+    margin-top 0.5s ease;
+
+  &.open {
+    max-height: 500px;
+    height: 100%;
+
+    opacity: 1;
+
+    margin-top: 1rem;
+    transform: translateY(0);
+  }
+}
+
+.timeline-description-content {
+  padding-top: 0.5rem;
+  text-align: justify;
+
+  transform: translateY(-10px);
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.5s ease;
+
+  transform: translateY(0);
+}
+
+// ==========================================
+// MOBILE
+// ==========================================
+
+@media (max-width: 768px) {
+  .timeline {
+    &::before,
+    &::after {
+      left: 15px;
+    }
   }
 
   .timeline-item {
     width: 100%;
+
     left: 0 !important;
+
     padding-right: 0;
+
     text-align: left !important;
+
     margin-top: 0 !important;
   }
 
@@ -145,10 +239,47 @@
     right: auto;
   }
 
+  .timeline-card .card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .timeline-title {
     font-size: 1.2rem !important;
   }
+
   .timeline-description {
     font-size: 0.8rem !important;
   }
 }
+
+// .timeline-description {
+//   line-height: 1.8;
+//   color: #555;
+//   text-align: justify;
+//   font-size: 1rem;
+//   margin: 0;
+//   font-family: $font-02;
+
+//   span {
+//     text-indent: 15px;
+//   }
+// }
+
+// .tape {
+//   position: absolute;
+
+//   top: -12px;
+//   left: 50%;
+
+//   transform: translateX(-50%) rotate(-4deg);
+
+//   width: 90px;
+//   height: 28px;
+
+//   background: rgba(255, 255, 255, 0.6);
+
+//   backdrop-filter: blur(2px);
+
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }

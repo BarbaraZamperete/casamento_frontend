@@ -63,8 +63,8 @@ export class TimelineComponent {
       title: 'Morar juntas',
       description: `
       <p>Em setembro de 2024, Kamila e Bárbara resolveram dar um próximo passo em sua relação e juntaram oficialmente as escovas de dentes. Essa mudança de fase veio acompanhada de muitos desafios, mas elas se mantiveram unidas e firmes, pois são mais fortes assim.</p>
-      <p>Também foi uma fase que trouxe muito aprendizado, evolução e inúmeras experiências positivas para o casal. Entre elas, a decisão de aumentar a família com a chegada de duas gatinhas muito especiais: primeiro a Collina, cujo nome foi inspirado no apelido "Gigante da Colina", como é conhecido o Vasco, time do coração da Kamila; e depois a Ada, batizada em homenagem a Ada Lovelace, a matemática considerada a autora do primeiro algoritmo de computador da história</p>
-      <p>Desde então, as duas passaram a dividir não apenas a casa e a rotina, mas também a companhia, as travessuras e o carinho de suas novas companheiras felinas.'</p>`,
+      <p>Também foi uma fase que trouxe muito aprendizado, evolução e inúmeras experiências positivas para o casal. Entre elas, a decisão de aumentar a família com a chegada de duas gatinhas muito especiais: Collina e Ada.</p>
+      <p>Desde então, as duas passaram a dividir não apenas a casa e a rotina, mas também a companhia, as travessuras e o carinho de suas novas companheiras felinas.</p>`,
       image: 'assets/images/timeline/morar-juntas.jpeg'
     },
     {
@@ -88,4 +88,10 @@ export class TimelineComponent {
     }
   ]
 
+
+  expandedIndex: number | null = 0
+
+  toggle(index: number): void{
+    this.expandedIndex = this.expandedIndex===index?null:index;
+  }
 }
