@@ -1,12 +1,12 @@
 @use "sass:color";
-@use '../../../variables.scss' as *;
+@use "../../../variables.scss" as *;
 
 :host {
   display: block;
   flex-shrink: 0; // Impede que o footer encolha
 }
 
-.container{
+.container {
   max-width: 1200px;
 }
 
@@ -16,16 +16,44 @@ footer.bg-dark {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba($primary-color, 1) !important;
+  background-color: rgba($terciary-color, 1) !important;
+  padding: 0 !important;
+
+  // overflow: hidden;
 
   .icone {
-    color: $highlight-color;
+    color: color.adjust($secondary-color, $lightness: -10%);
+  }
+
+  .text-footer {
+    color: $white;
   }
 
   .social-links {
     a:hover {
       opacity: 0.8;
     }
+  }
+
+  .footer-credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+  }
+
+  .footer-decor {
+    width: 30px;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  .footer-decor-left{
+    transform: rotate(-90deg);
+  }
+
+  .footer-decor-right {
+    transform: scaleX(-1) rotate(-90deg);
   }
 
   @media (max-width: 768px) {
