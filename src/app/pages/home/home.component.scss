@@ -98,6 +98,14 @@ html {
       font-size: 1.75rem;
       margin-bottom: 1rem;
       letter-spacing: 0.2em;
+
+      :last-child {
+        font-style: italic;
+      }
+
+      p {
+        margin: 0;
+      }
     }
     .subtitulo {
       text-transform: uppercase;
@@ -239,6 +247,24 @@ html {
 
 // FIM
 
+// INICIO DA SESSÂO PLAYLIST
+.playlist-card {
+  background-color: $background-very-light;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  .music-card{
+    background-color: transparent;
+    border: 0;
+
+    max-width: 400px;
+  }
+}
+
+// FIM
+
 // INÍCIO DA DESSÃO HISTÓRIA (TIMELINE)
 #historia {
   // background: linear-gradient(
@@ -264,7 +290,6 @@ html {
 // INÍCIO DA SESSÃO NOSSO LAR
 #nosso-lar {
   background-color: $background-very-light;
-
 
   .titulo-sessao {
     color: $terciary-color;
