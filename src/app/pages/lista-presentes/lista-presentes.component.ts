@@ -1,22 +1,22 @@
-// import { Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { FooterComponent } from '../../components/footer/footer.component';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FooterComponent } from '../../components/footer/footer.component';
 // import { ApiService } from '../../services/api.service';
-// import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
-// import { Presente } from '../../interfaces/presente.interface';
-// import { Router } from '@angular/router';
-// import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
-// import { Convidado } from '../../interfaces/convidado.interface';
-// declare var bootstrap: any;
+import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
+import { Presente } from '../../interfaces/presente.interface';
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { Convidado } from '../../interfaces/convidado.interface';
+declare var bootstrap: any;
 
-// @Component({
-//   selector: 'app-lista-presentes',
-//   standalone: true,
-//   imports: [CommonModule, FooterComponent, SimpleNavBarComponent, ReactiveFormsModule, FormsModule],
-//   templateUrl: './lista-presentes.component.html',
-//   styleUrl: './lista-presentes.component.scss'
-// })
-// export class ListaPresentesComponent {
+@Component({
+  selector: 'app-lista-presentes',
+  standalone: true,
+  imports: [CommonModule, FooterComponent, SimpleNavBarComponent, ReactiveFormsModule, FormsModule],
+  templateUrl: './lista-presentes.component.html',
+  styleUrl: './lista-presentes.component.scss'
+})
+export class ListaPresentesComponent {
 //   presentes: Presente[] = [];
 //   presenteSelecionado: Presente | null = null;
 //   searchForm: FormGroup;
@@ -99,5 +99,5 @@
 //       console.error('É necessário selecionar um presente e identificar o convidado.');
 //     }
 //   }
-// }
+}
 

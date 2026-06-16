@@ -1,0 +1,103 @@
+@use "sass:color";
+@use "../../../variables.scss" as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.polaroid {
+  position: relative;
+
+  // flex: 0 0 320px;
+
+  flex: 0 0 clamp(280px, 28vw, 320px);
+  max-width: 300px;
+
+  background: white;
+
+  padding: 1rem;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  scroll-snap-align: center;
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.tape {
+  position: absolute;
+
+  top: -12px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(-4deg);
+
+  width: 90px;
+  height: 28px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(2px);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.polaroid h3 {
+  text-align: center;
+
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+
+  font-size: 1.8rem;
+
+  font-family: $font-01;
+
+  color: $terciary-color;
+}
+
+.descricao {
+  text-align: left;
+
+  font-family: $font-02;
+
+  // line-height: 1.3;
+
+  color: #666;
+}
+
+.btn-voltar {
+  display: block;
+
+  width: fit-content;
+  cursor: pointer;
+  margin: 1.5rem auto 0;
+
+  padding: 0.8rem 2rem;
+
+  background: transparent;
+  border: 2px solid $terciary-color;
+  border-radius: 50px;
+
+  color: $terciary-color;
+  text-decoration: none;
+
+  font-family: $font-02;
+  letter-spacing: 0.08em;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $terciary-color;
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+}
