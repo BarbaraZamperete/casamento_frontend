@@ -243,6 +243,65 @@ html {
       color: $text-dark;
     }
   }
+
+  // Site NOTE
+
+  .site-note {
+    position: relative;
+
+    width: clamp(320px, 85vw, 700px);
+
+    margin: 3rem auto 0;
+
+    padding: 1rem;
+
+    background-image: url("/assets/image/ativos/background.png");
+
+    border-radius: 4px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    // transform: rotate(-1deg);
+  }
+
+  .site-note-content {
+    text-align: center;
+
+    p {
+      margin: 0;
+
+      color: #666;
+
+      line-height: 1.8;
+
+      font-family: $font-02;
+    }
+  }
+
+  .site-note .tape {
+    position: absolute;
+
+    width: 80px;
+    height: 32px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    backdrop-filter: blur(2px);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &.tape-left{
+      top: -14px;
+      left: 15px;
+    }
+
+    &.tape-right{
+      bottom: -14px;
+      right: -70px;
+    }
+
+    transform: translateX(-50%) rotate(-30deg);
+  }
 }
 
 // FIM
@@ -255,7 +314,7 @@ html {
 
   margin: 0 auto;
 
-  .music-card{
+  .music-card {
     background-color: transparent;
     border: 0;
 
