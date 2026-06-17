@@ -1,5 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/animations';
 
 interface TimelineItem {
   date: string;
@@ -13,7 +20,30 @@ interface TimelineItem {
   imports: [CommonModule],
   standalone: true,
   templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.scss'
+  styleUrl: './timeline.component.scss',
+  animations: [
+    trigger('expandCollapse', [
+
+      state('closed', style({
+        height: '0px',
+        opacity: 0,
+        marginTop: '0px',
+        overflow: 'hidden'
+      })),
+
+      state('open', style({
+        height: '*',
+        opacity: 1,
+        marginTop: '1rem',
+        overflow: 'hidden'
+      })),
+
+      transition('closed <=> open', [
+        animate('450ms cubic-bezier(0.22, 0.61, 0.36, 1)')
+      ])
+
+    ])
+  ]
 })
 export class TimelineComponent {
 
@@ -106,4 +136,5 @@ export class TimelineComponent {
   toggle(index: number): void {
     this.expandedIndex = this.expandedIndex === index ? null : index;
   }
+
 }

@@ -35,7 +35,7 @@
                 </div>
 
                 <!-- @if(expandedIndex === $index){ -->
-                <div class="card-text timeline-description mt-3" [class.open]="expandedIndex === $index">
+                <div class="card-text timeline-description mt-3"  [@expandCollapse]="expandedIndex === $index ? 'open' : 'closed'">
                     <div class="timeline-description-content" [innerHTML]="item.description"></div>
                 </div>
                 <!-- } -->

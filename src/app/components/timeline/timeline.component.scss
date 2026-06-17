@@ -7,7 +7,7 @@
 
 .timeline {
   position: relative;
-  max-width: 1100px;
+  // max-width: 1100px;
   margin: 0 auto;
   padding: 0;
 
@@ -55,9 +55,7 @@
 
 .timeline-item {
   position: relative;
-
   width: 50%;
-
   padding: 1rem 3rem;
   margin-bottom: 1rem;
 
@@ -100,7 +98,7 @@
 // ==========================================
 
 .timeline-card {
-  max-width: 500px;
+  // max-width: 500px;
 
   // background: #faf6ea;
   background-image: url("/assets/images/ativos/background.png");
@@ -108,8 +106,6 @@
 
   padding: 1rem;
   padding-bottom: 0;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 
   .tape {
     position: absolute;
@@ -175,39 +171,38 @@
 // ==========================================
 
 .timeline-description {
-  max-height: 0;
+  // max-height: 0;
 
   overflow: hidden;
-  opacity: 0;
-  margin-top: 0;
+  // opacity: 0;
+  // margin-top: 0;
 
-  transition:
-    max-height 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
-    opacity 0.5s ease,
-    margin-top 0.5s ease;
+  // transition:
+  //   max-height 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+  //   opacity 0.5s ease,
+  //   margin-top 0.5s ease;
 
-  &.open {
-    max-height: 800px;
-    height: 100%;
+  // &.open {
+  //   max-height: 1000px;
 
-    opacity: 1;
+  //   opacity: 1;
 
-    margin-top: 1rem;
-    transform: translateY(0);
-  }
+  //   margin-top: 1rem;
+  //   transform: translateY(0);
+  // }
 }
 
 .timeline-description-content {
   padding-top: 0.5rem;
   text-align: justify;
 
-  transform: translateY(-10px);
+  // transform: translateY(-10px);
 
-  transition:
-    transform 0.6s ease,
-    opacity 0.5s ease;
+  // transition:
+  //   transform 0.6s ease,
+  //   opacity 0.5s ease;
 
-  transform: translateY(0);
+  // transform: translateY(0);
 }
 
 // ==========================================

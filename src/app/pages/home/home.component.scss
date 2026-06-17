@@ -245,61 +245,63 @@ html {
   }
 
   // Site NOTE
+  .site-note-wrapper {
+    overflow-x: clip;
 
-  .site-note {
-    position: relative;
+    .site-note {
+      position: relative;
 
-    width: clamp(320px, 85vw, 700px);
+      width: clamp(280px, 85vw, 700px);
 
-    margin: 3rem auto 0;
+      margin: 3rem auto 0;
 
-    padding: 1rem;
+      padding: 1rem;
 
-    background-image: url("/assets/image/ativos/background.png");
+      background-image: url("/assets/image/ativos/background.png");
 
-    border-radius: 4px;
+      border-radius: 4px;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
-    // transform: rotate(-1deg);
-  }
-
-  .site-note-content {
-    text-align: center;
-
-    p {
-      margin: 0;
-
-      color: #666;
-
-      line-height: 1.8;
-      font-family: $font-02;
-    }
-  }
-
-  .site-note .tape {
-    position: absolute;
-
-    width: 80px;
-    height: 32px;
-
-    background: rgba(255, 255, 255, 0.7);
-
-    backdrop-filter: blur(2px);
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    &.tape-left{
-      top: -14px;
-      left: 15px;
+      // transform: rotate(-1deg);
     }
 
-    &.tape-right{
-      bottom: -14px;
-      right: -70px;
+    .site-note-content {
+      text-align: center;
+
+      p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: #666;
+
+        line-height: 1.8;
+        font-family: $font-02;
+      }
     }
 
-    transform: translateX(-50%) rotate(-30deg);
+    .site-note .tape {
+      position: absolute;
+
+      width: 60px;
+      height: 25px;
+
+      background: rgba(255, 255, 255, 0.7);
+
+      backdrop-filter: blur(2px);
+
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      &.tape-left {
+        top: -10px;
+        left: -20px;
+      }
+
+      &.tape-right {
+        right: -20px;
+      }
+
+      transform: rotate(-40deg);
+    }
   }
 }
 
