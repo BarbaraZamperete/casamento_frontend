@@ -88,16 +88,24 @@ export class TimelineComponent {
       date: '25/12/2021',
       title: 'No silêncio, o amor ecoou',
       description: `
-      <p>Em uma tarde de um dia qualquer, após alguns meses de namoro, Kamila encontrava-se deitada nos braços de Bárbara. Estavam conversando tranquilamente quando Bárbara sentiu vontade de revelar um sentimento, porém, é claro, de uma forma um tanto quanto diferente. Ela desenhou nas costas de Kamila as letras da frase “Eu te amo”, enquanto Kamila ia soletrando até compreender a mensagem por completo.</p>
-      <p>No Natal daquele ano, Kamila estava em viagem para Manaus. Mesmo à distância, gravou um vídeo segurando placas e, à medida que as mostrava, revelava que também amava Bárbara.</p>`,
+      <p>Alguns sentimentos chegam de mansinho. Não fazem barulho, apenas encontram um jeito de existir.</p>
+      <p>Em uma tarde qualquer, após alguns meses de namoro, enquanto descansávamos abraçadas, Bárbara teve vontade de revelar um sentimento e encontrou uma forma diferente de dizer aquilo que sentia. Com a ponta dos dedos, desenhou lentamente nas costas de Kamila as letras de uma frase. À medida que cada letra era soletrada, a mensagem foi ganhando sentido.</p>
+      <p><span class="destaque">"Eu te amo." </span></p>
+      <p>Aquelas palavras transbordaram o amor que já existia, mas Kamila ainda precisava de tempo para que seu próprio coração alcançasse o mesmo compasso. E Bárbara respeitou esse tempo.</p>
+      <p>A resposta de Kamila veio meses depois, durante uma viagem de Natal. Também sem dizer uma única palavra. Segurando pequenas placas diante da câmera, revelou, uma a uma, a mesma frase que um dia havia sido escrita em suas costas.</p>
+      <p>Às vezes, o amor não precisa ser dito em voz alta. Basta encontrar o momento certo para ecoar.</p>`,
       image: 'assets/images/default-image.png'
     },
     {
       date: '2021 e contando',
       title: 'Construindo memórias',
       description: `
-      <p>Durante os anos de namoro, Kamila e Bárbara viveram muitas aventuras, viagens e perrengues que depois viraram histórias para contar (como a caminhada no Morro da Tijuca e o episódio em que ficaram perdidas à noite no meio da estrada no Rio Grande do Norte, entre outros). Também enfrentaram desafios que se transformaram em aprendizados e contribuíram para a evolução do casal.</p>
-      <p>Além disso, viveram muitos encontros especiais, compartilharam diversos jogos e brincadeiras (como as Olimpíadas das Namoradas, Overcooked e jogos de tabuleiro, entre outros) e colecionaram momentos inesquecíveis. Foram todas essas experiências que ajudaram a construir a relação de duas mulheres muito companheiras, melhores amigas e com uma conexão única.</p>`,
+      <p>Com o passar do tempo, colecionamos muito mais do que datas especiais. Colecionamos histórias. </p>
+      <p>Tivemos viagens inesquecíveis, aventuras, as Olimpíadas das Namoradas, alguns perrengues que, na hora, pareciam enormes e que hoje rendem boas risadas</p>
+      <p>Houve dias difíceis, desafios inesperados e momentos que nos ensinaram que enfrentar o mundo quando estamos juntas é menos complicado. </p>
+      <p>E na nossa jornada também existem as alegrias simples: tardes de jogos de tabuleiro, partidas de Overcooked, encontros que não precisam de motivo e incontáveis momentos em que descobrimos que a melhor companhia sempre é uma da outra. Entre grandes aventuras e pequenos instantes do dia a dia, continuamos construindo as lembranças mais valiosas.</p>
+      <p>Cada experiência, divertida ou desafiadora, fortalece nossa amizade, nossa parceria e a certeza de que encontramos, uma na outra, alguém com quem vale a pena caminhar pela vida.</p>
+      <p>Porque, no fim, são as memórias compartilhadas que entrelaçam dois caminhos em uma única história.</p>`,
       image: 'assets/images/default-image.png'
     },
     {
