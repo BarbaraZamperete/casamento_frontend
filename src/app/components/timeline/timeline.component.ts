@@ -22,24 +22,36 @@ export class TimelineComponent {
       date: '16/01/2021',
       title: 'Uma troca de mensagens',
       description: `
-      <p>Bárbara fez uma tatuagem e postou nos stories. Kamila, que também tinha interesse em fazer uma tatuagem um dia, aproveitou a oportunidade para puxar assunto e conversar sobre a experiência, perguntando como era a dor. E assim começou a conversa entre elas. Alguns anos depois, Bárbara daria de presente a Kamila a realização de sua primeira tatuagem.</p>`,
+      <p>Um story no Instagram e uma pergunta sobre uma tatuagem marcaram o nosso primeiro contato. Depois vieram os gatos, os filmes, os livros e tantos outros assuntos que surgiram quase sem percebermos.</p>
+      <p>Naquele início, nenhuma de nós imaginava onde aquelas conversas poderiam nos levar. Éramos duas pessoas que, em momentos diferentes de recomeço, encontraram uma na outra uma companhia leve e agradável em meio à pandemia. Aos poucos, as mensagens deixaram de ser ocasionais e passaram a fazer parte da rotina.</p>
+      <p>O Instagram deu lugar ao WhatsApp. Entre chamadas de vídeo, risadas, descobertas e o prazer de conhecer alguém novo, nasceu uma vontade simples: continuar ali, uma na companhia da outra.</p>
+      <p>Sem grandes planos, sem pressa e sem imaginar o que o futuro nos reservava, uma troca de mensagens acabou se tornando o <span class="destaque">início de tudo</span> .</p>`,
       image: 'assets/images/default-image.png'
     },
     {
       date: '27/03/2021',
       title: 'Um beijo e tantos mais',
       description: `
-      <p>Após alguns meses trocando apenas mensagens e videochamadas, já que a pandemia de COVID-19 ainda estava em andamento, Bárbara e Kamila marcaram seu primeiro encontro na gelateria Dois e 90. Após o sorvete, foram para a Praça do Mirandinha, de onde acabaram sendo “expulsas” por um fiscal devido às restrições da pandemia. Então resolveram ir para a Praça do Chefão. </p>
-      <p>Sentadas na arquibancada de frente para a quadra de tênis, Kamila começou a fazer as perguntinhas que havia planejado para quebrar o gelo e conduzir o encontro ao objetivo final. A última pergunta era: “Em que lugar você gostaria de ser beijada?”.</p>
-      <p>Bárbara ficou nervosa com a pergunta e quis fazer uma piada, mas acabou soando um tanto estranha ao responder que gostaria de ser beijada no dedão do pé. E foi assim que surgiu o primeiro beijo da história delas. E algum tempo depois, até o beijo no dedão do pé ocorreu!</p>`,
+      <p>Depois de algum tempo entre longas conversas pelo WhatsApp, chegou o dia do nosso primeiro encontro. Escolhemos uma sorveteria para finalmente nos conhecermos além das telas. A ansiedade fazia parte daquele momento para nós duas. O encontro começou com um leve silêncio, mas bastaram poucos minutos para que a conexão construída pelas mensagens voltasse a aparecer, agora frente a frente. </p>
+      <p>Após o sorvete, seguimos para a Praça do Mirandinha, de onde tivemos que sair por causa das restrições da pandemia. Então, fomos para a Praça do Chefão. Sentadas lado a lado na arquibancada em frente à quadra de tênis, Kamila começou a fazer algumas perguntas que havia preparado para ajudar a vencer a timidez. A última delas era especial: "Em que lugar você gostaria de ser beijada?" </p>
+      <p>Para disfarçar o nervosismo, Bárbara resolveu fazer uma piada, mas acabou soando um tanto estranha ao responder "No dedão do pé." Isso causou um breve desconcerto que logo deu lugar às risadas e, pouco tempo depois, o primeiro beijo finalmente aconteceu. </p>
+      <p>Ao final do encontro, caminhamos de mãos dadas até os carros. Antes da despedida, Kamila entregou pequenas <span class="destaque">flores de sakura</span> perfumadas e uma cartinha que havia preparado para aquele momento. Dentro dela havia apenas uma pergunta:</p>
+      <p>"Você quer sair comigo novamente?"</p>
+      <p>☐ Sim  ☐ Não  ☐ Talvez</p>
+      <p>Encerrávamos aquele dia com a sensação de que aquele seria apenas o <span class="destaque"> primeiro de muitos encontros </span>.</p>
+      `,
       image: 'assets/images/default-image.png'
     },
     {
       date: '18/06/2021',
       title: 'O início de nós',
       description: `
-      <p>Após o primeiro beijo, as duas nunca mais deixaram de se ver. Toda semana havia encontrinhos, todos cheios de surpresinhas românticas, desenhos, chocolates, poemas, músicas e brincadeiras. Em junho, Bárbara viajou, e as duas passaram algumas semanas conversando por longas videochamadas. Nesse tempo, o coração finalmente se abriu por completo, e a paixão floresceu entre elas.</p>
-      <p>Ao retornar da viagem, Kamila a presenteou com uma caneca de gatinhos e vários coraçõeszinhos de papel, cada um com uma palavra formando a frase: “Quem sabe você quer namorar comigo?”. É claro que Bárbara disse que sim.</p>`,
+      <p>Depois do primeiro encontro, nunca mais deixamos de nos ver. Vieram muitos outros, quase sempre na mesma praça, que acabou se tornando <span class="destaque">"a nossa praça"</span>. Nem a chuva era motivo para desmarcar. Entre chocolates, desenhos, poemas, playlists, pequenas surpresas e longas conversas, fomos criando memórias sem perceber que, aos poucos, algo maior também estava sendo construído.</p>
+      <p>No início, combinamos que apenas deixaríamos as coisas acontecerem. Nenhuma de nós buscava um relacionamento sério naquele momento. Mas o carinho crescia a cada encontro e, sem que percebêssemos, aquilo que parecia leve e despretensioso começou a ganhar um novo significado.</p>
+      <p>Nem todo começo é feito apenas de certezas. Em meio ao caminho, enfrentamos um momento delicado que nos levou a uma conversa difícil, mas completamente sincera. Foi ali que escolhemos confiar uma na outra e dar uma chance ao que estava florescendo entre nós.</p>
+      <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram, os encontros nunca deixaram de acontecer e, quando a distância trouxe a saudade durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
+      <p>No dia <span class="destaque"> 18 de junho de 2021 </span>, uma caneca de gatinhos e vários corações de papel formando a pergunta "Quem sabe você quer namorar comigo?" marcaram o nosso pedido de namoro. É claro que Bárbara disse que sim.</p>
+      <p>Aquilo que já vinha sendo construído havia muito tempo finalmente ganhou um nome, e o nosso "nós" começou a criar raízes ainda mais profundas.</p>`,
       image: 'assets/images/default-image.png'
     },
     {
@@ -91,7 +103,7 @@ export class TimelineComponent {
 
   expandedIndex: number | null = 0
 
-  toggle(index: number): void{
-    this.expandedIndex = this.expandedIndex===index?null:index;
+  toggle(index: number): void {
+    this.expandedIndex = this.expandedIndex === index ? null : index;
   }
 }

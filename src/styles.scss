@@ -22,6 +22,11 @@ body {
 .timeline-description p {
   margin: 0;
   text-indent: 2em;
+
+  .destaque{
+    color: $highlight-color;
+    font-weight: 500;
+  }
 }
 
 .descricao li{
