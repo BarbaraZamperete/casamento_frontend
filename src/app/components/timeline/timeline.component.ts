@@ -68,7 +68,7 @@ export class TimelineComponent {
       <p>Ao final do encontro, caminhamos de mãos dadas até os carros. Antes da despedida, Kamila entregou pequenas <span class="destaque">flores de sakura</span> perfumadas e uma cartinha que havia preparado para aquele momento. Dentro dela havia apenas uma pergunta:</p>
       <p>"Você quer sair comigo novamente?"</p>
       <p>☐ Sim  ☐ Não  ☐ Talvez</p>
-      <p>Encerrávamos aquele dia com a sensação de que aquele seria apenas o <span class="destaque"> primeiro de muitos encontros </span>.</p>
+      <p>Encerrávamos aquele dia com a sensação de que aquele seria apenas o primeiro de muitos encontros.</p>
       `,
       image: 'assets/images/timeline/primeiro-beijo.png'
     },
@@ -76,7 +76,7 @@ export class TimelineComponent {
       date: '18/06/2021',
       title: 'O início de nós',
       description: `
-      <p>Depois do primeiro encontro, nunca mais deixamos de nos ver. Vieram muitos outros, quase sempre na mesma praça, que acabou se tornando <span class="destaque">"a nossa praça"</span>. Nem a chuva era motivo para desmarcar. Entre chocolates, desenhos, poemas, playlists, pequenas surpresas e longas conversas, fomos criando memórias sem perceber que, aos poucos, algo maior também estava sendo construído.</p>
+      <p>Depois do primeiro encontro, nunca mais deixamos de nos ver. Vieram muitos outros, quase sempre na mesma praça, que acabou se tornando "a nossa praça". Nem a chuva era motivo para desmarcar. Entre chocolates, desenhos, poemas, playlists, pequenas surpresas e longas conversas, fomos criando memórias sem perceber que, aos poucos, algo maior também estava sendo construído.</p>
       <p>No início, combinamos que apenas deixaríamos as coisas acontecerem. Nenhuma de nós buscava um relacionamento sério naquele momento. Mas o carinho crescia a cada encontro e, sem que percebêssemos, aquilo que parecia leve e despretensioso começou a ganhar um novo significado.</p>
       <p>Nem todo começo é feito apenas de certezas. Em meio ao caminho, enfrentamos um momento delicado que nos levou a uma conversa difícil, mas completamente sincera. Foi ali que escolhemos confiar uma na outra e dar uma chance ao que estava florescendo entre nós.</p>
       <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram, os encontros nunca deixaram de acontecer e, quando a distância trouxe a saudade durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
@@ -103,7 +103,7 @@ export class TimelineComponent {
       <p>Com o passar do tempo, colecionamos muito mais do que datas especiais. Colecionamos histórias. </p>
       <p>Tivemos viagens inesquecíveis, aventuras, as Olimpíadas das Namoradas, alguns perrengues que, na hora, pareciam enormes e que hoje rendem boas risadas</p>
       <p>Houve dias difíceis, desafios inesperados e momentos que nos ensinaram que enfrentar o mundo quando estamos juntas é menos complicado. </p>
-      <p>E na nossa jornada também existem as alegrias simples: tardes de jogos de tabuleiro, partidas de Overcooked, encontros que não precisam de motivo e incontáveis momentos em que descobrimos que a melhor companhia sempre é uma da outra. Entre grandes aventuras e pequenos instantes do dia a dia, continuamos construindo as lembranças mais valiosas.</p>
+      <p>E na nossa jornada também existem as alegrias simples: tardes de jogos de tabuleiro, partidas de Overcooked, encontros que não precisam de motivo e incontáveis momentos em que descobrimos que a melhor companhia sempre é uma da outra. Entre grandes aventuras e pequenos instantes do dia a dia, continuamos construindo as <span class="destaque">lembranças mais valiosas. </span></p>
       <p>Cada experiência, divertida ou desafiadora, fortalece nossa amizade, nossa parceria e a certeza de que encontramos, uma na outra, alguém com quem vale a pena caminhar pela vida.</p>
       <p>Porque, no fim, são as memórias compartilhadas que entrelaçam dois caminhos em uma única história.</p>`,
       image: 'assets/images/default-image.png'
@@ -116,7 +116,7 @@ export class TimelineComponent {
       <p>Dar esse passo trouxe entusiasmo, mas também muitos desafios. A vida mostrou que construir um lar vai muito além de escolher um lugar para morar. Mudanças inesperadas, conflitos e momentos difíceis colocaram nossa relação à prova. Nem sempre pensamos da mesma forma, mas aprendemos que ouvir, compreender e escolher uma à outra todos os dias sempre seria mais importante do que qualquer dificuldade. .</p>
       <p>Com o tempo, encontramos nosso cantinho. Ali, nossa família cresceu com a chegada da Collina e, algum tempo depois, da Ada, enchendo nossos dias de travessuras, carinho e ainda mais motivos para sorrir. 
       .</p>
-      <p>Nosso lugarzinho continua sendo construído diariamente. Entre obstáculos, conquistas, aprendizados, seguimos descobrindo que o nosso lar é onde estivermos juntas.
+      <p>Nosso lugarzinho continua sendo construído diariamente. Entre obstáculos, conquistas, aprendizados, seguimos descobrindo que o nosso <span class="destaque"> lar é onde estivermos juntas. </span>
       </p>`,
       image: 'assets/images/timeline/morar-juntas.jpeg'
     },
@@ -127,7 +127,7 @@ export class TimelineComponent {
       <p>Morando juntas e vivendo uma rotina de aprendizados, percebemos que era a hora de dar um novo passo na nossa história.</p>
       <p>No Réveillon de 2025, cercadas pelas pessoas mais importantes das nossas vidas, Kamila se declarou, ajoelhou-se e fez a pergunta:</p>
       <p>"Bárbara, você quer se casar comigo?"</p>
-      <p>A resposta foi "sim".</p>
+      <p>A resposta foi <span class="destaque">"sim!"</span>.</p>
       <p>Tempos depois, o pedido se tornou ainda mais especial. Entendendo que as duas deveriam viver a emoção de serem pedidas em casamento, Bárbara preparou uma surpresa em São Miguel do Gostoso, e mais um "sim" aconteceu.</p>
       <p>O segundo pedido de casamento não foi registrado, mas algumas lembranças não precisam de imagens para permanecer vivas.</p>`,
       image: 'assets/images/timeline/noivado.jpeg'
@@ -139,7 +139,7 @@ export class TimelineComponent {
       <p>E, enfim, chegamos a mais um marco das nossas vidas: o dia em que temos a felicidade de celebrar tudo o que vivemos, aprendemos e crescemos, ao lado das pessoas mais importantes para nós.</p>
       <p>Tudo começou com um simples story no Instagram e uma pergunta sobre uma tatuagem. Depois vieram as videochamadas, os encontros, as aventuras, os desafios, as conquistas e a vontade de seguir evoluindo uma com a outra.</p>
       <p>Em breve celebraremos não apenas o amor que nos uniu, mas também toda a caminhada que nos trouxe até aqui.</p>
-      <p>E este é apenas o começo. Muitos capítulos ainda serão escritos, com novas memórias para construir, novos sonhos para realizar... e muito amor para viver.</p>`,
+      <p>E este é apenas o começo. Muitos capítulos ainda serão escritos, com novas memórias para construir, novos sonhos para realizar... e <span class="destaque">muito amor para viver. </span></p>`,
       image: 'assets/images/timeline/casamento.jpeg'
     }
   ]
