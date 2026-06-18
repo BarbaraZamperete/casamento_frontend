@@ -56,7 +56,7 @@ export class TimelineComponent {
       <p>Naquele início, nenhuma de nós imaginava onde aquelas conversas poderiam nos levar. Éramos duas pessoas que, em momentos diferentes de recomeço, encontraram uma na outra uma companhia leve e agradável em meio à pandemia. Aos poucos, as mensagens deixaram de ser ocasionais e passaram a fazer parte da rotina.</p>
       <p>O Instagram deu lugar ao WhatsApp. Entre chamadas de vídeo, risadas, descobertas e o prazer de conhecer alguém novo, nasceu uma vontade simples: continuar ali, uma na companhia da outra.</p>
       <p>Sem grandes planos, sem pressa e sem imaginar o que o futuro nos reservava, uma troca de mensagens acabou se tornando o <span class="destaque">início de tudo</span> .</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/primeira-mensagem.png'
     },
     {
       date: '27/03/2021',
