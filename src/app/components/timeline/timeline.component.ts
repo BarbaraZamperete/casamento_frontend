@@ -9,6 +9,7 @@ import {
 } from '@angular/animations';
 
 interface TimelineItem {
+  id: number;
   date: string;
   title: string;
   description: string;
@@ -49,6 +50,7 @@ export class TimelineComponent {
 
   timelineItems: TimelineItem[] = [
     {
+      id: 1,
       date: '16/01/2021',
       title: 'Uma troca de mensagens',
       description: `
@@ -59,6 +61,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/primeira-mensagem.png'
     },
     {
+      id: 2,
       date: '27/03/2021',
       title: 'Um beijo e tantos mais',
       description: `
@@ -73,6 +76,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/primeiro-beijo.png'
     },
     {
+      id: 3,
       date: '18/06/2021',
       title: 'O início de nós',
       description: `
@@ -85,6 +89,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/inicio-de-nos.png'
     },
     {
+      id: 4,
       date: '25/12/2021',
       title: 'No silêncio, o amor ecoou',
       description: `
@@ -97,6 +102,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/eu-te-amo.png'
     },
     {
+      id: 5,
       date: '2021 e contando',
       title: 'Construindo memórias',
       description: `
@@ -106,9 +112,10 @@ export class TimelineComponent {
       <p>E na nossa jornada também existem as alegrias simples: tardes de jogos de tabuleiro, partidas de Overcooked, encontros que não precisam de motivo e incontáveis momentos em que descobrimos que a melhor companhia sempre é uma da outra. Entre grandes aventuras e pequenos instantes do dia a dia, continuamos construindo as <span class="destaque">lembranças mais valiosas. </span></p>
       <p>Cada experiência, divertida ou desafiadora, fortalece nossa amizade, nossa parceria e a certeza de que encontramos, uma na outra, alguém com quem vale a pena caminhar pela vida.</p>
       <p>Porque, no fim, são as memórias compartilhadas que entrelaçam dois caminhos em uma única história.</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/momentos_2.png'
     },
     {
+      id: 6,
       date: '30/09/2024',
       title: 'Nosso lugarzinho',
       description: `
@@ -121,6 +128,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/morar-juntas.jpeg'
     },
     {
+      id: 7,
       date: '01/01/2025',
       title: 'O sim',
       description: `
@@ -133,6 +141,7 @@ export class TimelineComponent {
       image: 'assets/images/timeline/noivado.jpeg'
     },
     {
+      id: 8,
       date: '27/03/2027',
       title: 'Para sempre nós',
       description: `
