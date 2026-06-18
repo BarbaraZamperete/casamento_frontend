@@ -121,8 +121,7 @@ export class TimelineComponent {
       description: `
       <p>Depois de anos dividindo os dias entre uma casa e outra, percebemos que já existia uma rotina entre nós. Faltava apenas um endereço em comum. </p>
       <p>Dar esse passo trouxe entusiasmo, mas também muitos desafios. A vida mostrou que construir um lar vai muito além de escolher um lugar para morar. Mudanças inesperadas, conflitos e momentos difíceis colocaram nossa relação à prova. Nem sempre pensamos da mesma forma, mas aprendemos que ouvir, compreender e escolher uma à outra todos os dias sempre seria mais importante do que qualquer dificuldade.</p>
-      <p>Com o tempo, encontramos nosso cantinho. Ali, nossa família cresceu com a chegada da Collina e, algum tempo depois, da Ada, enchendo nossos dias de travessuras felinas, carinho e ainda mais motivos para sorrir. 
-      .</p>
+      <p>Com o tempo, encontramos nosso cantinho. Ali, nossa família cresceu com a chegada da Collina e, algum tempo depois, da Ada, enchendo nossos dias de travessuras felinas, carinho e ainda mais motivos para sorrir. </p>
       <p>Nosso lugarzinho continua sendo construído diariamente. Entre obstáculos, conquistas, aprendizados, seguimos descobrindo que o nosso <span class="destaque"> lar é onde estivermos juntas. </span>
       </p>`,
       image: 'assets/images/timeline/morar-juntas.jpeg'
