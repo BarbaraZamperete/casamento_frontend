@@ -7,11 +7,12 @@ import { Presente } from '../../interfaces/presente.interface';
 import { CarroselSlideComponent } from "../../components/carrosel-slide/carrosel-slide.component";
 import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
 import { TimelineComponent } from '../../components/timeline/timeline.component';
+import { PlayerComponent } from '../../components/player/player.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent, SimpleNavBarComponent, TimelineComponent],
+  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent, SimpleNavBarComponent, TimelineComponent, PlayerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
