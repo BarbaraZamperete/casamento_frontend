@@ -132,7 +132,7 @@
 
 .timeline-image {
   width: 100%;
-  max-height: 350px;
+  max-height: 430px;
 
   object-fit: cover;
 }
@@ -237,6 +237,10 @@
   .timeline-card .card-body {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  .timeline-image{
+    max-height: 350px;
   }
 
   .timeline-title {
