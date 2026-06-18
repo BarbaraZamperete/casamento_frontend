@@ -112,28 +112,34 @@ export class TimelineComponent {
       date: '30/09/2024',
       title: 'Nosso lugarzinho',
       description: `
-      <p>Em setembro de 2024, Kamila e Bárbara resolveram dar um próximo passo em sua relação e juntaram oficialmente as escovas de dentes. Essa mudança de fase veio acompanhada de muitos desafios, mas elas se mantiveram unidas e firmes, pois são mais fortes assim.</p>
-      <p>Também foi uma fase que trouxe muito aprendizado, evolução e inúmeras experiências positivas para o casal. Entre elas, a decisão de aumentar a família com a chegada de duas gatinhas muito especiais: Collina e Ada.</p>
-      <p>Desde então, as duas passaram a dividir não apenas a casa e a rotina, mas também a companhia, as travessuras e o carinho de suas novas companheiras felinas.</p>`,
+      <p>Depois de anos dividindo os dias entre uma casa e outra, percebemos que já existia uma rotina entre nós. Faltava apenas um endereço em comum. </p>
+      <p>Dar esse passo trouxe entusiasmo, mas também muitos desafios. A vida mostrou que construir um lar vai muito além de escolher um lugar para morar. Mudanças inesperadas, conflitos e momentos difíceis colocaram nossa relação à prova. Nem sempre pensamos da mesma forma, mas aprendemos que ouvir, compreender e escolher uma à outra todos os dias sempre seria mais importante do que qualquer dificuldade. .</p>
+      <p>Com o tempo, encontramos nosso cantinho. Ali, nossa família cresceu com a chegada da Collina e, algum tempo depois, da Ada, enchendo nossos dias de travessuras, carinho e ainda mais motivos para sorrir. 
+      .</p>
+      <p>Nosso lugarzinho continua sendo construído diariamente. Entre obstáculos, conquistas, aprendizados, seguimos descobrindo que o nosso lar é onde estivermos juntas.
+      </p>`,
       image: 'assets/images/timeline/morar-juntas.jpeg'
     },
     {
       date: '01/01/2025',
       title: 'O sim',
       description: `
-      <p>No réveillon, sob o brilho dos fogos de artifício e perante as pessoas mais importantes da família das duas, Kamila se declarou para Bárbara, ajoelhou-se no gramado e a pediu em casamento. Não havia nenhuma dúvida: Bárbara disse sim!</p>
-      <p>No entanto, Bárbara acreditava que Kamila também deveria viver a experiência de ser pedida em casamento. Alguns meses depois, durante uma viagem para o Rio Grande do Norte, na cidade de São Miguel do Gostoso, Bárbara organizou para que o quarto estivesse todo decorado e fez sua declaração quando chegaram à hospedagem.</p>
-      <p>Houve alguns probleminhas técnicos, como por exemplo a Bárbara ter esquecido de registrar o momento, mas são justamente essas peculiaridades que tornam a história ainda mais especial. Um momento que, infelizmente, está gravado apenas na memória das duas.</p>`,
+      <p>Morando juntas e vivendo uma rotina de aprendizados, percebemos que era a hora de dar um novo passo na nossa história.</p>
+      <p>No Réveillon de 2025, cercadas pelas pessoas mais importantes das nossas vidas, Kamila se declarou, ajoelhou-se e fez a pergunta:</p>
+      <p>"Bárbara, você quer se casar comigo?"</p>
+      <p>A resposta foi "sim".</p>
+      <p>Tempos depois, o pedido se tornou ainda mais especial. Entendendo que as duas deveriam viver a emoção de serem pedidas em casamento, Bárbara preparou uma surpresa em São Miguel do Gostoso, e mais um "sim" aconteceu.</p>
+      <p>O segundo pedido de casamento não foi registrado, mas algumas lembranças não precisam de imagens para permanecer vivas.</p>`,
       image: 'assets/images/timeline/noivado.jpeg'
     },
     {
       date: '27/03/2027',
       title: 'Para sempre nós',
       description: `
-      <p>E enfim chegamos a mais um grande marco na história desse casal, que tem a felicidade de poder comemorar este momento ao lado de pessoas tão especiais.</p>
-      <p>Tudo começou com uma simples conversa sobre uma tatuagem. Depois vieram os encontros, os bilhetinhos, os chocolates, as videochamadas, as viagens, as aventuras, os aprendizados, as conquistas, os desafios, os gatos, a casa compartilhada e o sonho de construir uma vida juntas.</p>
-      <p>Hoje, cercadas por familiares e amigos, Bárbara e Kamila celebram não apenas o amor que as uniu, mas também toda a caminhada que percorreram até aqui. E este é apenas o começo de muitos novos capítulos que ainda serão escritos.</p>
-      <p>Obrigada por fazer parte dessa história.</p>`,
+      <p>E, enfim, chegamos a mais um marco das nossas vidas: o dia em que temos a felicidade de celebrar tudo o que vivemos, aprendemos e crescemos, ao lado das pessoas mais importantes para nós.</p>
+      <p>Tudo começou com um simples story no Instagram e uma pergunta sobre uma tatuagem. Depois vieram as videochamadas, os encontros, as aventuras, os desafios, as conquistas e a vontade de seguir evoluindo uma com a outra.</p>
+      <p>Em breve celebraremos não apenas o amor que nos uniu, mas também toda a caminhada que nos trouxe até aqui.</p>
+      <p>E este é apenas o começo. Muitos capítulos ainda serão escritos, com novas memórias para construir, novos sonhos para realizar... e muito amor para viver.</p>`,
       image: 'assets/images/timeline/casamento.jpeg'
     }
   ]
