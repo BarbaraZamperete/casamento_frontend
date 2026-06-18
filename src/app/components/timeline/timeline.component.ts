@@ -83,7 +83,7 @@ export class TimelineComponent {
       <p>Depois do primeiro encontro, nunca mais deixamos de nos ver. Vieram muitos outros, quase sempre na mesma praça, que acabou se tornando "a nossa praça". Nem a chuva era motivo para desmarcar. Entre chocolates, desenhos, poemas, playlists, pequenas surpresas e longas conversas, fomos criando memórias sem perceber que, aos poucos, algo maior também estava sendo construído.</p>
       <p>No início, combinamos que apenas deixaríamos as coisas acontecerem. Nenhuma de nós buscava um relacionamento sério naquele momento. Mas o carinho crescia a cada encontro e, sem que percebêssemos, aquilo que parecia leve e despretensioso começou a ganhar um novo significado.</p>
       <p>Nem todo começo é feito apenas de certezas. Em meio ao caminho, enfrentamos um momento delicado que nos levou a uma conversa difícil, mas completamente sincera. Foi ali que escolhemos confiar uma na outra e dar uma chance ao que estava florescendo entre nós.</p>
-      <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram, os encontros nunca deixaram de acontecer e, quando a distância trouxe a saudade durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
+      <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram e quando a distância trouxe a saudade, durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
       <p>No dia <span class="destaque"> 18 de junho de 2021 </span>, uma caneca de gatinhos e vários corações de papel formando a pergunta "Quem sabe você quer namorar comigo?" marcaram o nosso pedido de namoro. É claro que Bárbara disse que sim.</p>
       <p>Aquilo que já vinha sendo construído havia muito tempo finalmente ganhou um nome, e o nosso "nós" começou a criar raízes ainda mais profundas.</p>`,
       image: 'assets/images/timeline/inicio-de-nos.png'
@@ -144,7 +144,7 @@ export class TimelineComponent {
       date: '27/03/2027',
       title: 'Para sempre nós',
       description: `
-      <p>E, enfim, chegamos a mais um marco das nossas vidas: o dia em que temos a felicidade de celebrar tudo o que vivemos, aprendemos e crescemos, ao lado das pessoas mais importantes para nós.</p>
+      <p>E, enfim, chegamos a mais um marco das nossas vidas: o dia em que teremos a felicidade de celebrar tudo o que vivemos, aprendemos e crescemos, ao lado das pessoas mais importantes para nós.</p>
       <p>Tudo começou com um simples story no Instagram e uma pergunta sobre uma tatuagem. Depois vieram as videochamadas, os encontros, as aventuras, os desafios, as conquistas e a vontade de seguir evoluindo uma com a outra.</p>
       <p>Em breve celebraremos não apenas o amor que nos uniu, mas também toda a caminhada que nos trouxe até aqui.</p>
       <p>E este é apenas o começo. Muitos capítulos ainda serão escritos, com novas memórias para construir, novos sonhos para realizar... e <span class="destaque">muito amor para viver. </span></p>`,
