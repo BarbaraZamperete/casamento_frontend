@@ -12,7 +12,7 @@ export const routes: Routes = [
   },
   {
     path: 'galeria',
-    loadComponent: () => import('./pages/galeria/galeria.component').then(m => m.GaleriaComponent)
+    loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
   },
   {
     path: 'lista-presentes',
