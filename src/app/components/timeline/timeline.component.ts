@@ -70,7 +70,7 @@ export class TimelineComponent {
       <p>☐ Sim  ☐ Não  ☐ Talvez</p>
       <p>Encerrávamos aquele dia com a sensação de que aquele seria apenas o <span class="destaque"> primeiro de muitos encontros </span>.</p>
       `,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/primeiro-beijo.png'
     },
     {
       date: '18/06/2021',
@@ -82,7 +82,7 @@ export class TimelineComponent {
       <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram, os encontros nunca deixaram de acontecer e, quando a distância trouxe a saudade durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
       <p>No dia <span class="destaque"> 18 de junho de 2021 </span>, uma caneca de gatinhos e vários corações de papel formando a pergunta "Quem sabe você quer namorar comigo?" marcaram o nosso pedido de namoro. É claro que Bárbara disse que sim.</p>
       <p>Aquilo que já vinha sendo construído havia muito tempo finalmente ganhou um nome, e o nosso "nós" começou a criar raízes ainda mais profundas.</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/inicio-de-nos.png'
     },
     {
       date: '25/12/2021',
@@ -94,7 +94,7 @@ export class TimelineComponent {
       <p>Aquelas palavras transbordaram o amor que já existia, mas Kamila ainda precisava de tempo para que seu próprio coração alcançasse o mesmo compasso. E Bárbara respeitou esse tempo.</p>
       <p>A resposta de Kamila veio meses depois, durante uma viagem de Natal. Também sem dizer uma única palavra. Segurando pequenas placas diante da câmera, revelou, uma a uma, a mesma frase que um dia havia sido escrita em suas costas.</p>
       <p>Às vezes, o amor não precisa ser dito em voz alta. Basta encontrar o momento certo para ecoar.</p>`,
-      image: 'assets/images/default-image.png'
+      image: 'assets/images/timeline/eu-te-amo.png'
     },
     {
       date: '2021 e contando',
