@@ -1,4 +1,3 @@
-import { EmBreveComponent } from './pages/em-breve/em-breve.component';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -14,13 +13,21 @@ export const routes: Routes = [
     path: 'galeria',
     loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
   },
+  // {
+  //   path: 'lista-presentes',
+  //   loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
+  // },
   {
     path: 'lista-presentes',
-    loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
+    loadComponent: () => import('./pages/lista-presentes/lista-presentes.component').then(m => m.ListaPresentesComponent) 
   },
+  // {
+  //   path: 'confirmacao',
+  //   loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
+  // },
   {
     path: 'confirmacao',
-    loadComponent: () => import('./pages/em-breve/em-breve.component').then(m => m.EmBreveComponent)
+    loadComponent: () => import('./pages/confirma-presenca/confirma-presenca.component').then(m => m.ConfirmaPresencaComponent)
   },
   // {
   //   path: 'pagamento',

@@ -1,5 +1,22 @@
-// import { Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FooterComponent } from "../../components/footer/footer.component";
+import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
+
+@Component({
+  selector: 'app-confirma-presenca',
+  standalone: true,
+  imports: [CommonModule, SimpleNavBarComponent, FooterComponent],
+  templateUrl: './confirma-presenca.component.html',
+  styleUrl: './confirma-presenca.component.scss'
+})
+
+export class ConfirmaPresencaComponent {
+}       
+
+
+
+
 // import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 // import { ApiService } from '../../services/api.service';
 // import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";

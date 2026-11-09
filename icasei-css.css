@@ -1,0 +1,155 @@
+/* Header principal */
+header {
+    background: linear-gradient(
+        to bottom,
+        #BAC8B5,
+        #8C9D85
+    ) !important;
+
+    font-family: 'Libre Caslon Display', serif !important;
+    color: #FFFFFF !important;
+}
+
+/* Nome do casal */
+header .header__couple-name,
+header .header__couple-name p {
+    font-family: 'Libre Caslon Display', serif !important;
+    color: #FFFFFF !important;
+}
+
+/* Links e itens do menu */
+header nav,
+header nav a,
+header nav li,
+header nav button,
+header nav i {
+    font-family: 'Libre Caslon Display', serif !important;
+    color: #FFFFFF !important;
+}
+
+/* Ícones do menu */
+header nav button {
+    color: #FFFFFF !important;
+}
+
+/* Evita fundo diferente nos itens do menu */
+header nav ul,
+header nav li {
+    background-color: transparent !important;
+}
+
+
+/* Substitui o monograma B e K pela imagem personalizada */
+header a.header__couple-name {
+    display: block !important;
+    width: 90px;
+    height: 90px;
+
+    background-image: url("https://casamento-bk.vercel.app/assets/images/Monograma_FINAL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-size: 0 !important;
+}
+
+/* Oculta as letras originais */
+header a.header__couple-name p {
+    display: none !important;
+}
+
+/* Efeito ao passar o mouse */
+header nav a:hover,
+header .header__couple-name:hover {
+    color: #F1F3EE !important;
+}
+
+/* Texto "Ambiente seguro" */
+header .menu--checkout p {
+    color: #FFFFFF !important;
+}
+
+/* Ícone do cadeado */
+header .menu--checkout svg path {
+    fill: #FFFFFF !important;
+}
+
+
+/* Fundo dos submenus */
+header .menu-dropdown__list {
+    background-color: #8C9D85 !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Texto dos itens dos submenus */
+header .menu-dropdown__list .message-dropdown__item {
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+
+/* Hover nos itens dos submenus */
+header .menu-dropdown__list .message-dropdown__item:hover {
+    color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Títulos dos menus principais */
+header .menu-dropdown__title,
+header .menu-dropdown__title__text {
+    color: #FFFFFF !important;
+}
+
+/* Ícones de seta dos menus, sem afetar os SVGs de carregamento */
+header .menu-dropdown__icon path {
+    fill: #FFFFFF !important;
+}
+
+/* Fundo dos submenus no desktop e no menu mobile */
+header nav .menu-dropdown__list,
+header nav .menu-dropdown__list li {
+    background-color: #8C9D85 !important;
+}
+
+/* Texto dos links: Lista de presentes e Casamento */
+header nav .menu-dropdown__list .message-dropdown__item {
+    color: #FFFFFF !important;
+    background-color: #8C9D85 !important;
+}
+
+/* Efeito ao passar o mouse ou interagir com os links */
+header nav .menu-dropdown__list .message-dropdown__item:hover {
+    color: #FFFFFF !important;
+    background-color: #75886F !important;
+}
+
+/* Fundo dos submenus: Presentes e Confirmar presença */
+header .menu .menu-dropdown .menu-dropdown__list {
+    background-color: #8C9D85 !important;
+}
+
+/* Fundo dos itens dentro dos submenus */
+header .menu .menu-dropdown .menu-dropdown__list li {
+    background-color: #8C9D85 !important;
+}
+
+/* Texto dos links: Lista de presentes e Casamento */
+header .menu .menu-dropdown .menu-dropdown__list a.message-dropdown__item,
+header .menu .menu-dropdown .menu-dropdown__list a.message-dropdown__item.-active {
+    color: #FFFFFF !important;
+    background-color: #8C9D85 !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+    header .menu .menu-dropdown__title.kitfKQ {
+        padding: 15px;
+        color: #8C9D85 !important;
+        font-weight: 600;
+        background-color: white !important;
+    }
+
+    header .menu .menu-dropdown__title.kitfKQ .menu-dropdown__title__text {
+        color: #8C9D85 !important;
+        -webkit-text-fill-color: #8C9D85 !important;
+    }
+}
