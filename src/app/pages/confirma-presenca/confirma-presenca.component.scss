@@ -1,67 +1,78 @@
 @use "sass:color";
 @use '../../../variables.scss' as *;
 
-:host {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+// :host {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
 
-section {
-  flex: 1 0 auto;
-  padding-top: 76px;
-  min-height: 30vh;
-}
+.icasei-container {
+  width: 100%;
+  min-height: 900px;
 
-// Estilização dos botões
-.btn {
-  font-weight: 500;
-  transition: all 0.3s ease;
-
-  &.btn-primary {
-    background-color: $primary-color;
-    border-color: $primary-color;
+  iframe {
+    width: 100%;
+    min-height: 900px;
+    border: none;
   }
 }
 
-// Estilização dos radio buttons
-.form-check-input {
-  &:checked {
-    background-color: $primary-color;
-    border-color: $primary-color;
-  }
+// section {
+//   flex: 1 0 auto;
+//   padding-top: 76px;
+//   min-height: 30vh;
+// }
 
-  &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
-  }
+// // Estilização dos botões
+// .btn {
+//   font-weight: 500;
+//   transition: all 0.3s ease;
 
-  &:active {
-    background-color: $primary-color;
-    border-color: $primary-color;
-  }
-}
+//   &.btn-primary {
+//     background-color: $primary-color;
+//     border-color: $primary-color;
+//   }
+// }
 
-// Hover state para melhor feedback visual
-.form-check-input:not(:checked):hover {
-  border-color: $primary-color;
-}
+// // Estilização dos radio buttons
+// .form-check-input {
+//   &:checked {
+//     background-color: $primary-color;
+//     border-color: $primary-color;
+//   }
 
-#toastPlacement {
-  color: $dark-black;
-  border: none;
+//   &:focus {
+//     border-color: $primary-color;
+//     box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
+//   }
 
-  &.confirmado {
-    background-color: $success-green;
-  }
+//   &:active {
+//     background-color: $primary-color;
+//     border-color: $primary-color;
+//   }
+// }
 
-  &.desconfirmado {
-    background-color: $warning-yellow;
-  }
+// // Hover state para melhor feedback visual
+// .form-check-input:not(:checked):hover {
+//   border-color: $primary-color;
+// }
 
-  &.erro {
-    background-color: $error-red;
-  }
+// #toastPlacement {
+//   color: $dark-black;
+//   border: none;
+
+//   &.confirmado {
+//     background-color: $success-green;
+//   }
+
+//   &.desconfirmado {
+//     background-color: $warning-yellow;
+//   }
+
+//   &.erro {
+//     background-color: $error-red;
+//   }
   
-}
+// }
 
