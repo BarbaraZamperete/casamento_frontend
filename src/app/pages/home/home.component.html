@@ -20,7 +20,7 @@
 <app-simple-nav-bar></app-simple-nav-bar>
 
 <!-- Contagem regressiva -->
-<section class="countdown-section py-5">
+<section class="countdown-section py-5 session-decorated">
   <div class="container text-center">
 
     <img src="assets/images/monograma.png" alt="Monograma Bárbara & Kamila" class="monograma">
@@ -83,42 +83,11 @@
 
     </div>
   </div>
-</section>
-
-<!-- playlist -->
-<section class="d-flex justify-content-center playlist-card">
-  <app-player></app-player>
-</section>
 
 
-<!-- Nossa História -->
-<section id="historia" class="py-5 cor">
+  <section id="detalhes" class="py-5 cor">
   <div class="container">
-    <h2 class="titulo-sessao">Nossa História</h2>
-    <app-timeline></app-timeline>
-  </div>
-</section>
-
-
-<!-- Confirmar Presença -->
-<!-- <section id="confirmacao" class="py-5 cor">
-  <div class="container ">
-    <h2 class="titulo-sessao">Confirmação</h2>
-    <p class="lead mb-4">Ficaremos muito felizes com sua presença em nosso grande dia!</p>
-    <a href="/confirmacao" class="btn btn-dark btn-lg">Confirmar Presença</a>
-  </div>
-</section> -->
-
-<section id="nosso-lar" class="py-5 cor session-decorated">
-  <div class="container">
-    <h2 class="titulo-sessao">O Nosso Lar</h2>
-    <app-carrosel-slide></app-carrosel-slide>
-  </div>
-</section>
-
-<section id="detalhes" class="py-5">
-  <div class="container">
-    <h2 class="titulo-sessao">O Casamento</h2>
+    <!-- <h2 class="titulo-sessao">O Casamento</h2> -->
     <div class="row text-center g-5 align-items-stretch justify-content-center">
       <div class="col-md-3 d-flex">
         <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
@@ -158,7 +127,50 @@
     </div>
   </div>
 </section>
+</section>
 
+<!-- playlist -->
+<!-- <section class="d-flex justify-content-center playlist-card">
+  <app-player></app-player>
+</section> -->
+
+
+<!-- Nossa História -->
+<!-- <section id="historia" class="py-5 cor">
+  <div class="container">
+    <h2 class="titulo-sessao">Nossa História</h2>
+    <app-timeline></app-timeline>
+  </div>
+</section> -->
+
+
+
+
+<!-- Confirmar Presença -->
+<section id="confirmacao" class="py-5">
+  <div class="container justify-content-center text-center">
+    <h2 class="titulo-sessao">Confirmação</h2>
+    <p class="lead subtitulo">Não esqueça de confirmar a sua presença.</p>
+    <p class="lead mb-4 subtitulo">Ficaremos muito felizes com sua presença em nosso grande dia!</p>
+    <a href="/confirmacao" class="btn btn-dark btn-lg confirmacao-botao">Confirme sua Presença</a>
+  </div>
+</section>
+
+<section id="nosso-lar" class="py-5 cor session-decorated">
+  <div class="container">
+    <h2 class="titulo-sessao">O Nosso Lar</h2>
+    <app-carrosel-slide></app-carrosel-slide>
+  </div>
+</section>
+
+<!-- Presentes -->
+<section id="presentes" class="py-5">
+  <div class="container justify-content-center text-center">
+    <h2 class="titulo-sessao">Lista de Presentes</h2>
+    <p class="lead mb-4 subtitulo">Ajude a tornar esse dia ainda mais especial!</p>
+    <a href="/lista-presentes" class="btn btn-dark btn-lg presentes-botao">Ver Lista de Presentes</a>
+  </div>
+</section>
 
 <!-- Footer -->
 <app-footer></app-footer>

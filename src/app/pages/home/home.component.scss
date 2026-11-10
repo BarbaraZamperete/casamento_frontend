@@ -360,13 +360,13 @@ html {
 
 // INÍCIO DA DESSÃO DETALHES (O CASAMENTO)
 #detalhes {
-  background-color: $terciary-color;
+  background-color: transparent;
 
   .titulo-sessao {
-    color: $white;
+    color: $highlight-color;
   }
   .card {
-    background: $background-very-light;
+    background: $white;
     padding: 1rem;
     border-radius: 8px;
     // box-shadow: 0 2px 15px rgba($terciary-color, 0.5);
@@ -409,73 +409,93 @@ html {
 }
 // FIM
 
-// Estilização da seção de dúvidas frequentes
-// #duvidas {
-//   color: $text-dark;
-//   font-family: $font-02;
 
-//   .accordion {
-//     .accordion-item {
-//       background-color: $white;
-//       border: 1px solid $border-color;
-//       border-radius: 8px;
-//       overflow: hidden;
-//       margin-bottom: 1rem;
+#confirmacao {
+  background-color: $primary-color;
 
-//       .accordion-header {
-//         .accordion-button {
-//           background-color: $primary-color;
-//           color: $white;
-//           font-size: 1.1rem;
+  .titulo-sessao {
+    color: $white;
+  }
+  
+  .subtitulo {
+    font-family: $font-02;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+  }
 
-//           &:focus {
-//             box-shadow: none;
-//           }
+  .confirmacao-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-//           ::after {
-//             filter: invert(1);
-//           }
-//         }
-//       }
+    padding: 0.85rem 2rem;
 
-//       .accordion-collapse {
-//         .accordion-body {
-//           background-color: $white;
-//           color: $light-black;
-//         }
-//       }
-//     }
-//   }
+    background-color: color.adjust($highlight-color, $lightness: 5%);;
+    color: $white;
+    border: 2px solid $highlight-color;
 
-// Estilização da área de contato
-//   .contato {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-top: 2rem;
+    font-family: $font-02;
+    font-size: 1.05rem;
+    font-weight: 500;
 
-//     p {
-//       font-size: 1.2rem;
-//       color: $text-dark;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
 
-//       a {
-//         text-decoration: none;
-//         color: $highlight-color;
-//         font-weight: bold;
-//         margin-left: 5px;
+    &:hover {
+      background-color: color.adjust($highlight-color, $lightness: -5%);
+      border-color: color.adjust($highlight-color, $lightness: -5%);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
 
-//         &:hover {
-//           color: $terciary-color;
-//         }
 
-//         i {
-//           font-size: 1.4rem;
-//           margin-left: 5px;
-//         }
-//       }
-//     }
-//   }
-// }
+#presentes {
+  background-color: $terciary-color;
+
+  .titulo-sessao {
+    color: $white;
+  }
+  
+  .subtitulo {
+    font-family: $font-02;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+  }
+
+  .presentes-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.85rem 2rem;
+
+    background-color: color.adjust($highlight-color, $lightness: 5%);;
+    color: $white;
+    border: 2px solid $highlight-color;
+
+    font-family: $font-02;
+    font-size: 1.05rem;
+    font-weight: 500;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background-color: color.adjust($highlight-color, $lightness: -5%);
+      border-color: color.adjust($highlight-color, $lightness: -5%);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
 
 // ########### STYLES GENERALIZADOS DA PÁGINA HOME ##########
 

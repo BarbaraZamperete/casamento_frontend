@@ -29,6 +29,10 @@ export const routes: Routes = [
     path: 'confirmacao',
     loadComponent: () => import('./pages/confirma-presenca/confirma-presenca.component').then(m => m.ConfirmaPresencaComponent)
   },
+  {
+    path: 'nossa-historia',
+    loadComponent: () => import('./pages/nossa-historia/nossa-historia.component').then(m => m.NossaHistoriaComponent)
+  },
   // {
   //   path: 'pagamento',
   //   loadComponent: () => import('./pages/pagamento/pagamento.component').then(m => m.PagamentoComponent)

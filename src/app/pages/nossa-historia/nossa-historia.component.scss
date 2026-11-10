@@ -1,0 +1,53 @@
+@use "sass:color";
+@use "../../../variables.scss" as *;
+
+// INICIO DA SESSÂO PLAYLIST
+.playlist-card {
+  background-color: $background-very-light;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  .music-card {
+    background-color: transparent;
+    border: 0;
+
+    max-width: 400px;
+  }
+}
+
+// FIM
+
+// INÍCIO DA DESSÃO HISTÓRIA (TIMELINE)
+#historia {
+  // background: linear-gradient(
+  //   to bottom,
+  //   $background-very-light,
+  //   $primary-color,
+  //   $background-very-light
+  // );
+
+  background-color: $primary-color;
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .titulo-sessao {
+    color: $white;
+  }
+}
+// FIM
+
+// INÍCIO DA SESSÃO NOSSO LAR
+#nosso-lar {
+  background-color: $background-very-light;
+
+  .titulo-sessao {
+    color: $terciary-color;
+  }
+}
+
+// FIM
