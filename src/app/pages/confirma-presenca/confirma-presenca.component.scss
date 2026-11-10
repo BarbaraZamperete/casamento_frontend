@@ -7,72 +7,124 @@
 //   min-height: 100vh;
 // }
 
+.titulo-sessao{
+  color: $highlight-color;
+}
+
+.descricao{
+  font-family: $font-02;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: $text-dark;
+  
+}
+
+.site-note-wrapper {
+  overflow-x: clip;
+}
+
+.site-note {
+  position: relative;
+  width: clamp(320px, 85vw, 700px);
+  margin: 3rem auto 0;
+  padding: 1rem;
+  background-image: url("/assets/image/ativos/background.png");
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.site-note-content {
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+    font-family: $font-02;
+    font-size: 0.8rem;
+  }
+}
+
+.site-note .tape {
+  position: absolute;
+  width: 80px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%) rotate(-30deg);
+}
+
+.tape-left {
+  top: -14px;
+  left: 15px;
+}
+
+.tape-right {
+  bottom: -14px;
+  right: -70px;
+}
+
+.confirmacao-section {
+  padding: 3rem 0 5rem;
+  background-color: $background-very-light;
+}
+
+// Moldura externa
+.icasei-frame-wrapper {
+  width: min(92%, 1200px);
+  margin: 3rem auto;
+  padding: 12px;
+
+  background: #fff;
+  border: 1px solid rgba(126, 152, 131, 0.3);
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.07),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+// Área reservada para a página externa
 .icasei-container {
   width: 100%;
-  min-height: 900px;
+  height: 500px;
+
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  background-color: #fff;
 
   iframe {
+    display: block;
     width: 100%;
-    min-height: 900px;
+    height: 100%;
     border: none;
   }
 }
 
-// section {
-//   flex: 1 0 auto;
-//   padding-top: 76px;
-//   min-height: 30vh;
-// }
+// Responsividade
+@media (max-width: 576px) {
+  .icasei-frame-wrapper {
+    width: 96%;
+    padding: 7px;
+    margin: 2rem auto;
+  }
 
-// // Estilização dos botões
-// .btn {
-//   font-weight: 500;
-//   transition: all 0.3s ease;
+  .icasei-frame-header {
+    padding: 0.65rem;
+    flex-wrap: wrap;
 
-//   &.btn-primary {
-//     background-color: $primary-color;
-//     border-color: $primary-color;
-//   }
-// }
+    .frame-label {
+      font-size: 0.85rem;
+    }
 
-// // Estilização dos radio buttons
-// .form-check-input {
-//   &:checked {
-//     background-color: $primary-color;
-//     border-color: $primary-color;
-//   }
+    .frame-external-label {
+      font-size: 0.72rem;
+    }
+  }
 
-//   &:focus {
-//     border-color: $primary-color;
-//     box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
-//   }
-
-//   &:active {
-//     background-color: $primary-color;
-//     border-color: $primary-color;
-//   }
-// }
-
-// // Hover state para melhor feedback visual
-// .form-check-input:not(:checked):hover {
-//   border-color: $primary-color;
-// }
-
-// #toastPlacement {
-//   color: $dark-black;
-//   border: none;
-
-//   &.confirmado {
-//     background-color: $success-green;
-//   }
-
-//   &.desconfirmado {
-//     background-color: $warning-yellow;
-//   }
-
-//   &.erro {
-//     background-color: $error-red;
-//   }
-  
-// }
-
+  .icasei-container {
+    height: 650px;
+  }
+}
