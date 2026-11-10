@@ -16,7 +16,7 @@
 
         <img
           [src]="card.imagem && card.imagem.trim() !== '' ? card.imagem : 'assets/images/default-image.png'"
-          [alt]="card.titulo">
+          [alt]="card.titulo" loading="lazy" decoding="async">
 
         <div class="polaroid-body">
 

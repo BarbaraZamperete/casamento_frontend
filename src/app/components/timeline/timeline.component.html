@@ -15,7 +15,7 @@
             <div class="tape"></div>
 
             @if(item.image){
-            <img [src]="item.image" [alt]="item.title" class="card-img-top timeline-image">
+            <img [src]="item.image" [alt]="item.title" class="card-img-top timeline-image" loading="lazy" decoding="async">
             }
 
             <div class="card-body">

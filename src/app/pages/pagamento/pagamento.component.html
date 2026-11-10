@@ -16,7 +16,7 @@
             <p class="card-text">Realize o pagamento instantaneamente usando o PIX.</p>
             <p class="card-subtitle font-weight-bold mb-3">Valor: R$ {{ produtoValor | number: '1.2-2' }}</p>
             <div *ngIf="qrCodeUrl" class="mb-3">
-              <img [src]="qrCodeUrl" alt="QR Code de Pagamento" class="img-fluid rounded shadow">
+              <img [src]="qrCodeUrl" alt="QR Code de Pagamento" class="img-fluid rounded shadow" loading="lazy" decoding="async">
             </div>
             <div class="mt-auto">
               <button class="btn btn-dark" (click)="confirmarPagamento()">Pix realizado</button>
@@ -104,7 +104,7 @@
           </div>
           <div class="modal-body text-center">
             <h5 class="modal-title text-success font-weight-bold">Obrigada!!</h5>
-            <img src="assets/images/presente.png" alt="Agradecimento" class="img-fluid mb-3">
+            <img src="assets/images/presente.png" alt="Agradecimento" class="img-fluid mb-3" loading="lazy" decoding="async">
             <p class="text-muted">Você fez nosso dia ainda mais especial! Até breve!</p>
           </div>
           <div class="modal-footer border-top-0 justify-content-center">
