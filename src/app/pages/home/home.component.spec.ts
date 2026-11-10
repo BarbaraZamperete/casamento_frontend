@@ -1,13 +1,10 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HomeComponent } from './home.component';
-import { ApiService } from '../../services/api.service';
-import { of, throwError } from 'rxjs';
-import { Presente } from '../../interfaces/presente.interface';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { of, throwError } from 'rxjs';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { ActivatedRoute } from '@angular/router';
-import { By } from '@angular/platform-browser';
+import { ApiService } from '../../services/api.service';
+import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -35,10 +32,10 @@ describe('HomeComponent', () => {
     apiServiceSpy = TestBed.inject(ApiService) as jasmine.SpyObj<ApiService>;
 
     apiServiceSpy.getPresentes.and.returnValue(of([
-      {id: 1, nome: 'Presente 1', valor: 100, imagem: 'img1.jpg', descricao: 'Descrição do presente 1', link_compra: 'https://link1.com'},
-      {id: 2, nome: 'Presente 2', valor: 200, imagem: 'img2.jpg', descricao: 'Descrição do presente 2', link_compra: 'https://link2.com'},
-      {id: 3, nome: 'Presente 3', valor: 300, imagem: 'img3.jpg', descricao: 'Descrição do presente 3', link_compra: 'https://link3.com'},
-      {id: 4, nome: 'Presente 4', valor: 400, imagem: 'img4.jpg', descricao: 'Descrição do presente 4', link_compra: 'https://link4.com'}
+      {id: 1, nome: 'Presente 1', valor: 100, imagem: 'img1.webp', descricao: 'Descrição do presente 1', link_compra: 'https://link1.com'},
+      {id: 2, nome: 'Presente 2', valor: 200, imagem: 'img2.webp', descricao: 'Descrição do presente 2', link_compra: 'https://link2.com'},
+      {id: 3, nome: 'Presente 3', valor: 300, imagem: 'img3.webp', descricao: 'Descrição do presente 3', link_compra: 'https://link3.com'},
+      {id: 4, nome: 'Presente 4', valor: 400, imagem: 'img4.webp', descricao: 'Descrição do presente 4', link_compra: 'https://link4.com'}
     ]));
     fixture.detectChanges();
   });

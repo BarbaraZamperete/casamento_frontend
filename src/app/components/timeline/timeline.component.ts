@@ -1,12 +1,12 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
 import {
-  trigger,
+  animate,
   state,
   style,
   transition,
-  animate
+  trigger
 } from '@angular/animations';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 
 interface TimelineItem {
   id: number;
@@ -58,7 +58,7 @@ export class TimelineComponent {
       <p>Naquele início, nenhuma de nós imaginava onde aquelas conversas poderiam nos levar. Éramos duas pessoas que, em momentos diferentes de recomeço, encontraram uma na outra uma companhia leve e agradável em meio à pandemia. Aos poucos, as mensagens deixaram de ser ocasionais e passaram a fazer parte da rotina.</p>
       <p>O Instagram deu lugar ao WhatsApp. Entre chamadas de vídeo, risadas, descobertas e o prazer de conhecer alguém novo, nasceu uma vontade simples: continuar ali, uma na companhia da outra.</p>
       <p>Sem grandes planos, sem pressa e sem imaginar o que o futuro nos reservava, uma troca de mensagens acabou se tornando o <span class="destaque">início de tudo</span> .</p>`,
-      image: 'assets/images/timeline/primeira-mensagem.png'
+      image: 'assets/images/timeline/primeira-mensagem.webp'
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ export class TimelineComponent {
       <p>☐ Sim  ☐ Não  ☐ Talvez</p>
       <p>Encerrávamos aquele dia com a sensação de que aquele seria apenas o primeiro de muitos encontros.</p>
       `,
-      image: 'assets/images/timeline/primeiro-beijo.png'
+      image: 'assets/images/timeline/primeiro-beijo.webp'
     },
     {
       id: 3,
@@ -86,7 +86,7 @@ export class TimelineComponent {
       <p>A partir dali, seguimos vivendo um dia de cada vez. A confiança se fortaleceu, as conversas continuaram e quando a distância trouxe a saudade, durante uma viagem ao Rio Grande do Sul, percebemos que aquilo que tentávamos não nomear já fazia parte de nós.</p>
       <p>No dia <span class="destaque"> 18 de junho de 2021 </span>, uma caneca de gatinhos e vários corações de papel formando a pergunta "Quem sabe você quer namorar comigo?" marcaram o nosso pedido de namoro. É claro que Bárbara disse que sim.</p>
       <p>Aquilo que já vinha sendo construído havia muito tempo finalmente ganhou um nome, e o nosso "nós" começou a criar raízes ainda mais profundas.</p>`,
-      image: 'assets/images/timeline/inicio-de-nos.png'
+      image: 'assets/images/timeline/inicio-de-nos.webp'
     },
     {
       id: 4,
@@ -99,7 +99,7 @@ export class TimelineComponent {
       <p>Aquelas palavras transbordaram o amor que já existia, mas Kamila ainda precisava de tempo para que seu próprio coração alcançasse o mesmo compasso. E Bárbara respeitou esse tempo.</p>
       <p>A resposta de Kamila veio meses depois, durante uma viagem de Natal. Também sem dizer uma única palavra. Segurando pequenas placas diante da câmera, revelou, uma a uma, a mesma frase que um dia havia sido escrita em suas costas.</p>
       <p>Às vezes, o amor não precisa ser dito em voz alta. Basta encontrar o momento certo para ecoar.</p>`,
-      image: 'assets/images/timeline/eu-te-amo.png'
+      image: 'assets/images/timeline/eu-te-amo.webp'
     },
     {
       id: 5,
@@ -112,7 +112,7 @@ export class TimelineComponent {
       <p>E na nossa jornada também existem as alegrias simples: tardes de jogos de tabuleiro, partidas de Overcooked, encontros que não precisam de motivo e incontáveis momentos em que descobrimos que a melhor companhia sempre é uma da outra. Entre grandes aventuras e pequenos instantes do dia a dia, continuamos construindo as <span class="destaque">lembranças mais valiosas. </span></p>
       <p>Cada experiência, divertida ou desafiadora, fortalece nossa amizade, nossa parceria e a certeza de que encontramos, uma na outra, alguém com quem vale a pena caminhar pela vida.</p>
       <p>Porque, no fim, são as memórias compartilhadas que entrelaçam dois caminhos em uma única história.</p>`,
-      image: 'assets/images/timeline/momentos_2.png'
+      image: 'assets/images/timeline/momentos_2.webp'
     },
     {
       id: 6,
@@ -124,7 +124,7 @@ export class TimelineComponent {
       <p>Com o tempo, encontramos nosso cantinho. Ali, nossa família cresceu com a chegada da Collina e, algum tempo depois, da Ada, enchendo nossos dias de travessuras felinas, carinho e ainda mais motivos para sorrir. </p>
       <p>Nosso lugarzinho continua sendo construído diariamente. Entre obstáculos, conquistas, aprendizados, seguimos descobrindo que o nosso <span class="destaque"> lar é onde estivermos juntas. </span>
       </p>`,
-      image: 'assets/images/timeline/morar-juntas.jpeg'
+      image: 'assets/images/timeline/morar-juntas.webp'
     },
     {
       id: 7,
@@ -137,7 +137,7 @@ export class TimelineComponent {
       <p>A resposta foi <span class="destaque">"sim!"</span>.</p>
       <p>Tempos depois, o pedido se tornou ainda mais especial. Entendendo que as duas deveriam viver a emoção de serem pedidas em casamento, Bárbara preparou uma surpresa em São Miguel do Gostoso, e mais um "sim" aconteceu.</p>
       <p>O segundo pedido de casamento não foi registrado, mas algumas lembranças não precisam de imagens para permanecer vivas.</p>`,
-      image: 'assets/images/timeline/noivado.jpeg'
+      image: 'assets/images/timeline/noivado.webp'
     },
     {
       id: 8,
@@ -148,7 +148,7 @@ export class TimelineComponent {
       <p>Tudo começou com um simples story no Instagram e uma pergunta sobre uma tatuagem. Depois vieram as videochamadas, os encontros, as aventuras, os desafios, as conquistas e a vontade de seguir evoluindo uma com a outra.</p>
       <p>Em breve celebraremos não apenas o amor que nos uniu, mas também toda a caminhada que nos trouxe até aqui.</p>
       <p>E este é apenas o começo. Muitos capítulos ainda serão escritos, com novas memórias para construir, novos sonhos para realizar... e <span class="destaque">muito amor para viver. </span></p>`,
-      image: 'assets/images/timeline/casamento.jpeg'
+      image: 'assets/images/timeline/casamento.webp'
     }
   ]
 

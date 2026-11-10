@@ -20,7 +20,7 @@ export class CarroselSlideComponent {
   cards: MOMENTO_CARD[] = [
     {
       titulo: "Kamila",
-      imagem: "assets/images/default-image.png",
+      imagem: "assets/images/default-image.webp",
       descricao: `
       <ul>
         <li>Torcedora apaixonada do Vasco da Gama</li>
@@ -32,7 +32,7 @@ export class CarroselSlideComponent {
     },
     {
       titulo: "Bárbara",
-      imagem: "assets/images/default-image.png",
+      imagem: "assets/images/default-image.webp",
       descricao: `
       <ul>
           <li>Programadora responsável por este site</li>
@@ -44,7 +44,7 @@ export class CarroselSlideComponent {
     },
     {
       titulo: "Collina",
-      imagem: "assets/images/nosso_lar/collina.jpeg",
+      imagem: "assets/images/nosso_lar/collina.webp",
       descricao: `
       <ul>
         <li>A primogênita da família</li>
@@ -56,7 +56,7 @@ export class CarroselSlideComponent {
     },
     {
       titulo: "Ada",
-      imagem: "assets/images/nosso_lar/ada.png",
+      imagem: "assets/images/nosso_lar/ada.webp",
       descricao: `
       <ul>
         <li>A caçula da família</li>

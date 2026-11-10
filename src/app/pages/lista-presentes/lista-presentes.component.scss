@@ -28,7 +28,7 @@
   width: clamp(320px, 85vw, 700px);
   margin: 3rem auto 0;
   padding: 1rem;
-  background-image: url("/assets/image/ativos/background.png");
+  background-image: url("/assets/image/ativos/background.webp");
   border-radius: 4px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
@@ -136,8 +136,8 @@
 //   background-color: $white;
 
 //   &.enfeite {
-//     background-image: url("/assets/images/elementos/flor-folha.png"),
-//       url("/assets/images/elementos/flor-folha 2.png");
+//     background-image: url("/assets/images/elementos/flor-folha.webp"),
+//       url("/assets/images/elementos/flor-folha 2.webp");
 //     background-size: 250px, 250px; // Ajuste o tamanho conforme necessário
 //     background-position: -50px -50px, calc(100% + 50px) calc(100% + 50px); // Posição da flor mais no canto
 //     background-repeat: no-repeat, no-repeat; // Não repetir a imagem

@@ -1,18 +1,15 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../../components/footer/footer.component';
 // import { ApiService } from '../../services/api.service';
-import { Presente } from '../../interfaces/presente.interface';
 import { CarroselSlideComponent } from "../../components/carrosel-slide/carrosel-slide.component";
 import { SimpleNavBarComponent } from "../../components/navbar/simple-nav-bar.component";
-import { TimelineComponent } from '../../components/timeline/timeline.component';
-import { PlayerComponent } from '../../components/player/player.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent, SimpleNavBarComponent, TimelineComponent, PlayerComponent],
+  imports: [CommonModule, FooterComponent, RouterModule, CarroselSlideComponent, SimpleNavBarComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
