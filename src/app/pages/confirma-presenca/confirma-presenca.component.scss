@@ -1,5 +1,5 @@
 @use "sass:color";
-@use '../../../variables.scss' as *;
+@use "../../../variables.scss" as *;
 
 // :host {
 //   display: flex;
@@ -7,16 +7,15 @@
 //   min-height: 100vh;
 // }
 
-.titulo-sessao{
+.titulo-sessao {
   color: $highlight-color;
 }
 
-.descricao{
+.descricao {
   font-family: $font-02;
   font-size: 1rem;
   letter-spacing: 0.05em;
   color: $text-dark;
-  
 }
 
 .site-note-wrapper {
@@ -126,5 +125,41 @@
 
   .icasei-container {
     height: 650px;
+  }
+}
+
+#lista-presentes {
+  .subtitulo {
+    font-family: $font-02;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $text-dark;
+  }
+
+  .presentes-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.85rem 2rem;
+
+    background-color: $terciary-color;
+    color: white;
+    border: 1px solid $terciary-color;
+
+    font-family: $font-02;
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background-color: color.adjust($terciary-color, $lightness: -10%);
+      border-color: color.adjust($terciary-color, $lightness: -10%);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
   }
 }
