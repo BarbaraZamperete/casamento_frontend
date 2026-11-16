@@ -1,27 +1,12 @@
-// // Variáveis de cores globais
-// $primary-blue: #1a4b84;
-// $dark-blue: #1a1a1a;
-// $secondary-blue: #3474c5;
-// $light-blue: #e8f1ff;
-
-/* Color Theme Swatches in Hex */
-// $paleta_BK_01-1-hex: #6B8596;
-// $paleta_BK_01-2-hex: #95ADB7;
-// $paleta_BK_01-3-hex: #FBE4C5;
-// $paleta_BK_01-4-hex: #D9560B;
-// $paleta_BK_01-5-hex: #BF3604;
-
-
-
-// Paleta principal do site de casamento
-$primary-color: #A9B9A3;  // Azul acinzentado sofisticado
-$secondary-color: #CBBAD8;  // Azul claro para contrastes sutis
-$background-light: #F3E6D8;  // Bege claro para um visual elegante
-$highlight-color: #C67656;  // Laranja vibrante para realces e destaques
+// Paleta de cores do site.
+$primary-color: #A9B9A3; // Verde sálvia
+$secondary-color: #CBBAD8; // Lilás claro
+$background-light: #F3E6D8; // Bege claro
+$highlight-color: #C67656; // Terracota para destaques
 $terciary-color: #7E98B3; 
-$background-very-light: #F9F9F9; // Quase branco para fundos limpos 
+$background-very-light: #F9F9F9; // Fundo quase branco
 
-// Cores auxiliares para sombreamento e iluminação
+// Cores de texto, bordas e estados.
 $text-dark: #1a1a1a;  // Texto escuro para legibilidade
 $text-light: #ffffff;  // Texto claro para fundos escuros
 $border-color: #95ADB7;  // Bordas suaves e neutras
@@ -31,11 +16,9 @@ $white: #ffffff; // Branco para textos e elementos contrastantes
 $dark-black: #000000; // Preto para textos e elementos contrastantes
 $gray: #f5f5f5;
 $light-black: #575757;
-$dark-black: #000000;
 $success-green: #75ac97; // Cor verde de sucesso mais suave
 $error-red: #f07b7b; // Cor vermelha de erro
 $warning-yellow: #f7c388; // Cor amarela de aviso
-
-
+// Famílias tipográficas do site.
 $font-01: 'Bellarina', cursive;
 $font-02: 'Libre Caslon Display', serif;

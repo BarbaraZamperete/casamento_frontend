@@ -1,4 +1,4 @@
-<!-- Seção Hero -->
+<!-- Hero -->
 <section class="hero d-flex">
   <div class="container text-center titulo-container">
     <h1 class="titulo-principal">
@@ -11,12 +11,9 @@
       <p>Conheça a nossa jornada.</p>
       <p>Uma história construída com amor, todos os dias.</p>
     </div>
-
-    <!-- <a href="#confirmacao" class="btn btn-outline-dark btn-lg">Confirmar Presença</a> -->
   </div>
 </section>
 
-<!-- NavBar -->
 <app-simple-nav-bar></app-simple-nav-bar>
 
 <!-- Contagem regressiva -->
@@ -69,10 +66,6 @@
 
       <div class="site-note-content">
 
-        <!-- <h3>
-        Site em atualização
-      </h3> -->
-
         <p>
           Este espaço será atualizado ao longo dos próximos meses com novas fotos, informações do casamento, lista de presentes e confirmação oficial de presença!
         </p>
@@ -87,7 +80,6 @@
 
   <section id="detalhes" class="py-5 cor">
   <div class="container">
-    <!-- <h2 class="titulo-sessao">O Casamento</h2> -->
     <div class="row text-center g-5 align-items-stretch justify-content-center">
       <div class="col-md-3 d-flex">
         <div class="card border-0 shadow-sm h-90 w-100 mx-auto">
@@ -130,33 +122,17 @@
 </section>
 </section>
 
-<!-- playlist -->
-<!-- <section class="d-flex justify-content-center playlist-card">
-  <app-player></app-player>
-</section> -->
-
-
-<!-- Nossa História -->
-<!-- <section id="historia" class="py-5 cor">
-  <div class="container">
-    <h2 class="titulo-sessao">Nossa História</h2>
-    <app-timeline></app-timeline>
-  </div>
-</section> -->
-
-
-
-
-<!-- Confirmar Presença -->
+<!-- Confirmação de presença -->
 <section id="confirmacao" class="py-5">
   <div class="container justify-content-center text-center">
     <h2 class="titulo-sessao">Confirmação</h2>
     <p class="lead subtitulo">Não esqueça de confirmar a sua presença.</p>
     <p class="lead mb-4 subtitulo">Ficaremos muito felizes com você em nosso grande dia!</p>
-    <a href="/confirmacao" class="btn btn-dark btn-lg confirmacao-botao">Confirme sua Presença</a>
+    <a routerLink="/confirmacao" class="btn btn-dark btn-lg confirmacao-botao">Confirme sua Presença</a>
   </div>
 </section>
 
+<!-- Nosso Lar -->
 <section id="nosso-lar" class="py-5 cor session-decorated">
   <div class="container">
     <h2 class="titulo-sessao">O Nosso Lar</h2>
@@ -164,14 +140,11 @@
   </div>
 </section>
 
-<!-- Presentes -->
+<!-- Lista de presentes -->
 <section id="presentes" class="py-5">
   <div class="container justify-content-center text-center">
     <h2 class="titulo-sessao">Lista de Presentes</h2>
     <p class="lead mb-4 subtitulo">Ajude a tornar esse dia ainda mais especial!</p>
-    <a href="/lista-presentes" class="btn btn-dark btn-lg presentes-botao">Ver Lista de Presentes</a>
+    <a routerLink="/lista-presentes" class="btn btn-dark btn-lg presentes-botao">Ver Lista de Presentes</a>
   </div>
 </section>
-
-<!-- Footer -->
-<app-footer></app-footer>

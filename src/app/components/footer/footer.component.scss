@@ -1,27 +1,21 @@
-@use "sass:color";
 @use "../../../variables.scss" as *;
 
 :host {
   display: block;
-  flex-shrink: 0; // Impede que o footer encolha
+  flex-shrink: 0; // Mantém o rodapé no tamanho definido pelo conteúdo.
 }
 
 .container {
   max-width: 1200px;
 }
 
-// Footer
+// Cores e créditos do rodapé.
 footer.bg-dark {
   position: relative;
   bottom: 0;
   right: 0;
   left: 0;
-  // background-color: rgba($terciary-color, 1) !important;
   background-color: $background-light !important;
-  // padding: 0 !important;
-  // padding-bottom: 5px;
-
-  // overflow: hidden;
 
   .footer-credit {
     display: flex;

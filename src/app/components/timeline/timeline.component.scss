@@ -1,13 +1,8 @@
-@use "sass:color";
 @use "../../../variables.scss" as *;
 
-// ==========================================
-// TIMELINE
-// ==========================================
-
+// Linha central e sequência dos cartões.
 .timeline {
   position: relative;
-  // max-width: 1100px;
   margin: 0 auto;
   padding: 0;
 
@@ -49,10 +44,7 @@
   }
 }
 
-// ==========================================
-// ITEMS
-// ==========================================
-
+// Cartões alternados nas laterais da linha.
 .timeline-item {
   position: relative;
   width: 50%;
@@ -93,14 +85,8 @@
   }
 }
 
-// ==========================================
-// CARD
-// ==========================================
-
+// Aparência dos cartões.
 .timeline-card {
-  // max-width: 500px;
-
-  // background: #faf6ea;
   background-image: url("/assets/images/ativos/background.webp");
   background-size: contain;
 
@@ -126,10 +112,7 @@
   }
 }
 
-// ==========================================
-// CARD CONTENT
-// ==========================================
-
+// Conteúdo e tipografia dos cartões.
 .timeline-image {
   width: 100%;
   max-height: 450px;
@@ -166,49 +149,18 @@
   align-items: center;
 }
 
-// ==========================================
-// DESCRIPTION / ACCORDION
-// ==========================================
-
+// O estado expandido é controlado pela animação do componente.
 .timeline-description {
-  // max-height: 0;
-
   overflow: hidden;
-  // opacity: 0;
-  // margin-top: 0;
-
-  // transition:
-  //   max-height 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
-  //   opacity 0.5s ease,
-  //   margin-top 0.5s ease;
-
-  // &.open {
-  //   max-height: 1000px;
-
-  //   opacity: 1;
-
-  //   margin-top: 1rem;
-  //   transform: translateY(0);
-  // }
 }
 
 .timeline-description-content {
   padding-top: 0.5rem;
   text-align: justify;
 
-  // transform: translateY(-10px);
-
-  // transition:
-  //   transform 0.6s ease,
-  //   opacity 0.5s ease;
-
-  // transform: translateY(0);
 }
 
-// ==========================================
-// MOBILE
-// ==========================================
-
+// Ajustes para telas menores.
 @media (max-width: 768px) {
   .timeline {
     &::before,
@@ -251,34 +203,3 @@
     font-size: 0.8rem !important;
   }
 }
-
-// .timeline-description {
-//   line-height: 1.8;
-//   color: #555;
-//   text-align: justify;
-//   font-size: 1rem;
-//   margin: 0;
-//   font-family: $font-02;
-
-//   span {
-//     text-indent: 15px;
-//   }
-// }
-
-// .tape {
-//   position: absolute;
-
-//   top: -12px;
-//   left: 50%;
-
-//   transform: translateX(-50%) rotate(-4deg);
-
-//   width: 90px;
-//   height: 28px;
-
-//   background: rgba(255, 255, 255, 0.6);
-
-//   backdrop-filter: blur(2px);
-
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { RouterOutlet } from '@angular/router';
+import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -8,12 +8,13 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterOutlet, AppComponent],  // Importa o RouterOutlet, já que o AppComponent usa
-      declarations: []
+      imports: [AppComponent],
+      providers: [provideRouter([])]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('deve criar o componente', () => {

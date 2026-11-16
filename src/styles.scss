@@ -1,12 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
 @use 'variables.scss' as *;
 
-
+// Fonte decorativa local usada nos títulos.
 @font-face {
     font-family: 'Bellarina';
-    src: url('assets/fonts/Bellarina.otf') format('truetype');
+    src: url('assets/fonts/Bellarina.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -16,13 +16,7 @@
 html,
 body {
   background-color: $background-light;
-  // overflow-x: hidden;
 }
-
-// * {
-//   outline: 1px solid red;
-// }
-
 
 .timeline-description p {
   margin: 0;
@@ -99,7 +93,7 @@ body {
   }
 }
 
-// Títulos de Sessão
+// Títulos compartilhados entre as páginas.
 .titulo-sessao {
   text-transform: uppercase;
   font-family: $font-02;
@@ -108,4 +102,52 @@ body {
   font-weight: 400;
   margin-bottom: 2.5rem;
   text-align: center;
+}
+
+
+.site-note-wrapper {
+  overflow-x: clip;
+  z-index: 1000;
+}
+
+.site-note {
+  position: relative;
+  width: clamp(320px, 85vw, 700px);
+  margin: 3rem auto 0;
+  padding: 1rem;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.site-note-content {
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+    font-family: $font-02;
+    font-size: 0.8rem;
+  }
+}
+
+.site-note .tape {
+  position: absolute;
+  width: 80px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%) rotate(-30deg);
+}
+
+.tape-left {
+  top: -14px;
+  left: 15px;
+}
+
+.tape-right {
+  bottom: -14px;
+  right: -70px;
 }

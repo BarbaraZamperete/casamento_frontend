@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideNoopAnimations } from '@angular/platform-browser/animations';
 
 import { NossaHistoriaComponent } from './nossa-historia.component';
 
@@ -8,7 +9,8 @@ describe('NossaHistoriaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NossaHistoriaComponent]
+      imports: [NossaHistoriaComponent],
+      providers: [provideNoopAnimations()]
     })
     .compileComponents();
 

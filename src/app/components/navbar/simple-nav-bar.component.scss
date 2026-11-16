@@ -2,24 +2,19 @@
 @use "../../../variables.scss" as *;
 
 .navbar {
-  // transition: background-color 0.3s ease;
   padding: 0.75rem 0;
   height: 60px;
-  // background-color: $background-light;
-  // background: linear-gradient(
-  //   to bottom,
-  //   color.adjust($highlight-color, $lightness: 5%),
-  //   color.adjust($highlight-color, $lightness: -10%)
-  // );
-
-    background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     color.adjust($primary-color, $lightness: 7%),
     color.adjust($primary-color, $lightness: -10%),
   );
 
-  // background-color: color.adjust($background-light, $lightness: 7%);
   margin: 0;
+
+  .container-navbar {
+    padding: 0 20px;
+  }
 
   .menu-icon {
     display: none;
@@ -35,7 +30,6 @@
     background-repeat: no-repeat;
     width: 70px;
     height: 50px;
-    // padding: 0.5rem 1rem;
   }
 
   .nav-link {
@@ -97,11 +91,15 @@
     }
 
     .navbar-collapse {
+
+      position: relative;
+      z-index: 1101;
+
       background-color: $white;
       padding: 0.5rem;
       margin-top: 0.25rem;
       border-radius: 4px;
-      // max-width: 400px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 
       .nav-link {
         color: color.adjust($highlight-color, $lightness: -5%);

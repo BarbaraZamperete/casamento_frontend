@@ -1,4 +1,3 @@
-@use "sass:color";
 @use "../../../variables.scss" as *;
 
 :host {
@@ -9,8 +8,6 @@
 
 .polaroid {
   position: relative;
-
-  // flex: 0 0 320px;
 
   flex: 0 0 clamp(280px, 28vw, 320px);
   max-width: 300px;
@@ -65,8 +62,6 @@
   text-align: left;
 
   font-family: $font-02;
-
-  // line-height: 1.3;
 
   color: #666;
 }

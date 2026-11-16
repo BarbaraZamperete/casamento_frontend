@@ -1,30 +1,23 @@
 @use "sass:color";
 @use "../../../variables.scss" as *;
 
-// Layout
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-
-  &-navbar {
-    padding: 0 20px;
-  }
 }
 
-// Scroll behavior
+// Mantém os alvos de navegação visíveis abaixo da navbar fixa.
 html {
   scroll-padding-top: 70px;
   scroll-behavior: smooth;
 }
 
-// INICIO DA SESSÃO DO HERO
+// Hero
 .hero {
   background-image: url("/assets/images/banner3.webp");
   background-size: auto;
   background-position: calc(50% + 30px) calc(50% - 180px);
-
-  // background-repeat: no-repeat;
 
   height: 70vh;
   max-height: 1000px;
@@ -33,12 +26,7 @@ html {
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  // justify-content: space-evenly;
   align-items: center;
-
-  // @media (max-width: 768px) {
-  //   height: calc(100vh - 60px);
-  // }
 
   &::before {
     content: "";
@@ -54,14 +42,6 @@ html {
     );
     z-index: 1;
   }
-
-  // .monograma {
-  // width: clamp(70px, 15vw, 100px);
-  // height: auto;
-  // z-index: 2;
-  // margin-top: clamp(1px, 5vw, 90px);
-  // margin-top: max(0px, calc(30px - 4vw));
-  // }
 
   .container.titulo-container {
     margin-top: 100px;
@@ -128,7 +108,6 @@ html {
       margin-top: 0;
     }
 
-    /* Tablets */
     @media (max-width: 992px) {
       .titulo-principal {
         font-size: 5rem;
@@ -140,7 +119,6 @@ html {
       }
     }
 
-    /* Celulares */
     @media (max-width: 768px) {
       .titulo-principal {
         font-size: 3.5rem;
@@ -153,7 +131,6 @@ html {
       }
     }
 
-    /* Celulares pequenos */
     @media (max-width: 480px) {
       .titulo-principal {
         font-size: 2.7rem;
@@ -195,9 +172,8 @@ html {
     }
   }
 }
-//  FIM
 
-// INICIO DA SESSÃO DA CONTAGEM REGRESSIVA
+// Contagem regressiva
 .countdown-section {
   background-color: $background-very-light;
   padding-top: 0 !important;
@@ -206,8 +182,6 @@ html {
     width: clamp(70px, 15vw, 100px);
     height: auto;
     z-index: 2;
-    // margin-top: clamp(1px, 5vw, 90px);
-    // margin-top: max(0px, calc(30px - 4vw));
     margin-bottom: 10px;
   }
 
@@ -244,121 +218,9 @@ html {
     }
   }
 
-  // Site NOTE
-  .site-note-wrapper {
-    overflow-x: clip;
-
-    .site-note {
-      position: relative;
-
-      width: clamp(280px, 85vw, 700px);
-
-      margin: 3rem auto 0;
-
-      padding: 1rem;
-
-      background-image: url("/assets/image/ativos/background.webp");
-
-      border-radius: 4px;
-
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-
-      // transform: rotate(-1deg);
-    }
-
-    .site-note-content {
-      text-align: center;
-
-      p {
-        margin: 0;
-        font-size: 0.8rem;
-        color: #666;
-
-        line-height: 1.8;
-        font-family: $font-02;
-      }
-    }
-
-    .site-note .tape {
-      position: absolute;
-
-      width: 60px;
-      height: 25px;
-
-      background: rgba(255, 255, 255, 0.7);
-
-      backdrop-filter: blur(2px);
-
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-      &.tape-left {
-        top: -10px;
-        left: -20px;
-      }
-
-      &.tape-right {
-        right: -20px;
-      }
-
-      transform: rotate(-40deg);
-    }
-  }
 }
 
-// FIM
-
-// INICIO DA SESSÂO PLAYLIST
-.playlist-card {
-  background-color: $background-very-light;
-
-  width: 100%;
-
-  margin: 0 auto;
-
-  .music-card {
-    background-color: transparent;
-    border: 0;
-
-    max-width: 400px;
-  }
-}
-
-// FIM
-
-// INÍCIO DA DESSÃO HISTÓRIA (TIMELINE)
-#historia {
-  // background: linear-gradient(
-  //   to bottom,
-  //   $background-very-light,
-  //   $primary-color,
-  //   $background-very-light
-  // );
-
-  background-color: $primary-color;
-
-  .container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .titulo-sessao {
-    color: $white;
-  }
-}
-// FIM
-
-// INÍCIO DA SESSÃO NOSSO LAR
-#nosso-lar {
-  background-color: $background-very-light;
-
-  .titulo-sessao {
-    color: $terciary-color;
-  }
-}
-
-// FIM
-
-// INÍCIO DA DESSÃO DETALHES (O CASAMENTO)
+// Detalhes do casamento
 #detalhes {
   background-color: transparent;
 
@@ -369,7 +231,6 @@ html {
     background: $white;
     padding: 1rem;
     border-radius: 8px;
-    // box-shadow: 0 2px 15px rgba($terciary-color, 0.5);
     transition: transform 0.3s ease;
     margin-bottom: 30px;
     text-align: center;
@@ -396,7 +257,6 @@ html {
       color: $highlight-color;
       margin: 1rem 0;
       font-family: $font-01;
-      // font-size: 2.5rem;
       font-size: clamp(2rem, 4vw, 2.5rem);
     }
 
@@ -407,9 +267,8 @@ html {
     }
   }
 }
-// FIM
 
-
+// Confirmação de presença
 #confirmacao {
   background-color: $primary-color;
 
@@ -453,7 +312,16 @@ html {
   }
 }
 
+// Nosso lar
+#nosso-lar {
+  background-color: $background-very-light;
 
+  .titulo-sessao {
+    color: $terciary-color;
+  }
+}
+
+// Lista de presentes
 #presentes {
   background-color: $terciary-color;
 
@@ -497,9 +365,7 @@ html {
   }
 }
 
-// ########### STYLES GENERALIZADOS DA PÁGINA HOME ##########
-
-// Sessões com decoração
+// Elementos compartilhados entre as seções da Home
 .session-decorated {
   position: relative;
 
@@ -561,7 +427,6 @@ html {
   }
 }
 
-// Títulos de Sessão
 .titulo-sessao {
   text-transform: uppercase;
   font-family: $font-02;

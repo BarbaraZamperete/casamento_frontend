@@ -20,4 +20,11 @@ describe('CarroselSlideComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('renders descriptions as list items', () => {
+    const descriptionItems = fixture.nativeElement.querySelectorAll('.descricao li');
+
+    expect(descriptionItems.length).toBeGreaterThan(0);
+    expect(descriptionItems[0].textContent).toContain('Torcedora apaixonada');
+  });
 });
