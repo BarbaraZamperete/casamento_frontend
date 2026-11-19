@@ -403,15 +403,10 @@ html {
 
     color: $text-dark;
 
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
-      border-color 0.25s ease;
+    transition: transform 0.25s ease;
 
     &:hover {
       transform: translateY(-4px);
-      border-color: rgba(126, 152, 131, 0.4);
-      box-shadow: 0 10px 25px rgba(67, 55, 44, 0.08) !important;
     }
 
     .card-body {
@@ -474,13 +469,6 @@ html {
   }
 }
 
-
-// Responsividade
-@media (max-width: 576px) {
-  #combinados .combinado-card .card-body {
-    padding: 1.75rem 1.25rem;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   #combinados .combinado-card {
