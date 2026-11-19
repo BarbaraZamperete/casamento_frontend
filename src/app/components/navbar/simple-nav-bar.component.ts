@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,6 +8,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './simple-nav-bar.component.scss'
 })
 export class SimpleNavBarComponent {
+  @Input() fixed = false;
+  private readonly elementRef = inject(ElementRef<HTMLElement>);
   isMenuOpen = false;
 
   toggleMenu(): void {
@@ -16,5 +18,12 @@ export class SimpleNavBarComponent {
 
   closeMenu(): void {
     this.isMenuOpen = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  closeMenuOnOutsideClick(event: MouseEvent): void {
+    if (this.isMenuOpen && !this.elementRef.nativeElement.contains(event.target as Node)) {
+      this.closeMenu();
+    }
   }
 }

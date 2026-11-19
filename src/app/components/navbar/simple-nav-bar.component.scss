@@ -12,6 +12,14 @@
 
   margin: 0;
 
+  &.navbar-fixed-route {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
   .container-navbar {
     padding: 0 20px;
   }
