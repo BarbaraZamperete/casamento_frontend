@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   minutes = 0;
   seconds = 0;
 
-  horadoconvite = "16h";
-  cerimonia = "16:30";
-  recepcao = "17:30";
-  jantar = "19:00";
+  horadoconvite = "16:30";
+  cerimonia = "17:00";
+  recepcao = "18:30";
+  jantar = "20:30";
 
   private intervalId: ReturnType<typeof setInterval> | undefined;
   // O evento acontece em Boa Vista, no fuso UTC-4.

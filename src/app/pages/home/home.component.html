@@ -148,3 +148,81 @@
     <a routerLink="/lista-presentes" class="btn btn-dark btn-lg presentes-botao">Ver Lista de Presentes</a>
   </div>
 </section>
+
+<section id="combinados" class="py-5 session-decorated">
+  <div class="container">
+
+    <h2 class="titulo-sessao">Combinados</h2>
+
+    <p class="lead subtitulo text-center mb-4">
+      Algumas coisinhas que gostaríamos de combinar com vocês para o nosso dia.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Branco -->
+      <div class="col-md-4 d-flex">
+        <article class="card combinado-card h-100 w-100 text-center shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center">
+
+            <div class="combinado-ornamento ornamento-branco" aria-hidden="true">
+              <i class="bi bi-flower1"></i>
+            </div>
+
+            <h3 class="titulo-detalhes">Branco</h3>
+
+            <p class="mb-0">
+              Pedimos que evitem roupas brancas ou em tons muito próximos.
+              Afinal, essa cor fica reservada para nós duas!
+            </p>
+
+          </div>
+        </article>
+      </div>
+
+      <!-- Terracota -->
+      <div class="col-md-4 d-flex">
+        <article class="card combinado-card h-100 w-100 text-center shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center">
+
+            <div class="combinado-ornamento ornamento-terracota" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <h3 class="titulo-detalhes">Terracota</h3>
+
+            <p class="mb-0">
+              Essa cor foi escolhida para as nossas madrinhas.
+              Por isso, pedimos que evitem roupas nesse tom.
+            </p>
+
+          </div>
+        </article>
+      </div>
+
+      <!-- Horário -->
+      <div class="col-md-4 d-flex">
+        <article class="card combinado-card h-100 w-100 text-center shadow-sm">
+          <div class="card-body d-flex flex-column align-items-center">
+
+            <div class="combinado-ornamento ornamento-horario" aria-hidden="true">
+              <i class="bi bi-clock"></i>
+            </div>
+
+            <h3 class="titulo-detalhes">Horário</h3>
+
+            <p class="mb-0">
+              Nossa cerimônia começa às <strong>{{ cerimonia }}</strong>.
+              Pedimos que cheguem alguns minutinhos antes para encontrar
+              seus lugares e não perder o início!
+            </p>
+
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>

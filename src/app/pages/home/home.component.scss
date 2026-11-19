@@ -279,6 +279,7 @@ html {
   }
 }
 
+
 // Confirmação de presença
 #confirmacao {
   background-color: $primary-color;
@@ -373,6 +374,117 @@ html {
       transform: translateY(-2px);
       box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
     }
+  }
+}
+
+// Combinados
+#combinados {
+  background-color: $background-very-light;
+
+  .titulo-sessao {
+    color: $highlight-color;
+    margin-bottom: 0.75rem;
+  }
+
+  .subtitulo {
+    font-family: $font-02;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    color: $text-dark;
+  }
+
+  .combinado-card {
+    position: relative;
+    overflow: hidden;
+
+    background-color: $white;
+    border: 1px solid rgba(126, 152, 131, 0.2);
+    border-radius: 14px;
+
+    color: $text-dark;
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(126, 152, 131, 0.4);
+      box-shadow: 0 10px 25px rgba(67, 55, 44, 0.08) !important;
+    }
+
+    .card-body {
+      padding: 2rem 1.5rem;
+    }
+
+    .titulo-detalhes {
+      color: $highlight-color;
+      margin: 0.8rem 0 1rem;
+      font-family: $font-01;
+      font-size: clamp(1.7rem, 2.5vw, 2rem);
+    }
+
+    p {
+      max-width: 290px;
+      font-family: $font-02;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: rgba($highlight-color, 0.9);
+    }
+  }
+}
+
+// Elementos decorativos
+.combinado-ornamento {
+  height: 48px;
+  width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $highlight-color;
+  font-size: 1.8rem;
+
+  margin-bottom: 0.25rem;
+}
+
+
+// Pontos decorativos
+.ornamento-terracota {
+  gap: 5px;
+
+  span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #C67656;
+
+    &:nth-child(2) {
+      width: 11px;
+      height: 11px;
+      opacity: 0.75;
+    }
+
+    &:nth-child(3) {
+      opacity: 0.5;
+    }
+  }
+}
+
+
+// Responsividade
+@media (max-width: 576px) {
+  #combinados .combinado-card .card-body {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #combinados .combinado-card {
+    transition: none;
   }
 }
 
